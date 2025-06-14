@@ -713,9 +713,15 @@ main {
 
 /* CUSTOM CSS */
 
+body {
+    overflow: hidden;
+
+}
+
 nav.main-header {
     display: flex;
     flex-direction: column;
+    /* width: 100%; */
     /* gap: 1rem; */
 
     /* transition: all 5s ease-in-out; */
@@ -729,6 +735,7 @@ nav.main-header {
 
     ul {
         display: flex;
+        /* align-items: center; */
         flex-wrap: wrap;
         gap: var(--space-lg);
     }
@@ -747,12 +754,49 @@ nav.main-header {
 
     li {
         /* padding: .15rem; */
+        font-size: var(--font-size-base);
+
+        a {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: .25rem;
+
+            img {
+                margin-top: 15px;
+                height: 15px;
+                width: 30px;
+
+                transition: all .15s ease-in-out;
+
+            }
+
+            &:hover img {
+                transform: rotate(180deg);
+
+            }
+        }
+
+    }
+
+    ul.parent {
+        display: flex;
+        align-items: center;
+    }
+
+    li.parent {
+        gap: .25rem;
+        text-transform: uppercase;
+
+
     }
 
     ul.child {
+
         position: absolute;
-        left: 0;
-        top: calc(100% + 1rem);
+        left: -.2rem;
+        top: calc(100% + .25rem);
         padding: var(--space-sm);
         display: flex;
         flex-direction: column;
@@ -761,15 +805,20 @@ nav.main-header {
 
         min-width: 250px;
 
-        border-radius: 5px;
-        box-shadow: 0 1px 2px 3px rgba(0,0, 0, .2);
+        border-radius: 2px;
+        box-shadow: 0 1px 2px 3px rgba(0, 0, 0, .1);
 
+        align-items: start;
+
+        padding: 1rem;
 
         /* transformations */
-        transition: all .3s ease-in-out;
+        transition: all .15s ease-in-out;
         transform: translateY(-50px);
         z-index: -100;
         opacity: 0;
+
+        border-right: 3px solid var(--color-accent-primary);
     }
 
     li.child {
@@ -781,12 +830,12 @@ nav.main-header {
         /* border: 1px solid; */
     }
 
-    li.parent.hasChildren::after {
+    /* li.parent.hasChildren::after {
         content: "↓";
-        color: var(--color-neutral-light);
+        color: white;
 
 
-    }
+    } */
 
     li.parent.hasChildren:hover+ul.child,
     li.parent.hasChildren+ul.child:hover {

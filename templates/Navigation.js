@@ -22,6 +22,9 @@ function Navigation() {
       <li class="parent ${hasChildren}">
       <a href="${route.path}">
       ${route.name}
+      ${hasChildren? /*html*/`
+        <img src="${logoSrc.light}" alt="" />
+        `: ''}
       </a>
       </li>
       ${
