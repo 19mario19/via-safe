@@ -1,36 +1,55 @@
+import { routes } from "../routes/routes.js"
+
 /**
- * Generates an HTML layout string with optional navigation, body, and footer content.
+ * Renders a navigation menu based on the global `routes` array.
+ * Each route is rendered as a list item with a link, and if the route has children,
+ * a nested list of child routes is also rendered.
  *
- * @param {Object} params - The parameters for the layout.
- * @param {string} params.title - The title of the HTML document.
- * @param {Object} params.content - The content sections for the layout.
- * @param {string} [params.content.nav] - The HTML string for the navigation section (optional).
- * @param {string} [params.content.body] - The HTML string for the body section (optional).
- * @param {string} [params.content.footer] - The HTML string for the footer section (optional).
- * @param {boolean} [script=false] - Whether to include the script tag for "/js/script.js".
- * @returns {string} The generated HTML layout as a string.
+ * @returns {string} HTML string representing the navigation menu.
  */
-function LayoutDir({ title, content: { nav, body, footer } }, script = false) {
+function Footer() {
+  const elements = routes
+    ?.map((route) => {
+      return /*html*/ `
+    <li>
+      <a href="${route.path}">
+        ${route.name}
+      </a>
+      ${
+        route?.children
+          ? /*html*/ `
+          <ul>
+          ${route?.children
+            .map((child) => {
+              return /*html*/ `
+              <li>
+                <a href="${child.path}">
+                  ${child.name}
+                </a>
+              </li>
+              `
+            })
+            .join("")}
+          </ul>`
+          : ""
+      }
+    </li>
+    `
+    })
+    .join("")
+
   return /*html*/ `
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        ${
-          script
-            ? '<script src="/js/script.js" defer type="module"></script>'
-            : ""
-        }
-        <title>${title}</title>
-    </head>
-    <body>
-        ${nav ?? ""}
-        ${body ?? ""}
-        ${footer ?? ""}
-    </body>
-    </html>
-`
+<nav class="">
+    ${
+     elements
+      ? /*html*/ `
+    <ul>
+      ${elements}
+    </ul>
+    `
+      : ""
+  }
+  </nav>`
 }
 
-export { LayoutDir }
+export { Footer }

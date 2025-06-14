@@ -17,6 +17,7 @@ function LayoutDir({ title, content: { nav, body, footer } }, script = false) {
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./global.css" />
         ${
           script
             ? '<script src="/js/script.js" defer type="module"></script>'

@@ -8,44 +8,63 @@ import { routes } from "../routes/routes.js"
  * @returns {string} HTML string representing the navigation menu.
  */
 function Navigation() {
+  const logoSrc = {
+    light: "../media/logo/logo-1.svg",
+    dark: "../media/logo/logo-1-dark.svg",
+  }
+
   const elements = routes
     ?.map((route) => {
+      const hasChildren = route?.children?.length > 0 ? "hasChildren" : ""
+
       return /*html*/ `
-    <li>
-      <a href=${route.path}>
-        ${route.name}
+      <div className="drop-down">
+      <li class="parent ${hasChildren}">
+      <a href="${route.path}">
+      ${route.name}
       </a>
+      </li>
       ${
         route?.children
           ? /*html*/ `
-          <ul>
-          ${route?.children
-            .map((child) => {
-              return /*html*/ `
-              <li>
-                <a href=${child.path}>
-                  ${child.name}
+        <ul class="child">
+        ${route?.children
+          .map((child) => {
+            return /*html*/ `
+              <li class="child">
+              <a href="${child.path}">
+              ${child.name}
                 </a>
-              </li>
-              `
-            })
-            .join("")}
-          </ul>`
+                </li>
+                `
+          })
+          .join("")}
+            </ul>`
           : ""
       }
-    </li>
+            </div>
     `
     })
     .join("")
 
   return /*html*/ `
-  <nav>
+  <nav class="main-header">
 
+  <h1 className="logo">
+  ${
+    logoSrc
+      ? /*html*/ `
+    <img src="${logoSrc.light}" alt="" />
+    `
+      : ""
+  }
+  </h1>
+  
   ${
     elements
       ? /*html*/ `
-    <ul>
-      ${elements}
+    <ul class="parent">
+    ${elements}
     </ul>
     `
       : ""

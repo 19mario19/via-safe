@@ -56,13 +56,13 @@ const routes = [
         path: "/features-benefits/tuning-customization",
       },
       {
-        name: "Logistics and Cargo (For Business)",
+        name: "Logistics and Cargo",
         path: "/features-benefits/logistics-cargo",
       },
     ],
   },
   {
-    name: 'How It Works ("Behind the Scenes")',
+    name: 'How It Works',
     path: "/how-it-works",
     children: [
       {

@@ -2,8 +2,10 @@
   "name": "via-safe",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "create": "node create.js"
   },
   "repository": {
     "type": "git",
