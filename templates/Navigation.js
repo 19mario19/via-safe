@@ -13,6 +13,11 @@ function Navigation() {
     dark: "../media/logo/logo-1-dark.svg",
   }
 
+  const arrowSrc = {
+    light: "../media/svg/arrow.svg",
+    dark: "",
+  }
+
   const elements = routes
     ?.map((route) => {
       const hasChildren = route?.children?.length > 0 ? "hasChildren" : ""
@@ -22,9 +27,13 @@ function Navigation() {
       <li class="parent ${hasChildren}">
       <a href="${route.path}">
       ${route.name}
-      ${hasChildren? /*html*/`
-        <img src="${logoSrc.light}" alt="" />
-        `: ''}
+      ${
+        hasChildren
+          ? /*html*/ `
+        <img src="${arrowSrc.light}" alt="arrow" />
+        `
+          : ""
+      }
       </a>
       </li>
       ${

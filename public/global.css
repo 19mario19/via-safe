@@ -753,15 +753,16 @@ nav.main-header {
     }
 
     li {
-        /* padding: .15rem; */
         font-size: var(--font-size-base);
-
+        
         a {
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: center;
             gap: .25rem;
+
+            padding: .15rem .35rem;
 
             img {
                 margin-top: 15px;
