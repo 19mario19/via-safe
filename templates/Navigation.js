@@ -66,7 +66,9 @@ function Navigation() {
   ${
     logoSrc
       ? /*html*/ `
-    <img src="${logoSrc.light}" alt="" />
+      <a href="${routes[0].path}">
+      <img src="${logoSrc.light}" alt="" />
+      </a>
     `
       : ""
   }
