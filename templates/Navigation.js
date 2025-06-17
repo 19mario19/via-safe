@@ -10,11 +10,11 @@ import { routes } from "../routes/routes.js"
 function Navigation() {
   const logoSrc = {
     light: "../media/logo/logo-1.svg",
-    dark: "../media/logo/logo-1-dark.svg",
+    dark: "./media/logo/logo-1-dark.svg",
   }
 
   const arrowSrc = {
-    light: "../media/svg/arrow.svg",
+    light: "./media/svg/arrow.svg",
     dark: "",
   }
 

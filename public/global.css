@@ -882,12 +882,24 @@ nav.main-header {
         gap: var(--space-lg);
         justify-content: space-between;
         align-items: center;
-        padding: var(--space-md) var(--space-lg);
+        padding: var(--space-sm) var(--space-md);
 
         .drop-down {
             width: 100%;
             padding: .25rem;
 
+        }
+
+        h1 {
+
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            height: calc(var(--font-size-xxxl) *1);
+            margin: 0;
+            padding: 0;
         }
 
         ul {
@@ -901,7 +913,7 @@ nav.main-header {
 
         ul.parent {
             position: absolute;
-            border-top: var(--space-xxs) solid var(--color-neutral-light);
+            /* border-top: var(--space-xxs) solid var(--color-neutral-light); */
             top: 100%;
             left: 0;
             width: 100%;
@@ -930,6 +942,7 @@ nav.main-header {
             a {
                 padding: 0;
                 width: fit-content;
+                font-size: var(--font-size-lg);
                 /* background-color: red; */
             }
 
@@ -939,6 +952,15 @@ nav.main-header {
         }
 
 
+        li.parent.active {
+            background-color: var(--color-warning);
+
+            a {
+                color: black;
+                font-weight: bold;
+
+            }
+        }
 
         /* li.parent:hover+ul.child, */
         /* ul.child:hover, */
@@ -981,6 +1003,9 @@ nav.main-header {
             li {
                 width: 100%;
 
+                a {
+                    font-size: var(--font-size-body);
+                }
             }
         }
 
@@ -992,15 +1017,17 @@ nav.main-header {
             cursor: pointer;
             padding: 10px;
 
+            transition: transform .35s ease;
+
             img {
-                min-height: 50px;
-                max-height: 60px;
+                max-height: 35px;
                 margin: 0;
                 padding: 0;
             }
 
             &.active {
                 user-select: none;
+                transform: rotate(90deg);
             }
 
             &.active~ul.parent {
