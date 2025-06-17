@@ -8,6 +8,9 @@ const fullPath = path.join(__rootFolder, "public", "pages")
 
 // console.log(routes)
 
-const layout = LayoutDir({title:"test", content: {nav: Navigation()}})
+const layout = LayoutDir(
+  { title: "test", content: { nav: Navigation() } },
+  true,
+)
 
 console.log(layout)
