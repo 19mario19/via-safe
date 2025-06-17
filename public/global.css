@@ -735,9 +735,11 @@ main {
 /* CUSTOM CSS */
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
 
 }
+
+
 
 nav.main-header {
     display: flex;
@@ -747,6 +749,10 @@ nav.main-header {
     /* gap: 1rem; */
 
     /* transition: all 5s ease-in-out; */
+    #toggle {
+        display: none;
+    }
+
     img {
         height: calc(var(--font-size-xxxl) *4);
     }
@@ -861,7 +867,8 @@ nav.main-header {
     } */
 
     li.parent.hasChildren:hover+ul.child,
-    li.parent.hasChildren+ul.child:hover {
+    li.parent.hasChildren+ul.child:hover,
+    ul.child:hover {
         transform: translateY(0);
         z-index: 100;
         opacity: 1;
@@ -871,6 +878,11 @@ nav.main-header {
 
     /* mobile */
     @media (max-width: 576px) {
+        flex-direction: row;
+        gap: var(--space-lg);
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--space-md) var(--space-lg);
 
         .drop-down {
             width: 100%;
@@ -885,9 +897,23 @@ nav.main-header {
 
         }
 
+        position: relative;
+
         ul.parent {
+            position: absolute;
+            border-top: var(--space-xxs) solid var(--color-neutral-light);
+            top: 100%;
+            left: 0;
+            width: 100%;
             /* transition: all .5s ease-in-out; */
             gap: var(--space-lg);
+            display: none;
+            background-color: var(--color-neutral-dark);
+
+            padding: 1rem;
+            min-height: 50vh;
+
+            z-index: var(--z-overlay);
 
         }
 
@@ -912,19 +938,18 @@ nav.main-header {
             }
         }
 
-        li.parent.active {
-            /* background-color: red; */
-        }
 
-        li.parent:hover+ul.child,
-        ul.child:hover,
-        li.parent.active {
+
+        /* li.parent:hover+ul.child, */
+        /* ul.child:hover, */
+        li.parent.hasChildren.active+ul.child {
             /* display: flex; */
             max-height: 500px;
             height: auto;
             visibility: visible;
             opacity: 1;
-            margin: var(--space-sm) 0;
+            transform: translate(0);
+            /* margin: var(--space-sm) 0; */
 
             z-index: 0;
 
@@ -959,5 +984,34 @@ nav.main-header {
             }
         }
 
+
+
+
+        div#toggle {
+            display: block;
+            cursor: pointer;
+            padding: 10px;
+
+            img {
+                min-height: 50px;
+                max-height: 60px;
+                margin: 0;
+                padding: 0;
+            }
+
+            &.active {
+                user-select: none;
+            }
+
+            &.active~ul.parent {
+                display: flex;
+            }
+
+
+
+        }
+
+
+        /* end mobile */
     }
 }

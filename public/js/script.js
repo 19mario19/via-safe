@@ -1,25 +1,30 @@
 window.addEventListener("DOMContentLoaded", () => {
   console.log("Script loaded...")
-
   const container = document.querySelector(".main-header")
 
+  const toggle = container?.querySelector("#toggle")
+
+  toggle.addEventListener("click", () => {
+    console.log("click")
+    toggle.classList.toggle("active")
+
+  })
+
+  // active li element
   const parents = container.querySelectorAll("li.parent.hasChildren")
-
-  console.log(parents)
-
   parents.forEach((parent, index) => {
     parent.addEventListener("click", () => {
       console.log("parent clicked is: ", parent)
+
+      const wasActive = parent.classList.contains("active")
+
       clearActive(parents)
-      parent.classList.toggle("active")
+
+      if (!wasActive) {
+        parent.classList.toggle("active")
+      }
     })
   })
-
-
-  
-
-
-
 })
 
 /**

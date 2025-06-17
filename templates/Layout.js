@@ -20,7 +20,7 @@ function LayoutDir({ title, content: { nav, body, footer } }, script = false) {
         <link rel="stylesheet" href="./global.css" />
         ${
           script
-            ? '<script src="/js/script.js" defer type="module"></script>'
+            ? '<script src="./js/script.js" defer type="module"></script>'
             : ""
         }
         <title>${title}</title>

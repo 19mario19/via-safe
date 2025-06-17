@@ -61,7 +61,6 @@ function Navigation() {
 
   return /*html*/ `
   <nav class="main-header">
-
   <h1 className="logo">
   ${
     logoSrc
@@ -69,10 +68,13 @@ function Navigation() {
       <a href="${routes[0].path}">
       <img src="${logoSrc.light}" alt="" />
       </a>
-    `
+      `
       : ""
   }
   </h1>
+  <div className="burger" id="toggle">
+    <img src="./media/menu/menu.png" alt="menu icon" />
+  </div>
   
   ${
     elements
