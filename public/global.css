@@ -878,6 +878,7 @@ nav.main-header {
 
     /* mobile */
     @media (max-width: 576px) {
+        width: 576;
         flex-direction: row;
         gap: var(--space-lg);
         justify-content: space-between;
