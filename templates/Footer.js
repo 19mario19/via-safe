@@ -1,28 +1,21 @@
 import { routes } from "../routes/routes.js"
 
-/**
- * Renders a navigation menu based on the global `routes` array.
- * Each route is rendered as a list item with a link, and if the route has children,
- * a nested list of child routes is also rendered.
- *
- * @returns {string} HTML string representing the navigation menu.
- */
 function Footer() {
   const elements = routes
     ?.map((route) => {
       return /*html*/ `
-    <li>
+    <li class="parent">
       <a href="${route.path}">
         ${route.name}
       </a>
       ${
         route?.children
           ? /*html*/ `
-          <ul>
+          <ul class="child">
           ${route?.children
             .map((child) => {
               return /*html*/ `
-              <li>
+              <li class="child">
                 <a href="${child.path}">
                   ${child.name}
                 </a>
@@ -39,17 +32,17 @@ function Footer() {
     .join("")
 
   return /*html*/ `
-<nav class="">
+<footer class="main-footer">
     ${
-     elements
-      ? /*html*/ `
-    <ul>
+      elements
+        ? /*html*/ `
+    <ul class="parent">
       ${elements}
     </ul>
     `
-      : ""
-  }
-  </nav>`
+        : ""
+    }
+  </footer>`
 }
 
 export { Footer }
