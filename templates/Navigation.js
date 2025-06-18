@@ -1,12 +1,16 @@
+/**
+ * Generates the HTML markup for the navigation bar using the defined routes.
+ *
+ * - Displays a logo that links to the first route.
+ * - Renders navigation links for each route in the `routes` array.
+ * - If a route has children, displays a dropdown with child links and an arrow icon.
+ * - Includes a burger menu icon for mobile navigation.
+ *
+ * @returns {string} The HTML string representing the navigation bar.
+ */
 import { routes } from "../routes/routes.js"
 
-/**
- * Renders a navigation menu based on the global `routes` array.
- * Each route is rendered as a list item with a link, and if the route has children,
- * a nested list of child routes is also rendered.
- *
- * @returns {string} HTML string representing the navigation menu.
- */
+
 function Navigation() {
   const logoSrc = {
     light: "../media/logo/logo-1.svg",

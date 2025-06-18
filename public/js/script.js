@@ -3,15 +3,19 @@ window.addEventListener("DOMContentLoaded", () => {
   const container = document.querySelector(".main-header")
 
   const toggle = container?.querySelector("#toggle")
+  const parents = container.querySelectorAll("li.parent.hasChildren")
+
+  // init
+//   toggle.classList.remove("active")
 
   toggle.addEventListener("click", () => {
     console.log("click")
     toggle.classList.toggle("active")
 
+    if (!toggle.classList.contains("active")) clearActive(parents)
   })
 
   // active li element
-  const parents = container.querySelectorAll("li.parent.hasChildren")
   parents.forEach((parent, index) => {
     parent.addEventListener("click", () => {
       console.log("parent clicked is: ", parent)
