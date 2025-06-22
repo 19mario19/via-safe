@@ -1,3 +1,5 @@
+import { pages, LANGUAGES } from "../data/data.js"
+
 window.addEventListener("DOMContentLoaded", () => {
   console.log("Script loaded...")
   const container = document.querySelector(".main-header")
@@ -6,7 +8,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const parents = container.querySelectorAll("li.parent.hasChildren")
 
   // init
-//   toggle.classList.remove("active")
+  //   toggle.classList.remove("active")
 
   toggle.addEventListener("click", () => {
     console.log("click")
@@ -29,6 +31,15 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     })
   })
+
+  // adding content to home page
+  const homePage = document.querySelector("#home")
+  console.log(homePage)
+  if (!homePage) console.log("Home page not found")
+  for (let content in pages.home) {
+    console.log(content)
+    homePage.innerHTML += pages.home[content][LANGUAGES.RU]
+  }
 })
 
 /**

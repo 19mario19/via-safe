@@ -9,13 +9,8 @@ const __rootFolder = process.cwd()
 const fullPath = path.join(__rootFolder, "public", "pages")
 
 console.log(fullPath)
-
 console.log(routes)
 
-const layout = LayoutDir(
-  { title: "test", content: { nav: Navigation(), footer: Footer() } },
-  true,
-)
 function LayoutTitle(title) {
   return LayoutDir(
     { title, content: { nav: Navigation(), body: "", footer: Footer() } },
@@ -23,7 +18,6 @@ function LayoutTitle(title) {
   )
 }
 
-// console.log("LAYOUT => \n",layout)
 
 async function generatePages() {
   for (let route of routes) {
