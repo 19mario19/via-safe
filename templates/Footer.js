@@ -36,7 +36,7 @@ function Footer() {
     ${
       elements
         ? /*html*/ `
-    <ul class="parent">
+    <ul class="parent container">
       ${elements}
     </ul>
     `

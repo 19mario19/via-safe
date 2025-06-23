@@ -1,7 +1,10 @@
-import { pages, LANGUAGES } from "../data/data.js"
+import { generateHTML, LANGUAGES } from "../data/data.js"
 
 window.addEventListener("DOMContentLoaded", () => {
   console.log("Script loaded...")
+
+  let currentLanguage = LANGUAGES.RU
+
   const container = document.querySelector(".main-header")
 
   const toggle = container?.querySelector("#toggle")
@@ -34,11 +37,22 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // adding content to home page
   const homePage = document.querySelector("#home")
-  console.log(homePage)
   if (!homePage) console.log("Home page not found")
-  for (let content in pages.home) {
-    console.log(content)
-    homePage.innerHTML += pages.home[content][LANGUAGES.RU]
+  homePage.innerHTML = generateHTML("home", LANGUAGES.RU)
+
+  const ul = document.createElement("ul")
+  container.append(ul)
+  for (let lang in LANGUAGES) {
+    console.log(lang)
+    const li = document.createElement("li")
+    li.textContent = lang
+    ul.append(li)
+
+    li.addEventListener("click", () => {
+      homePage.innerHTML = ""
+      homePage.innerHTML = generateHTML("home", lang.toLowerCase())
+    //   console.log(homePage.innerHTML)
+    })
   }
 })
 

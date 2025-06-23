@@ -1,128 +1,146 @@
 const LANGUAGES = {
   RU: "ru",
-  RO: "ro",
   EN: "en",
+  RO: "ro",
 }
 
 const pages = {}
 
 pages.home = {
   1: {
-    [LANGUAGES.RU]: /*html*/ `
-      <section aria-labelledby="main-title" role="region">
-        <h1 id="main-title">Главная Страница (Home)</h1>
-        <h2 id="viasafe-slogan">ViaSafe: Ваша Мобильность. Умно. Безопасно. Без Забот.</h2>
-        <p>ViaSafe — это не просто технология, это Глобальная Транспортная Нервная Система...</p>
-        <p>Представьте мир, где дороги, автомобили и вы сами связаны...</p>
-        <p>Мы создали ViaSafe, чтобы сделать вашу жизнь проще и безопаснее...</p>
-      </section>
-    `,
-    [LANGUAGES.EN]: /*html*/ `
-      <section aria-labelledby="main-title" role="region">
-        <h1 id="main-title">Home Page</h1>
-        <h2 id="viasafe-slogan">ViaSafe: Your Mobility. Smart. Safe. Worry-Free.</h2>
-        <p>ViaSafe isn't just technology — it's a Global Transportation Nervous System that redefines every aspect of your movement.</p>
-        <p>Imagine a world where roads, cars, and you are all connected in a single, intelligent network working for your benefit.</p>
-        <p>We created ViaSafe to simplify and protect your life, offering an unprecedented level of comfort and efficiency.</p>
-      </section>
-    `,
-    [LANGUAGES.RO]: /*html*/ `
-      <section aria-labelledby="main-title" role="region">
-        <h1 id="main-title">Pagina Principală</h1>
-        <h2 id="viasafe-slogan">ViaSafe: Mobilitatea Ta. Inteligent. Sigur. Fără Griji.</h2>
-        <p>ViaSafe nu este doar o tehnologie — este un Sistem Nervos Global de Transport care regândește fiecare aspect al mobilității tale.</p>
-        <p>Imaginează-ți o lume unde drumurile, mașinile și tu sunteți conectați într-o rețea inteligentă, care lucrează în favoarea ta.</p>
-        <p>Am creat ViaSafe pentru a-ți face viața mai simplă și mai sigură, oferind un nivel fără precedent de confort și eficiență.</p>
-      </section>
-    `,
+    name: "intro",
+    tag: "section",
+    children: {
+      1: {
+        name: "image",
+        tag: "img",
+        src: "./data/home/main/home.png",
+      },
+      2: {
+        tag: "h1",
+        name: "main-title",
+        content: {
+          ru: "ViaSafe: Ваша Мобильность. Умно. Безопасно. Без Забот.",
+          en: "ViaSafe: Your Mobility. Smart. Safe. Worry-Free.",
+          ro: "ViaSafe: Mobilitatea Ta. Inteligent. Sigur. Fără Griji.",
+        },
+      },
+      3: {
+        tag: "p",
+        content: {
+          ru: "ViaSafe — это не просто технология, это Глобальная Транспортная Нервная Система, которая переосмысливает каждый аспект вашего передвижения.",
+          en: "ViaSafe isn't just technology — it's a Global Transportation Nervous System that redefines every aspect of your movement.",
+          ro: "ViaSafe nu este doar o tehnologie — este un Sistem Nervos Global de Transport care regândește fiecare aspect al mobilității tale.",
+        },
+      },
+      4: {
+        tag: "p",
+        content: {
+          ru: "Представьте мир, где дороги, автомобили и вы сами связаны в единую, интеллектуальную сеть, работающую на ваше благо.",
+          en: "Imagine a world where roads, cars, and you are all connected in a single, intelligent network working for your benefit.",
+          ro: "Imaginează-ți o lume unde drumurile, mașinile și tu sunteți conectați într-o rețea inteligentă, care lucrează în favoarea ta.",
+        },
+      },
+      5: {
+        tag: "p",
+        content: {
+          ru: "Мы создали ViaSafe, чтобы сделать вашу жизнь проще и безопаснее, предлагая беспрецедентный уровень комфорта и эффективности.",
+          en: "We created ViaSafe to simplify and protect your life, offering an unprecedented level of comfort and efficiency.",
+          ro: "Am creat ViaSafe pentru a-ți face viața mai simplă și mai sigură, oferind un nivel fără precedent de confort și eficiență.",
+        },
+      },
+    },
   },
-
   2: {
-    [LANGUAGES.RU]: /*html*/ `
-      <section aria-labelledby="benefits-heading" role="region">
-        <h2 id="benefits-heading">Основные Преимущества ViaSafe:</h2>
-        <ul aria-label="Список преимуществ">
-          <li><strong>Непревзойденная Безопасность:</strong> ViaSafe предвидит опасности...</li>
-          <li><strong>Свобода от Бюрократии:</strong> ViaSafe объединяет расходы и автоматизирует оформление...</li>
-          <li><strong>Безграничные Путешествия:</strong> Глобальный роуминг и умное планирование...</li>
-          <li><strong>Инклюзивность для Каждого:</strong> Доступно для людей с особыми потребностями...</li>
-          <li><strong>Умное Управление Транспортом:</strong> Персональный VR-гараж и предиктивное обслуживание...</li>
-        </ul>
-      </section>
-    `,
-    [LANGUAGES.EN]: /*html*/ `
-      <section aria-labelledby="benefits-heading" role="region">
-        <h2 id="benefits-heading">Key Benefits of ViaSafe:</h2>
-        <ul aria-label="Benefits list">
-          <li><strong>Unmatched Safety:</strong> Anticipates danger, coordinates traffic, and prevents accidents in real time.</li>
-          <li><strong>Freedom from Bureaucracy:</strong> Merges all expenses into one bill, automates documents.</li>
-          <li><strong>Unlimited Travel:</strong> Global roaming and automatic route optimisation, wherever you go.</li>
-          <li><strong>Accessibility for All:</strong> Navigation for people with disabilities and seniors, with instant support.</li>
-          <li><strong>Smart Vehicle Management:</strong> VR tuning, predictive maintenance, and intuitive control.</li>
-        </ul>
-      </section>
-    `,
-    [LANGUAGES.RO]: /*html*/ `
-      <section aria-labelledby="benefits-heading" role="region">
-        <h2 id="benefits-heading">Beneficiile Cheie ale ViaSafe:</h2>
-        <ul aria-label="Listă de beneficii">
-          <li><strong>Siguranță Deosebită:</strong> Anticipează pericolele, coordonează traficul și previne accidentele în timp real.</li>
-          <li><strong>Fără Birocrație:</strong> Toate cheltuielile într-o singură factură, documente automatizate.</li>
-          <li><strong>Călătorii Fără Limite:</strong> Roaming global și planificare inteligentă a rutelor.</li>
-          <li><strong>Accesibil pentru Toți:</strong> Navigare adaptată și suport instant pentru persoane cu nevoi speciale.</li>
-          <li><strong>Management Inteligent al Vehiculului:</strong> Tuning în VR și mentenanță predictivă.</li>
-        </ul>
-      </section>
-    `,
+    name: "philosophy",
+    tag: "section",
+    children: {
+      1: {
+        tag: "p",
+        content: {
+          ru: "ViaSafe — это не просто перемещение. Это новая философия жизни на ходу.",
+          en: "ViaSafe is more than movement. It’s a new way of life on the go.",
+          ro: "ViaSafe nu înseamnă doar deplasare. Este o nouă filosofie a vieții în mișcare.",
+        },
+      },
+    },
   },
-
   3: {
-    [LANGUAGES.RU]: /*html*/ `
-      <section aria-label="Философия ViaSafe" role="region">
-        <p><strong>ViaSafe</strong> — это не просто перемещение. Это новая философия жизни на ходу.</p>
-      </section>
-    `,
-    [LANGUAGES.EN]: /*html*/ `
-      <section aria-label="ViaSafe Philosophy" role="region">
-        <p><strong>ViaSafe</strong> is more than movement. It’s a new way of life on the go.</p>
-      </section>
-    `,
-    [LANGUAGES.RO]: /*html*/ `
-      <section aria-label="Filosofia ViaSafe" role="region">
-        <p><strong>ViaSafe</strong> nu înseamnă doar deplasare. Este o nouă filosofie a vieții în mișcare.</p>
-      </section>
-    `,
-  },
+    name: "cta",
+    tag: "section",
+    children: {
+      1: {
+        tag: "h2",
+        name: "cta-heading",
 
-  4: {
-    [LANGUAGES.RU]: /*html*/ `
-      <section aria-labelledby="cta-heading" role="region">
-        <h2 id="cta-heading">Готовы ощутить будущее мобильности?</h2>
-        <p>
-          <a href="#about-viasafe" role="link" aria-label="Узнать больше о ViaSafe">Узнать больше о ViaSafe</a> | 
-          <a href="#connect" role="link" aria-label="Подключиться к ViaSafe сейчас">Подключиться сейчас</a>
-        </p>
-      </section>
-    `,
-    [LANGUAGES.EN]: /*html*/ `
-      <section aria-labelledby="cta-heading" role="region">
-        <h2 id="cta-heading">Ready to experience the future of mobility?</h2>
-        <p>
-          <a href="#about-viasafe" role="link" aria-label="Learn more about ViaSafe">Learn more about ViaSafe</a> | 
-          <a href="#connect" role="link" aria-label="Connect to ViaSafe now">Connect now</a>
-        </p>
-      </section>
-    `,
-    [LANGUAGES.RO]: /*html*/ `
-      <section aria-labelledby="cta-heading" role="region">
-        <h2 id="cta-heading">Ești gata să experimentezi viitorul mobilității?</h2>
-        <p>
-          <a href="#about-viasafe" role="link" aria-label="Află mai multe despre ViaSafe">Află mai multe despre ViaSafe</a> | 
-          <a href="#connect" role="link" aria-label="Conectează-te acum">Conectează-te acum</a>
-        </p>
-      </section>
-    `,
+        content: {
+          ru: "Готовы ощутить будущее мобильности?",
+          en: "Ready to experience the future of mobility?",
+          ro: "Ești gata să experimentezi viitorul mobilității?",
+        },
+      },
+      2: {
+        tag: "p",
+        children: {
+          1: {
+            tag: "a",
+            content: {
+              ru: "Узнать больше о ViaSafe",
+              en: "Learn more about ViaSafe",
+              ro: "Află mai multe despre ViaSafe",
+            },
+          },
+          2: {
+            tag: "span",
+            content: {
+              ru: " | ",
+              en: " | ",
+              ro: " | ",
+            },
+          },
+          3: {
+            tag: "a",
+            content: {
+              ru: "Подключиться сейчас",
+              en: "Connect now",
+              ro: "Conectează-te acum",
+            },
+          },
+        },
+      },
+    },
   },
 }
 
-export { pages, LANGUAGES }
+function renderToHTML(obj, lang) {
+  if (!obj) return
+
+  let res = ""
+  for (let key in obj) {
+    let node = obj[key]
+
+    let stringImg = ""
+    if (node.tag === "img" && node.src) {
+      stringImg = `src=${node.src}`
+    }
+
+    res += `<${node?.tag}  ${stringImg ?? ""} class="${node?.name ?? ""}"> ${node?.content?.[lang] ?? ""} 
+              ${renderToHTML(node.children, lang) ?? ""}
+              </${node?.tag}>`
+  }
+
+  return res
+}
+
+/**
+ * Generates HTML content for a given page and language.
+ *
+ * @param {string} page - The identifier of the page to render.
+ * @param {string} lang - The language code to use for rendering.
+ * @returns {string} The rendered HTML string for the specified page and language.
+ */
+function generateHTML(page, lang) {
+  return renderToHTML(pages[page], lang)
+}
+
+export { pages, LANGUAGES, generateHTML }
