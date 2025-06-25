@@ -3109,53 +3109,53 @@ pages["Join ViaSafe"] = [
 
 const list = [
   { name: "Home Page", path: "/" },
-  { name: "About ViaSafe", path: "/about" },
-  { name: "What is ViaSafe?", path: "/about/what-is-viasafe" },
-  { name: "Our Mission and Values", path: "/about/mission-values" },
-  { name: "ViaSafe Technologies", path: "/about/technologies" },
-  { name: "Features & Benefits", path: "/features-benefits" },
-  { name: "Road Safety", path: "/features-benefits/road-safety" },
+  { name: "About ViaSafe", path: "/about/" },
+  { name: "What is ViaSafe?", path: "/about/what-is-viasafe/" },
+  { name: "Our Mission and Values", path: "/about/mission-values/" },
+  { name: "ViaSafe Technologies", path: "/about/technologies/" },
+  { name: "Features & Benefits", path: "/features-benefits/" },
+  { name: "Road Safety", path: "/features-benefits/road-safety/" },
   {
     name: "Convenience and Savings",
-    path: "/features-benefits/convenience-savings",
+    path: "/features-benefits/convenience-savings/",
   },
   {
     name: "Family and Travel",
-    path: "/features-benefits/family-travel",
+    path: "/features-benefits/family-travel/",
   },
   {
     name: "Inclusivity and Accessibility",
-    path: "/features-benefits/accessibility",
+    path: "/features-benefits/accessibility/",
   },
   {
     name: "Tuning and Customization",
-    path: "/features-benefits/tuning-customization",
+    path: "/features-benefits/tuning-customization/",
   },
   {
     name: "Logistics and Cargo",
-    path: "/features-benefits/logistics-cargo",
+    path: "/features-benefits/logistics-cargo/",
   },
-  { name: "How It Works", path: "/how-it-works" },
-  { name: "ViaSafe Architecture", path: "/how-it-works/architecture" },
-  { name: "ViaSafe Operators", path: "/how-it-works/operators" },
-  { name: "Global Roaming", path: "/how-it-works/global-roaming" },
+  { name: "How It Works", path: "/how-it-works/" },
+  { name: "ViaSafe Architecture", path: "/how-it-works/architecture/" },
+  { name: "ViaSafe Operators", path: "/how-it-works/operators/" },
+  { name: "Global Roaming", path: "/how-it-works/global-roaming/" },
   {
     name: "Integration with Existing Systems",
-    path: "/how-it-works/integration",
+    path: "/how-it-works/integration/",
   },
-  { name: "Join ViaSafe", path: "/join" },
-  { name: "For Users", path: "/join/users" },
+  { name: "Join ViaSafe", path: "/join/" },
+  { name: "For Users", path: "/join/users/" },
   {
     name: "For Partners (Business, Government)",
-    path: "/join/partners",
+    path: "/join/partners/",
   },
-  { name: "Careers at ViaSafe", path: "/join/careers" },
-  { name: "News & Blog", path: "/news-blog" },
-  { name: "Contact Us", path: "/contact" },
-  { name: "Legal Information", path: "/legal" },
-  { name: "Privacy Policy", path: "/legal/privacy-policy" },
-  { name: "Terms of Use", path: "/legal/terms-of-use" },
-  { name: "Cookie Policy", path: "/legal/cookie-policy" },
+  { name: "Careers at ViaSafe", path: "/join/careers/" },
+  { name: "News & Blog", path: "/news-blog/" },
+  { name: "Contact Us", path: "/contact/" },
+  { name: "Legal Information", path: "/legal/" },
+  { name: "Privacy Policy", path: "/legal/privacy-policy/" },
+  { name: "Terms of Use", path: "/legal/terms-of-use/" },
+  { name: "Cookie Policy", path: "/legal/cookie-policy/" },
 ]
 
 function combine(list, pages) {
@@ -3214,4 +3214,4 @@ function generateHTML(page, lang) {
   return render(element.data || [], lang.toLowerCase())
 }
 
-export { pages, LANGUAGES, generateHTML }
+export { pages, LANGUAGES, list, generateHTML }

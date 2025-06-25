@@ -30,7 +30,7 @@ function Navigation(depth) {
       return /*html*/ `
       <div className="drop-down">
       <li class="parent ${hasChildren}">
-      <a href="${route.path}">
+      <a href="${route.path}/">
       ${route.name}
       ${
         hasChildren

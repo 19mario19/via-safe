@@ -25,7 +25,6 @@ const LANGUAGES = {
 // const names = getRouteName(routes)
 
 // console.log(names)
-
 const pages = {}
 pages["Home Page"] = [
   {
@@ -2576,57 +2575,584 @@ pages["Legal Information"] = [
     ],
   },
 ]
+// link pages
+pages["About ViaSafe"] = [
+  {
+    tag: "section",
+    attributes: {
+      class: "container",
+      "aria-labelledby": "about-viasafe-main-title",
+      role: "region",
+    },
+    children: [
+      {
+        tag: "h1",
+        attributes: { id: "about-viasafe-main-title" },
+        content: {
+          ru: "О ViaSafe",
+          en: "About ViaSafe",
+          ro: "Despre ViaSafe",
+        },
+      },
+      {
+        tag: "p",
+        content: {
+          ru: "ViaSafe — это больше, чем просто транспортная система; это видение будущего мобильности, где каждый аспект движения становится умным, безопасным и удобным. Узнайте о нашей уникальной философии, основных принципах работы и передовых технологиях, которые делают это возможным.",
+          en: "ViaSafe is more than just a transportation system; it's a vision for the future of mobility, where every aspect of movement becomes smart, safe, and convenient. Learn about our unique philosophy, core operating principles, and the advanced technologies that make it all possible.",
+          ro: "ViaSafe este mai mult decât un simplu sistem de transport; este o viziune pentru viitorul mobilității, unde fiecare aspect al mișcării devine inteligent, sigur și convenabil. Aflați despre filozofia noastră unică, principiile de bază de funcționare și tehnologiile avansate care fac totul posibil.",
+        },
+      },
+      {
+        tag: "h2",
+        attributes: { id: "explore-about-heading" },
+        content: {
+          ru: "Подробнее о ViaSafe",
+          en: "Explore About ViaSafe",
+          ro: "Explorați Despre ViaSafe",
+        },
+      },
+      {
+        tag: "ul",
+        children: [
+          {
+            tag: "li",
+            children: [
+              {
+                tag: "a",
+                attributes: { href: "/about/what-is-viasafe" },
+                content: {
+                  ru: "Что такое ViaSafe?",
+                  en: "What is ViaSafe?",
+                  ro: "Ce este ViaSafe?",
+                },
+              },
+              {
+                tag: "span",
+                content: {
+                  ru: ": Познакомьтесь с определением ViaSafe как Глобальной Транспортной Нервной Системы.",
+                  en: ": Get to know the definition of ViaSafe as a Global Transportation Nervous System.",
+                  ro: ": Aflați definiția ViaSafe ca Sistem Nervos de Transport Global.",
+                },
+              },
+            ],
+          },
+          {
+            tag: "li",
+            children: [
+              {
+                tag: "a",
+                attributes: { href: "/about/mission-values" },
+                content: {
+                  ru: "Наша Миссия и Ценности",
+                  en: "Our Mission and Values",
+                  ro: "Misiunea și Valorile Noastre",
+                },
+              },
+              {
+                tag: "span",
+                content: {
+                  ru: ": Узнайте о ключевых принципах, которые лежат в основе нашей работы.",
+                  en: ": Discover the core principles that guide our work.",
+                  ro: ": Descoperiți principiile fundamentale care ne ghidează activitatea.",
+                },
+              },
+            ],
+          },
+          {
+            tag: "li",
+            children: [
+              {
+                tag: "a",
+                attributes: { href: "/about/technologies" },
+                content: {
+                  ru: "Технологии ViaSafe",
+                  en: "ViaSafe Technologies",
+                  ro: "Tehnologii ViaSafe",
+                },
+              },
+              {
+                tag: "span",
+                content: {
+                  ru: ": Ознакомьтесь с ИИ, блокчейном, IoT и другими технологиями, которые мы используем.",
+                  en: ": Learn about the AI, blockchain, IoT, and other technologies we leverage.",
+                  ro: ": Aflați despre AI, blockchain, IoT și alte tehnologii pe care le utilizăm.",
+                },
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+]
+pages["Features & Benefits"] = [
+  {
+    tag: "section",
+    attributes: {
+      class: "container",
+      "aria-labelledby": "features-benefits-main-title",
+      role: "region",
+    },
+    children: [
+      {
+        tag: "h1",
+        attributes: { id: "features-benefits-main-title" },
+        content: {
+          ru: "Возможности и Преимущества ViaSafe",
+          en: "ViaSafe Features & Benefits",
+          ro: "Funcționalități și Beneficii ViaSafe",
+        },
+      },
+      {
+        tag: "p",
+        content: {
+          ru: "ViaSafe разработана для того, чтобы сделать вашу мобильность беспрецедентно безопасной, удобной и экономичной. Откройте для себя широкий спектр возможностей, которые улучшат вашу повседневную жизнь на дорогах и за их пределами.",
+          en: "ViaSafe is designed to make your mobility unprecedentedly safe, convenient, and economical. Discover a wide range of features that will enhance your daily life on the roads and beyond.",
+          ro: "ViaSafe este concepută pentru a vă face mobilitatea incomparabil mai sigură, mai comodă și mai economică. Descoperiți o gamă largă de funcționalități care vă vor îmbunătăți viața de zi cu zi pe drumuri și nu numai.",
+        },
+      },
+      {
+        tag: "h2",
+        attributes: { id: "explore-features-heading" },
+        content: {
+          ru: "Подробнее о Возможностях",
+          en: "Explore Features in Detail",
+          ro: "Explorați Funcționalitățile în Detaliu",
+        },
+      },
+      {
+        tag: "ul",
+        children: [
+          {
+            tag: "li",
+            children: [
+              {
+                tag: "a",
+                attributes: { href: "/features-benefits/road-safety" },
+                content: {
+                  ru: "Безопасность на Дорогах",
+                  en: "Road Safety",
+                  ro: "Siguranța Rutieră",
+                },
+              },
+              {
+                tag: "span",
+                content: {
+                  ru: ": Как ViaSafe предотвращает аварии и защищает вас в реальном времени.",
+                  en: ": How ViaSafe prevents accidents and protects you in real-time.",
+                  ro: ": Cum ViaSafe previne accidentele și vă protejează în timp real.",
+                },
+              },
+            ],
+          },
+          {
+            tag: "li",
+            children: [
+              {
+                tag: "a",
+                attributes: { href: "/features-benefits/convenience-savings" },
+                content: {
+                  ru: "Удобство и Экономия",
+                  en: "Convenience and Savings",
+                  ro: "Comoditate și Economii",
+                },
+              },
+              {
+                tag: "span",
+                content: {
+                  ru: ": Узнайте, как ViaSafe упрощает ваши расходы и автоматизирует рутину.",
+                  en: ": Learn how ViaSafe simplifies your expenses and automates routines.",
+                  ro: ": Aflați cum ViaSafe vă simplifică cheltuielile și automatizează rutina.",
+                },
+              },
+            ],
+          },
+          {
+            tag: "li",
+            children: [
+              {
+                tag: "a",
+                attributes: { href: "/features-benefits/family-travel" },
+                content: {
+                  ru: "Семья и Путешествия",
+                  en: "Family and Travel",
+                  ro: "Familie și Călătorii",
+                },
+              },
+              {
+                tag: "span",
+                content: {
+                  ru: ": Функции для безопасных и комфортных поездок с близкими.",
+                  en: ": Features for safe and comfortable trips with loved ones.",
+                  ro: ": Funcționalități pentru călătorii sigure și confortabile cu cei dragi.",
+                },
+              },
+            ],
+          },
+          {
+            tag: "li",
+            children: [
+              {
+                tag: "a",
+                attributes: { href: "/features-benefits/accessibility" },
+                content: {
+                  ru: "Инклюзивность и Доступность",
+                  en: "Inclusivity and Accessibility",
+                  ro: "Inclusivitate și Accesibilitate",
+                },
+              },
+              {
+                tag: "span",
+                content: {
+                  ru: ": Как ViaSafe делает мобильность доступной для всех, включая людей с особыми потребностями.",
+                  en: ": How ViaSafe makes mobility accessible to everyone, including people with special needs.",
+                  ro: ": Cum ViaSafe face mobilitatea accesibilă tuturor, inclusiv persoanelor cu nevoi speciale.",
+                },
+              },
+            ],
+          },
+          {
+            tag: "li",
+            children: [
+              {
+                tag: "a",
+                attributes: { href: "/features-benefits/tuning-customization" },
+                content: {
+                  ru: "Тюнинг и Кастомизация",
+                  en: "Tuning and Customization",
+                  ro: "Tuning și Personalizare",
+                },
+              },
+              {
+                tag: "span",
+                content: {
+                  ru: ": Настройте ваш автомобиль и опыт вождения с уникальными возможностями ViaSafe.",
+                  en: ": Customize your car and driving experience with ViaSafe's unique features.",
+                  ro: ": Personalizați-vă mașina și experiența de condus cu funcționalitățile unice ale ViaSafe.",
+                },
+              },
+            ],
+          },
+          {
+            tag: "li",
+            children: [
+              {
+                tag: "a",
+                attributes: { href: "/features-benefits/logistics-cargo" },
+                content: {
+                  ru: "Логистика и Грузоперевозки",
+                  en: "Logistics and Cargo",
+                  ro: "Logistică și Transport Marfă",
+                },
+              },
+              {
+                tag: "span",
+                content: {
+                  ru: ": Оптимизируйте управление грузами и автопарками с интеллектуальными решениями.",
+                  en: ": Optimize cargo and fleet management with intelligent solutions.",
+                  ro: ": Optimizați gestionarea mărfurilor și a flotelor cu soluții inteligente.",
+                },
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+]
+pages["How It Works"] = [
+  {
+    tag: "section",
+    attributes: {
+      class: "container",
+      "aria-labelledby": "how-it-works-main-title",
+      role: "region",
+    },
+    children: [
+      {
+        tag: "h1",
+        attributes: { id: "how-it-works-main-title" },
+        content: {
+          ru: "Как Работает ViaSafe",
+          en: "How ViaSafe Works",
+          ro: "Cum Funcționează ViaSafe",
+        },
+      },
+      {
+        tag: "p",
+        content: {
+          ru: "ViaSafe — это сложная, но интуитивно понятная система, которая гармонично объединяет транспортные средства, инфраструктуру и пользователей. Узнайте о внутренней архитектуре, роли операторов, механизмах глобального роуминга и о том, как мы интегрируемся с существующими системами для обеспечения бесперебойной и эффективной мобильности.",
+          en: "ViaSafe is a complex yet intuitive system that harmoniously integrates vehicles, infrastructure, and users. Learn about its internal architecture, the role of operators, global roaming mechanisms, and how we integrate with existing systems to ensure seamless and efficient mobility.",
+          ro: "ViaSafe este un sistem complex, dar intuitiv, care integrează armonios vehiculele, infrastructura și utilizatorii. Aflați despre arhitectura sa internă, rolul operatorilor, mecanismele de roaming global și modul în care ne integrăm cu sistemele existente pentru a asigura o mobilitate fluidă și eficientă.",
+        },
+      },
+      {
+        tag: "h2",
+        attributes: { id: "explore-how-it-works-heading" },
+        content: {
+          ru: "Изучите Принципы Работы",
+          en: "Explore How It Works",
+          ro: "Explorați Principiile de Funcționare",
+        },
+      },
+      {
+        tag: "ul",
+        children: [
+          {
+            tag: "li",
+            children: [
+              {
+                tag: "a",
+                attributes: { href: "/how-it-works/architecture" },
+                content: {
+                  ru: "Архитектура ViaSafe",
+                  en: "ViaSafe Architecture",
+                  ro: "Arhitectura ViaSafe",
+                },
+              },
+              {
+                tag: "span",
+                content: {
+                  ru: ": Погрузитесь в структуру и основные компоненты нашей системы.",
+                  en: ": Dive into the structure and core components of our system.",
+                  ro: ": Aprofundați structura și componentele de bază ale sistemului nostru.",
+                },
+              },
+            ],
+          },
+          {
+            tag: "li",
+            children: [
+              {
+                tag: "a",
+                attributes: { href: "/how-it-works/operators" },
+                content: {
+                  ru: "Операторы ViaSafe",
+                  en: "ViaSafe Operators",
+                  ro: "Operatori ViaSafe",
+                },
+              },
+              {
+                tag: "span",
+                content: {
+                  ru: ": Узнайте о роли и функциях децентрализованных операторов в экосистеме.",
+                  en: ": Learn about the role and functions of decentralized operators in the ecosystem.",
+                  ro: ": Aflați despre rolul și funcțiile operatorilor descentralizați în ecosistem.",
+                },
+              },
+            ],
+          },
+          {
+            tag: "li",
+            children: [
+              {
+                tag: "a",
+                attributes: { href: "/how-it-works/global-roaming" },
+                content: {
+                  ru: "Глобальный Роуминг",
+                  en: "Global Roaming",
+                  ro: "Roaming Global",
+                },
+              },
+              {
+                tag: "span",
+                content: {
+                  ru: ": Как ViaSafe обеспечивает бесшовную мобильность по всему миру.",
+                  en: ": How ViaSafe ensures seamless global mobility.",
+                  ro: ": Cum ViaSafe asigură mobilitatea globală fără întreruperi.",
+                },
+              },
+            ],
+          },
+          {
+            tag: "li",
+            children: [
+              {
+                tag: "a",
+                attributes: { href: "/how-it-works/integration" },
+                content: {
+                  ru: "Интеграция с Существующими Систелами",
+                  en: "Integration with Existing Systems",
+                  ro: "Integrarea cu Sistemele Existente",
+                },
+              },
+              {
+                tag: "span",
+                content: {
+                  ru: ": Узнайте, как ViaSafe взаимодействует с другими приложениями и сервисами.",
+                  en: ": Learn how ViaSafe interacts with other applications and services.",
+                  ro: ": Aflați cum ViaSafe interacționează cu alte aplicații și servicii.",
+                },
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+]
+pages["Join ViaSafe"] = [
+  {
+    tag: "section",
+    attributes: {
+      class: "container",
+      "aria-labelledby": "join-viasafe-main-title",
+      role: "region",
+    },
+    children: [
+      {
+        tag: "h1",
+        attributes: { id: "join-viasafe-main-title" },
+        content: {
+          ru: "Присоединиться к ViaSafe",
+          en: "Join ViaSafe",
+          ro: "Alăturați-vă ViaSafe",
+        },
+      },
+      {
+        tag: "p",
+        content: {
+          ru: "Добро пожаловать в будущее мобильности! ViaSafe предлагает возможности для каждого — будь вы индивидуальный пользователь, стремящийся к более безопасным и удобным поездкам, или бизнес/государственная организация, желающая оптимизировать транспортные процессы. Узнайте, как стать частью нашей растущей экосистемы.",
+          en: "Welcome to the future of mobility! ViaSafe offers opportunities for everyone—whether you're an individual user seeking safer and more convenient travels, or a business/government organization looking to optimize transportation processes. Discover how to become part of our growing ecosystem.",
+          ro: "Bun venit în viitorul mobilității! ViaSafe oferă oportunități pentru toată lumea—fie că sunteți un utilizator individual care caută călătorii mai sigure și mai convenabile, fie o organizație de afaceri/guvernamentală care dorește să optimizeze procesele de transport. Descoperiți cum să deveniți parte a ecosistemului nostru în creștere.",
+        },
+      },
+      {
+        tag: "h2",
+        attributes: { id: "explore-join-heading" },
+        content: {
+          ru: "Как Присоединиться",
+          en: "How to Join",
+          ro: "Cum să Vă Alăturați",
+        },
+      },
+      {
+        tag: "ul",
+        children: [
+          {
+            tag: "li",
+            children: [
+              {
+                tag: "a",
+                attributes: { href: "/join/users" },
+                content: {
+                  ru: "Для Пользователей",
+                  en: "For Users",
+                  ro: "Pentru Utilizatori",
+                },
+              },
+              {
+                tag: "span",
+                content: {
+                  ru: ": Подключитесь к ViaSafe через мобильное приложение или оборудование для автомобиля.",
+                  en: ": Connect to ViaSafe via the mobile app or in-car equipment.",
+                  ro: ": Conectați-vă la ViaSafe prin aplicația mobilă sau echipamentul auto.",
+                },
+              },
+            ],
+          },
+          {
+            tag: "li",
+            children: [
+              {
+                tag: "a",
+                attributes: { href: "/join/partners" },
+                content: {
+                  ru: "Для Партнеров (Бизнес, Государство)",
+                  en: "For Partners (Business, Government)",
+                  ro: "Pentru Parteneri (Afaceri, Guvern)",
+                },
+              },
+              {
+                tag: "span",
+                content: {
+                  ru: ": Узнайте о возможностях сотрудничества и интеграции для вашего бизнеса или организации.",
+                  en: ": Learn about collaboration and integration opportunities for your business or organization.",
+                  ro: ": Aflați despre oportunitățile de colaborare și integrare pentru afacerea sau organizația dumneavoastră.",
+                },
+              },
+            ],
+          },
+          {
+            tag: "li",
+            children: [
+              {
+                tag: "a",
+                attributes: { href: "/join/careers" },
+                content: {
+                  ru: "Карьера в ViaSafe",
+                  en: "Careers at ViaSafe",
+                  ro: "Cariere la ViaSafe",
+                },
+              },
+              {
+                tag: "span",
+                content: {
+                  ru: ": Изучите открытые вакансии и присоединитесь к нашей инновационной команде.",
+                  en: ": Explore open positions and join our innovative team.",
+                  ro: ": Explorați posturile deschise și alăturați-vă echipei noastre inovatoare.",
+                },
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+]
 
 const list = [
   { name: "Home Page", path: "/" },
-  { name: "About ViaSafe", path: "/about" },
-  { name: "What is ViaSafe?", path: "/about/what-is-viasafe" },
-  { name: "Our Mission and Values", path: "/about/mission-values" },
-  { name: "ViaSafe Technologies", path: "/about/technologies" },
-  { name: "Features & Benefits", path: "/features-benefits" },
-  { name: "Road Safety", path: "/features-benefits/road-safety" },
+  { name: "About ViaSafe", path: "/about/" },
+  { name: "What is ViaSafe?", path: "/about/what-is-viasafe/" },
+  { name: "Our Mission and Values", path: "/about/mission-values/" },
+  { name: "ViaSafe Technologies", path: "/about/technologies/" },
+  { name: "Features & Benefits", path: "/features-benefits/" },
+  { name: "Road Safety", path: "/features-benefits/road-safety/" },
   {
     name: "Convenience and Savings",
-    path: "/features-benefits/convenience-savings",
+    path: "/features-benefits/convenience-savings/",
   },
   {
     name: "Family and Travel",
-    path: "/features-benefits/family-travel",
+    path: "/features-benefits/family-travel/",
   },
   {
     name: "Inclusivity and Accessibility",
-    path: "/features-benefits/accessibility",
+    path: "/features-benefits/accessibility/",
   },
   {
     name: "Tuning and Customization",
-    path: "/features-benefits/tuning-customization",
+    path: "/features-benefits/tuning-customization/",
   },
   {
     name: "Logistics and Cargo",
-    path: "/features-benefits/logistics-cargo",
+    path: "/features-benefits/logistics-cargo/",
   },
-  { name: "How It Works", path: "/how-it-works" },
-  { name: "ViaSafe Architecture", path: "/how-it-works/architecture" },
-  { name: "ViaSafe Operators", path: "/how-it-works/operators" },
-  { name: "Global Roaming", path: "/how-it-works/global-roaming" },
+  { name: "How It Works", path: "/how-it-works/" },
+  { name: "ViaSafe Architecture", path: "/how-it-works/architecture/" },
+  { name: "ViaSafe Operators", path: "/how-it-works/operators/" },
+  { name: "Global Roaming", path: "/how-it-works/global-roaming/" },
   {
     name: "Integration with Existing Systems",
-    path: "/how-it-works/integration",
+    path: "/how-it-works/integration/",
   },
-  { name: "Join ViaSafe", path: "/join" },
-  { name: "For Users", path: "/join/users" },
+  { name: "Join ViaSafe", path: "/join/" },
+  { name: "For Users", path: "/join/users/" },
   {
     name: "For Partners (Business, Government)",
-    path: "/join/partners",
+    path: "/join/partners/",
   },
-  { name: "Careers at ViaSafe", path: "/join/careers" },
-  { name: "News & Blog", path: "/news-blog" },
-  { name: "Contact Us", path: "/contact" },
-  { name: "Legal Information", path: "/legal" },
-  { name: "Privacy Policy", path: "/privacy-policy" },
-  { name: "Terms of Use", path: "/terms-of-use" },
-  { name: "Cookie Policy", path: "/cookie-policy" },
+  { name: "Careers at ViaSafe", path: "/join/careers/" },
+  { name: "News & Blog", path: "/news-blog/" },
+  { name: "Contact Us", path: "/contact/" },
+  { name: "Legal Information", path: "/legal/" },
+  { name: "Privacy Policy", path: "/privacy-policy/" },
+  { name: "Terms of Use", path: "/terms-of-use/" },
+  { name: "Cookie Policy", path: "/cookie-policy/" },
 ]
+
+console.log(Object.values(pages).length, list.length)
 
 function combine(list, pages) {
   const res = []
@@ -2634,12 +3160,17 @@ function combine(list, pages) {
     const pageData = pages[item.name]
     if (pageData) {
       res.push({ ...item, data: pageData })
+    } else {
+      console.log("page data was not found", item.name)
     }
   }
   return res
 }
 
 const completeData = combine(list, pages)
+
+console.log(completeData.map((el) => el.name))
+console.log(completeData.length)
 
 function render(array, lang) {
   let selfclosing = ["img", "br", "hr", "input"]
@@ -2679,10 +3210,12 @@ function render(array, lang) {
  * @returns {string} The rendered HTML string for the specified page and language.
  */
 function generateHTML(page, lang) {
-  console.log(page, lang)
+  // console.log(page, lang)
+
   const element = completeData.find((el) => el.name === page)
+  if (!element) return
+  console.log("element found => ", element.name)
   return render(element.data, lang.toLowerCase())
 }
 
-
-export { pages, LANGUAGES, generateHTML }
+export { pages, LANGUAGES, completeData, generateHTML }

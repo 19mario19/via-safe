@@ -34,8 +34,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol that have a class attribute (so you can explicitly add them if needed) */
-ul[class],
-ol[class] {
+ul,
+ol {
     list-style: none;
 }
 
