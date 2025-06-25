@@ -4,37 +4,52 @@ import { routes } from "./routes/routes.js"
 import { LayoutDir } from "./templates/Layout.js"
 import { Navigation } from "./templates/Navigation.js"
 import { Footer } from "./templates/Footer.js"
+import { generateHTML, LANGUAGES } from "./data/data.js"
 
 const __rootFolder = process.cwd()
 const fullPath = path.join(__rootFolder, "public", "pages")
 
-console.log(fullPath)
-console.log(routes)
+// console.log(fullPath)
+// console.log(routes)
 
-function LayoutTitle(title) {
+function LayoutTitleBody(title, body = "", depth) {
   return LayoutDir(
-    { title, content: { nav: Navigation(), body: "", footer: Footer() } },
+    { title, content: { nav: Navigation(), body, footer: Footer() } },
     true,
+    depth,
   )
 }
 
+// console.log(generateHTML("Home Page", LANGUAGES.EN))
 
 async function generatePages() {
   for (let route of routes) {
     try {
       const parentPath = path.join(fullPath, route.path)
       const parentFile = path.join(parentPath, `${route.name}.html`)
-      console.log(parentPath)
+
       await fs.mkdir(parentPath, { recursive: true })
-      await fs.writeFile(parentFile, LayoutTitle(route.name), "utf-8")
+
+      const body = generateHTML(route.name, LANGUAGES.EN) ?? ""
+
+      await fs.writeFile(parentFile, LayoutTitleBody(route.name, body), "utf-8")
 
       if (Array.isArray(route.children) && route.children.length > 0) {
         for (let child of route.children) {
           const childPath = path.join(fullPath, child.path)
           const childFile = path.join(childPath, `${child.name}.html`)
-          console.log(childPath)
+
           await fs.mkdir(childPath, { recursive: true })
-          await fs.writeFile(childFile, LayoutTitle(child.name, ""), "utf-8")
+
+          const body = generateHTML(child.name, LANGUAGES.EN) ?? ""
+
+          console.log("\n")
+
+          await fs.writeFile(
+            childFile,
+            LayoutTitleBody(child.name, body, 2),
+            "utf-8",
+          )
         }
       }
     } catch (error) {

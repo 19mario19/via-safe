@@ -2,19 +2,15 @@ import { generateHTML, LANGUAGES } from "../data/data.js"
 
 window.addEventListener("DOMContentLoaded", () => {
   console.log("Script loaded...")
-
-  let currentLanguage = LANGUAGES.RU
-
   const container = document.querySelector(".main-header")
 
   const toggle = container?.querySelector("#toggle")
   const parents = container.querySelectorAll("li.parent.hasChildren")
 
-  // init
   //   toggle.classList.remove("active")
 
   toggle.addEventListener("click", () => {
-    console.log("click")
+    // console.log("click")
     toggle.classList.toggle("active")
 
     if (!toggle.classList.contains("active")) clearActive(parents)
@@ -24,6 +20,8 @@ window.addEventListener("DOMContentLoaded", () => {
   parents.forEach((parent, index) => {
     parent.addEventListener("click", () => {
       console.log("parent clicked is: ", parent)
+
+    //   console.log(parent.innerHTML)
 
       const wasActive = parent.classList.contains("active")
 
@@ -36,24 +34,32 @@ window.addEventListener("DOMContentLoaded", () => {
   })
 
   // adding content to home page
-  const homePage = document.querySelector("#home")
-  if (!homePage) console.log("Home page not found")
-  homePage.innerHTML = generateHTML("home", LANGUAGES.RU)
+//   let currentLanguage = LANGUAGES.EN
+//   let currentPage = "Terms of Use"
 
-  const ul = document.createElement("ul")
-  container.append(ul)
-  for (let lang in LANGUAGES) {
-    console.log(lang)
-    const li = document.createElement("li")
-    li.textContent = lang
-    ul.append(li)
+//   const mainContainer = document.querySelector("main")
+//   mainContainer.innerHTML = generateHTML(currentPage, currentLanguage)
+  
+//   const title = mainContainer.querySelector("h1")
+//   console.log(title.innerHTML)
 
-    li.addEventListener("click", () => {
-      homePage.innerHTML = ""
-      homePage.innerHTML = generateHTML("home", lang.toLowerCase())
-    //   console.log(homePage.innerHTML)
-    })
-  }
+
+//   const ul = document.createElement("ul")
+//   ul.classList.add("list")
+//   container.append(ul)
+//   for (let lang in LANGUAGES) {
+//     // console.log(lang)
+//     const li = document.createElement("li")
+//     li.classList.add("item")
+//     li.textContent = lang
+//     ul.append(li)
+
+//     li.addEventListener("click", () => {
+//       mainContainer.innerHTML = ""
+//       mainContainer.innerHTML = generateHTML("Home Page", lang)
+//       //   console.log(homePage.innerHTML)
+//     })
+//   }
 })
 
 /**

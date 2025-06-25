@@ -62,7 +62,7 @@ const routes = [
     ],
   },
   {
-    name: "How It Works",
+    name: 'How It Works',
     path: "/how-it-works",
     children: [
       {
@@ -113,9 +113,9 @@ const routes = [
     name: "Legal Information",
     path: "/legal",
     children: [
-      { name: "Privacy Policy", path: "/legal/privacy-policy" },
-      { name: "Terms of Use", path: "/legal/terms-of-use" },
-      { name: "Cookie Policy", path: "/legal/cookie-policy" },
+      { name: "Privacy Policy", path: "/privacy-policy" },
+      { name: "Terms of Use", path: "/terms-of-use" },
+      { name: "Cookie Policy", path: "/cookie-policy" },
     ],
   },
 ]

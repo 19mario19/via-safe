@@ -10,16 +10,17 @@
  */
 import { routes } from "../routes/routes.js"
 
+function Navigation(depth) {
+  const stringDepth = "../".repeat(depth)
 
-function Navigation() {
   const logoSrc = {
-    light: "../media/logo/logo-1.svg",
-    dark: "./media/logo/logo-1-dark.svg",
+    light: stringDepth + "/media/logo/logo-1.svg",
+    // dark: "./media/logo/logo-1-dark.svg",
   }
 
   const arrowSrc = {
-    light: "./media/svg/arrow.svg",
-    dark: "",
+    light: stringDepth + "/media/svg/arrow.svg",
+    // dark: "",
   }
 
   const elements = routes
@@ -77,7 +78,7 @@ function Navigation() {
   }
   </h1>
   <div className="burger" id="toggle">
-    <img src="./media/menu/menu.png" alt="menu icon" />
+    <img src="${stringDepth}/media/menu/menu.png" alt="menu icon" />
   </div>
   
   ${

@@ -39,6 +39,10 @@ ol[class] {
     list-style: none;
 }
 
+li {
+    cursor: pointer;
+}
+
 /* Set core body defaults for font rendering, scrolling, and cursor */
 body {
     min-height: 100vh;
