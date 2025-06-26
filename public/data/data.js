@@ -1,5 +1,5 @@
 import { routes } from "../routes/routes.js"
-// console.log(routes)
+// // console.log(routes)
 
 const LANGUAGES = {
   RU: "ru",
@@ -24,7 +24,7 @@ const LANGUAGES = {
 
 // const names = getRouteName(routes)
 
-// console.log(names)
+// // console.log(names)
 const pages = {}
 pages["Home Page"] = [
   {
@@ -3152,7 +3152,7 @@ const list = [
   { name: "Cookie Policy", path: "/cookie-policy/" },
 ]
 
-console.log(Object.values(pages).length, list.length)
+// console.log(Object.values(pages).length, list.length)
 
 function combine(list, pages) {
   const res = []
@@ -3169,8 +3169,8 @@ function combine(list, pages) {
 
 const completeData = combine(list, pages)
 
-console.log(completeData.map((el) => el.name))
-console.log(completeData.length)
+// console.log(completeData.map((el) => el.name))
+// console.log(completeData.length)
 
 function render(array, lang) {
   let selfclosing = ["img", "br", "hr", "input"]
@@ -3210,11 +3210,11 @@ function render(array, lang) {
  * @returns {string} The rendered HTML string for the specified page and language.
  */
 function generateHTML(page, lang) {
-  // console.log(page, lang)
+  // // console.log(page, lang)
 
   const element = completeData.find((el) => el.name === page)
   if (!element) return
-  console.log("element found => ", element.name)
+  // console.log("element found => ", element.name)
   return render(element.data, lang.toLowerCase())
 }
 

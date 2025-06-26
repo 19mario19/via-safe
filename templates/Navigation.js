@@ -27,10 +27,12 @@ function Navigation(depth) {
     ?.map((route) => {
       const hasChildren = route?.children?.length > 0 ? "hasChildren" : ""
 
+      const routePath = route.path === "/" ? "/" : route.path + "/"
+
       return /*html*/ `
       <div className="drop-down">
       <li class="parent ${hasChildren}">
-      <a href="${route.path}/">
+      <a href="${routePath}">
       ${route.name}
       ${
         hasChildren

@@ -43,7 +43,7 @@ async function generatePages() {
 
           const body = generateHTML(child.name, LANGUAGES.EN) ?? ""
 
-          console.log("\n")
+          // console.log("\n")
 
           await fs.writeFile(
             childFile,
