@@ -71,7 +71,7 @@ function Navigation(lang = LANGUAGES.RU) {
   ${
     logoSrc
       ? /*html*/ `
-      <a href="${routes[0].path}">
+      <a href="/${lang}${routes[0].path}">
       <img src="${logoSrc.light}" alt="" />
       </a>
       `

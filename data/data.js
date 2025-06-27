@@ -3184,6 +3184,9 @@ function render(array, lang) {
     let attrs = ""
     if (node.attributes) {
       for (let [k, v] of Object.entries(node.attributes)) {
+        if (k === "href") {
+          attrs += `${k}="/${lang}${v}" `
+        }
         attrs += `${k}="${v}" `
       }
     }

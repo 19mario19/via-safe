@@ -13,7 +13,7 @@ const fullPath = path.join(__rootFolder, "public", "pages")
 // console.log(routes)
 
 function LayoutTitleBody(title, body = "", lang) {
-  console.log(Navigation(lang))
+  // console.log(Navigation(lang))
   return LayoutDir(
     { title, content: { nav: Navigation(lang), body, footer: Footer(lang) } },
     true,

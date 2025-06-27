@@ -12,9 +12,9 @@ const fullPath = path.join(__rootFolder, "public", "pages")
 app.use(express.json())
 app.use(express.static(path.join(__rootFolder, "public")))
 
-// app.get("/", (req, res) => {
-//   return res.sendFile(path.join(__rootFolder, "public", "index.html"))
-// })
+app.get("/", (req, res) => {
+  return res.redirect("/en/")
+})
 
 for (let parent of routes) {
   for (let l in LANGUAGES) {
