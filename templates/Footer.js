@@ -7,7 +7,7 @@ function Footer(lang = LANGUAGES.RU) {
     ?.map((route) => {
       return /*html*/ `
     <li class="parent">
-      <a href="${language}${route.path}">
+      <a href="/${language}${route.path}">
         ${route.name[language]}
       </a>
       ${
@@ -18,7 +18,7 @@ function Footer(lang = LANGUAGES.RU) {
             .map((child) => {
               return /*html*/ `
               <li class="child">
-                <a href="${language}${child.path}">
+                <a href="/${language}${child.path}">
                   ${child.name[language]}
                 </a>
               </li>

@@ -13,6 +13,7 @@ const fullPath = path.join(__rootFolder, "public", "pages")
 // console.log(routes)
 
 function LayoutTitleBody(title, body = "", lang) {
+  console.log(Navigation(lang))
   return LayoutDir(
     { title, content: { nav: Navigation(lang), body, footer: Footer(lang) } },
     true,
@@ -37,7 +38,7 @@ async function generatePages() {
 
         await fs.writeFile(
           parentFile,
-          LayoutTitleBody(route.name[lang], body,lang),
+          LayoutTitleBody(route.name[lang], body, lang),
           "utf-8",
         )
 
@@ -54,7 +55,7 @@ async function generatePages() {
 
             await fs.writeFile(
               childFile,
-              LayoutTitleBody(child.name[lang], body,lang),
+              LayoutTitleBody(child.name[lang], body, lang),
               "utf-8",
             )
           }

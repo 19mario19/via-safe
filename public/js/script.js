@@ -1,4 +1,4 @@
-import { generateHTML, LANGUAGES, completeData } from "../data/data.js"
+import { LANGUAGES } from "../data/data.js"
 
 window.addEventListener("DOMContentLoaded", () => {
   console.log("Script loaded...")
@@ -35,24 +35,11 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const currentPath = getPath()
 
-  const element = completeData?.find((el) => {
-    // console.log(el.path === currentPath)
-    // console.log(el.path)
-    // console.log(currentPath)
-
-    return el.path === currentPath
-  })
-  console.log(element)
-
-  const mainContainer = document.querySelector("main")
-
-  const title = mainContainer.querySelector("h1")
-  console.log(title.innerHTML)
-
   const ul = document.createElement("ul")
   ul.classList.add("list")
   container.append(ul)
   for (let lang in LANGUAGES) {
+    const language = lang.toLowerCase()
     // console.log(lang)
     const li = document.createElement("li")
     li.classList.add("item")
@@ -60,9 +47,13 @@ window.addEventListener("DOMContentLoaded", () => {
     ul.append(li)
 
     li.addEventListener("click", () => {
-      mainContainer.innerHTML = ""
-      mainContainer.innerHTML = generateHTML(element.name, lang)
-      //   console.log(homePage.innerHTML)
+      console.log(currentPath, lang)
+      const newPath = currentPath.split("/")
+      newPath.shift()
+      newPath[0] = language
+      const completePath = newPath.join("/")
+
+      window.location.href = "/" + completePath
     })
   }
 })

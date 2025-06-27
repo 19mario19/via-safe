@@ -31,7 +31,7 @@ function Navigation(lang = LANGUAGES.RU) {
       return /*html*/ `
       <div className="drop-down">
       <li class="parent ${hasChildren}">
-      <a href="${lang}${route.path}">
+      <a href="/${lang}${route.path}">
       ${route.name[lang]}
       ${
         hasChildren
@@ -50,7 +50,7 @@ function Navigation(lang = LANGUAGES.RU) {
           .map((child) => {
             return /*html*/ `
               <li class="child">
-              <a href="${lang}${child.path}">
+              <a href="/${lang}${child.path}">
               ${child.name[lang]}
                 </a>
                 </li>
