@@ -1,7 +1,6 @@
 import { LANGUAGES } from "../data/data.js"
 
-const lsLang = localStorage.getItem("lang", LANGUAGES.EN) 
-
+const lsLang = localStorage.getItem("lang", LANGUAGES.EN)
 
 window.addEventListener("DOMContentLoaded", () => {
   console.log("Script loaded...")
@@ -38,14 +37,18 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const currentPath = getPath()
 
+  const currentLanguage = currentPath.split("/")[1]
+  console.log(currentLanguage)
+
   const ul = document.createElement("ul")
-  ul.classList.add("list")
-  container.append(ul)
+  ul.classList.add("langs")
+  container.insertBefore(ul, container.firstChild)
   for (let lang in LANGUAGES) {
     const language = lang.toLowerCase()
     // console.log(lang)
     const li = document.createElement("li")
     li.classList.add("item")
+    if (language === currentLanguage) li.classList.add("active")
     li.textContent = lang
     ul.append(li)
 

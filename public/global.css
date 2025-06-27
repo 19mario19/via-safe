@@ -762,6 +762,19 @@ nav.main-header {
         display: none;
     }
 
+    ul.langs {
+        li {
+            padding: var(--space-xxs);
+            border-radius: var(--radius-md);
+            font-weight: bold;
+        }
+
+        li.active {
+            background-color: white;
+            color: black;
+        }
+    }
+
     img {
         height: calc(var(--font-size-xxxl) * 4);
     }
