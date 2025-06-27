@@ -1039,9 +1039,12 @@ nav.main-header {
             transition: transform 0.35s ease;
 
             img {
-                max-height: 35px;
+                height: 35px;
+                width: 60px;
+                aspect-ratio: 1;
                 margin: 0;
                 padding: 0;
+                fill: white;
             }
 
             &.active {
