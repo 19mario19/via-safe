@@ -1,6 +1,6 @@
 import path from "path"
 import { promises as fs } from "fs"
-import { routes } from "./routes/routes.js"
+import { routes2 as routes } from "./routes/routes.js"
 import { LayoutDir } from "./templates/Layout.js"
 import { Navigation } from "./templates/Navigation.js"
 import { Footer } from "./templates/Footer.js"
@@ -12,11 +12,10 @@ const fullPath = path.join(__rootFolder, "public", "pages")
 // console.log(fullPath)
 // console.log(routes)
 
-function LayoutTitleBody(title, body = "", depth) {
+function LayoutTitleBody(title, body = "", lang) {
   return LayoutDir(
-    { title, content: { nav: Navigation(), body, footer: Footer() } },
+    { title, content: { nav: Navigation(lang), body, footer: Footer(lang) } },
     true,
-    depth,
   )
 }
 
@@ -24,36 +23,45 @@ function LayoutTitleBody(title, body = "", depth) {
 
 async function generatePages() {
   for (let route of routes) {
-    try {
-      const parentPath = path.join(fullPath, route.path)
-      const parentFile = path.join(parentPath, `${route.name}.html`)
+    for (let l in LANGUAGES) {
+      let lang = l.toLowerCase()
+      try {
+        const parentPath = path.join(fullPath, lang, route.path)
+        const parentFile = path.join(parentPath, `${route.name[lang]}.html`)
 
-      await fs.mkdir(parentPath, { recursive: true })
+        // console.log(route.name)
 
-      const body = generateHTML(route.name, LANGUAGES.EN) ?? ""
+        await fs.mkdir(parentPath, { recursive: true })
 
-      await fs.writeFile(parentFile, LayoutTitleBody(route.name, body), "utf-8")
+        const body = generateHTML(route.name[LANGUAGES.EN], lang) ?? "" // keeping english route name
 
-      if (Array.isArray(route.children) && route.children.length > 0) {
-        for (let child of route.children) {
-          const childPath = path.join(fullPath, child.path)
-          const childFile = path.join(childPath, `${child.name}.html`)
+        await fs.writeFile(
+          parentFile,
+          LayoutTitleBody(route.name[lang], body),
+          "utf-8",
+        )
 
-          await fs.mkdir(childPath, { recursive: true })
+        if (Array.isArray(route.children) && route.children.length > 0) {
+          for (let child of route.children) {
+            const childPath = path.join(fullPath, lang, child.path)
+            const childFile = path.join(childPath, `${child.name[lang]}.html`)
 
-          const body = generateHTML(child.name, LANGUAGES.EN) ?? ""
+            await fs.mkdir(childPath, { recursive: true })
 
-          // console.log("\n")
+            const body = generateHTML(child.name[LANGUAGES.EN], lang) ?? ""
 
-          await fs.writeFile(
-            childFile,
-            LayoutTitleBody(child.name, body, 2),
-            "utf-8",
-          )
+            // console.log("\n")
+
+            await fs.writeFile(
+              childFile,
+              LayoutTitleBody(child.name[lang], body),
+              "utf-8",
+            )
+          }
         }
+      } catch (error) {
+        console.log(error)
       }
-    } catch (error) {
-      console.log(error)
     }
   }
 }

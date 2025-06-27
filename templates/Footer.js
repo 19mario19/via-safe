@@ -1,12 +1,14 @@
-import { routes } from "../routes/routes.js"
+import { LANGUAGES } from "../data/data.js"
+import { routes2 as routes } from "../routes/routes.js"
 
-function Footer() {
+function Footer(lang = LANGUAGES.RU) {
+  const language = lang.toLowerCase()
   const elements = routes
     ?.map((route) => {
       return /*html*/ `
     <li class="parent">
-      <a href="${route.path}">
-        ${route.name}
+      <a href="${language}${route.path}">
+        ${route.name[language]}
       </a>
       ${
         route?.children
@@ -16,8 +18,8 @@ function Footer() {
             .map((child) => {
               return /*html*/ `
               <li class="child">
-                <a href="${child.path}">
-                  ${child.name}
+                <a href="${language}${child.path}">
+                  ${child.name[language]}
                 </a>
               </li>
               `
