@@ -17,6 +17,7 @@ function LayoutTitleBody(title, body = "", lang) {
   return LayoutDir(
     { title, content: { nav: Navigation(lang), body, footer: Footer(lang) } },
     true,
+    lang
   )
 }
 

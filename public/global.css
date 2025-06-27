@@ -881,6 +881,8 @@ nav.main-header {
 
     } */
 
+
+
     li.parent.hasChildren:hover+ul.child,
     li.parent.hasChildren+ul.child:hover,
     ul.child:hover {
@@ -897,6 +899,13 @@ nav.main-header {
         justify-content: space-between;
         align-items: center;
         padding: var(--space-sm) var(--space-lg);
+
+
+        ul.langs {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+        }
 
         .drop-down {
             width: 100%;
@@ -955,6 +964,8 @@ nav.main-header {
                 width: fit-content;
                 font-size: var(--font-size-lg);
                 /* background-color: red; */
+                text-align: center;
+                padding: var(--space-xs);
             }
 
             img {

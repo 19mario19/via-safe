@@ -1,7 +1,5 @@
 import { LANGUAGES } from "../data/data.js"
 
-const lsLang = localStorage.getItem("lang", LANGUAGES.EN)
-
 window.addEventListener("DOMContentLoaded", () => {
   console.log("Script loaded...")
   const container = document.querySelector(".main-header")

@@ -15,26 +15,23 @@
 function LayoutDir(
   { title, description, content: { nav, body, footer } },
   script = false,
-  depth = 1,
+  lang = "en",
 ) {
-  const stringDepth = ""
-  // const stringDepth = "../".repeat(depth)
-
   return /*html*/ `
     <!DOCTYPE html>
-    <html lang="en">
+    <html lang=${lang}>
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="${stringDepth}/global.css" />
+        <link rel="stylesheet" href="/global.css" />
         ${
           description
-            ? '<meta name="description" content="${description}" />'
+            ? `<meta name="description" content="${description}" />`
             : ""
         }
         ${
           script
-            ? `<script src="${stringDepth}/js/script.js" defer type="module"></script>`
+            ? `<script src="/js/script.js" defer type="module"></script>`
             : ""
         }
         <title>${title}</title>
