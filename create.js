@@ -37,7 +37,7 @@ async function generatePages() {
 
         await fs.writeFile(
           parentFile,
-          LayoutTitleBody(route.name[lang], body),
+          LayoutTitleBody(route.name[lang], body,lang),
           "utf-8",
         )
 
@@ -54,7 +54,7 @@ async function generatePages() {
 
             await fs.writeFile(
               childFile,
-              LayoutTitleBody(child.name[lang], body),
+              LayoutTitleBody(child.name[lang], body,lang),
               "utf-8",
             )
           }
