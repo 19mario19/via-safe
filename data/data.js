@@ -1898,7 +1898,7 @@ pages["News & Blog"] = [
         content: {
           ru: "Новости и Блог",
           en: "News & Blog",
-          ro: "Știri și Blog",
+          ro: "Noutăți și Blog",
         },
       },
       {
