@@ -1906,7 +1906,7 @@ pages["News & Blog"] = [
         content: {
           ru: "Добро пожаловать в наш раздел 'Новости и Блог', где вы найдете самую свежую информацию о ViaSafe, глубокие аналитические статьи и вдохновляющие истории из мира мобильности будущего. Мы постоянно развиваемся и хотим делиться с вами каждым шагом!",
           en: "Welcome to our 'News & Blog' section, where you'll find the latest information about ViaSafe, in-depth analytical articles, and inspiring stories from the world of future mobility. We are constantly evolving and want to share every step with you!",
-          ro: "Bun venit în secțiunea noastră 'Știri și Blog', unde veți găsi cele mai recente informații despre ViaSafe, articole analitice aprofundate și povești inspiraționale din lumea mobilității viitorului. Suntem în continuă dezvoltare și dorim să împărtășim cu dumneavoastră fiecare pas!",
+          ro: "Bun venit în secțiunea noastră 'Noutăți și Blog', unde veți găsi cele mai recente informații despre ViaSafe, articole analitice aprofundate și povești inspiraționale din lumea mobilității viitorului. Suntem în continuă dezvoltare și dorim să împărtășim cu dumneavoastră fiecare pas!",
         },
       },
       {

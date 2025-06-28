@@ -85,7 +85,7 @@ function Navigation(lang = LANGUAGES.RU) {
   ${
     elements
       ? /*html*/ `
-    <ul class="parent">
+    <ul class="parent container">
     ${elements}
     </ul>
     `

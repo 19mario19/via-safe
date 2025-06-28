@@ -1,5 +1,14 @@
 import { LANGUAGES } from "../data/data.js"
 
+const THEME = {
+  LIGHT: "light",
+  DARK: "dark",
+}
+
+let currentTheme = localStorage.getItem("theme") || THEME.DARK
+if (currentTheme === THEME.LIGHT) enableLight()
+if (currentTheme === THEME.DARK) enableDark()
+
 window.addEventListener("DOMContentLoaded", () => {
   console.log("Script loaded...")
   const container = document.querySelector(".main-header")
@@ -72,6 +81,13 @@ window.addEventListener("DOMContentLoaded", () => {
   container.insertBefore(buttonTheme, container.firstChild)
   buttonTheme.addEventListener("click", () => {
     toggleTheme()
+    currentTheme = localStorage.getItem("theme")
+    console.log(currentTheme)
+    if (currentTheme === THEME.DARK) {
+      localStorage.setItem("theme", THEME.LIGHT)
+    } else if (currentTheme === THEME.LIGHT) {
+      localStorage.setItem("theme", THEME.DARK)
+    }
   })
 })
 
@@ -90,4 +106,10 @@ function getPath() {
 
 function toggleTheme() {
   document.body.classList.toggle("light-theme")
+}
+function enableLight() {
+  document.body.classList.add("light-theme")
+}
+function enableDark() {
+  document.body.classList.remove("light-theme")
 }
