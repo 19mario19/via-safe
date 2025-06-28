@@ -758,6 +758,18 @@ nav.main-header {
     /* gap: 1rem; */
 
     /* transition: all 5s ease-in-out; */
+
+    button.theme {
+        display: flex;
+        padding: 0;
+
+        img {
+            height: 35px;
+            width: 35px;
+        }
+    }
+
+
     #toggle {
         display: none;
     }
@@ -899,6 +911,16 @@ nav.main-header {
         justify-content: space-between;
         align-items: center;
         padding: var(--space-sm) var(--space-lg);
+
+        button.theme {
+            display: flex;
+            padding: 0;
+
+            img {
+                height: 35px;
+                width: 75px;
+            }
+        }
 
 
         ul.langs {

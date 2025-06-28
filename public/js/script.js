@@ -4,6 +4,8 @@ window.addEventListener("DOMContentLoaded", () => {
   console.log("Script loaded...")
   const container = document.querySelector(".main-header")
 
+  console.log(container.children)
+
   const toggle = container?.querySelector("#toggle")
   const parents = container.querySelectorAll("li.parent.hasChildren")
 
@@ -60,6 +62,17 @@ window.addEventListener("DOMContentLoaded", () => {
       window.location.href = "/" + completePath
     })
   }
+
+  // toggle theme
+  const buttonTheme = document.createElement("button")
+  buttonTheme.classList.add("theme")
+  const img = document.createElement("img")
+  img.src = "/media/theme/theme.png"
+  buttonTheme.appendChild(img)
+  container.insertBefore(buttonTheme, container.firstChild)
+  buttonTheme.addEventListener("click", () => {
+    toggleTheme()
+  })
 })
 
 /**
@@ -73,4 +86,8 @@ function clearActive(list) {
 
 function getPath() {
   return location.pathname
+}
+
+function toggleTheme() {
+  document.body.classList.toggle("light-theme")
 }
