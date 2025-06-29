@@ -29,7 +29,7 @@ function Navigation(lang = LANGUAGES.RU) {
       const hasChildren = route?.children?.length > 0 ? "hasChildren" : ""
 
       return /*html*/ `
-      <div className="drop-down">
+      <div class="drop-down">
       <li class="parent ${hasChildren}">
       <a href="/${lang}${route.path}">
       ${route.name[lang]}
@@ -67,7 +67,7 @@ function Navigation(lang = LANGUAGES.RU) {
 
   return /*html*/ `
   <nav class="main-header">
-  <h1 className="logo">
+  <h1 class="logo">
   ${
     logoSrc
       ? /*html*/ `
@@ -78,7 +78,25 @@ function Navigation(lang = LANGUAGES.RU) {
       : ""
   }
   </h1>
-  <div className="burger" id="toggle">
+
+  <div class="mid">
+  <button class="theme">
+    <img src="/media/theme/theme.png" alt="toggle theme image" />
+  </button>
+    <ul class="langs">
+    ${Object.keys(LANGUAGES)
+      .map(
+        (item) => /*html*/ `
+        <li class="item">
+          ${item}
+        </li>
+        `,
+      )
+      .join("")}
+    </ul>
+  </div>
+
+  <div class="burger" id="toggle">
     <img src="/media/menu/menu.png" alt="menu icon" />
   </div>
   
