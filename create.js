@@ -3,7 +3,8 @@ import { promises as fs } from "fs"
 import { routes2 as routes } from "./routes/routes.js"
 import { LayoutDir } from "./templates/Layout.js"
 import { Navigation } from "./templates/Navigation.js"
-import { Footer } from "./templates/Footer.js"
+// import { Footer } from "./templates/Footer.js"
+import { Footer } from "./templates/Footer-2.js"
 import { generateHTML, LANGUAGES } from "./data/data.js"
 
 const __rootFolder = process.cwd()
@@ -17,7 +18,7 @@ function LayoutTitleBody(title, body = "", lang) {
   return LayoutDir(
     { title, content: { nav: Navigation(lang), body, footer: Footer(lang) } },
     true,
-    lang
+    lang,
   )
 }
 

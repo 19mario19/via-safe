@@ -169,7 +169,7 @@ select {
     --font-size-lg: clamp(1.25rem, 1.1rem + 1.5vw, 1.5rem);
     --font-size-xl: clamp(1.5rem, 1.3rem + 2vw, 2rem);
     --font-size-xxl: clamp(2rem, 1.7rem + 3vw, 2.75rem);
-    --font-size-xxxl: clamp(2.5rem, 2rem + 4vw, 3.5rem);
+    --font-size-xxxl: clamp(2.25rem, 1.85rem + 3.5vw, 3.25rem);
 
     /* Line Heights */
     --line-height-heading: 1.2;
@@ -755,7 +755,8 @@ body {
     overflow-x: hidden;
 }
 
-nav.main-header {
+nav.main-header,
+footer.main-header {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -869,30 +870,32 @@ nav.main-header {
                 height: 15px;
                 width: 30px;
 
-                transition: all 0.15s ease-in-out;
+                transition: transform 0.15s ease-in-out;
+
+                &:hover {
+                    transform: rotate(180deg);
+                }
             }
 
-            &:hover img {
-                transform: rotate(180deg);
-            }
         }
     }
 
     ul.parent {
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        gap: var(--space-xs);
+        justify-content: center;
+        /* justify-content: space-evenly; */
     }
 
     li.parent {
-        gap: 0.25rem;
         text-transform: uppercase;
     }
 
     ul.child {
         position: absolute;
-        left: -0.2rem;
-        top: calc(100% + 0.25rem);
+        right: -0.2rem;
+        top: calc(90%);
         padding: var(--space-sm);
         display: flex;
         flex-direction: column;
@@ -907,7 +910,7 @@ nav.main-header {
         align-items: start;
 
         /* transformations */
-        transition: all 0.15s ease-in-out;
+        transition: transform 0.15s ease-in-out, opacity .15s ease-in-out, z-index .15s ease-in-out;
         transform: translateY(-50px);
         z-index: -1;
         opacity: 0;
@@ -932,13 +935,25 @@ nav.main-header {
 
 
 
-    li.parent.hasChildren:hover+ul.child,
+    li.parent.hasChildren:has(img:hover)+ul.child,
+    li.parent.hasChildren+ul.child:hover {
+        transform: translateY(0);
+        z-index: 100;
+        opacity: 1;
+    }
+
+    ul.child:hover+li.parent.hasChildren:has(img) {
+        background-color: red;
+        padding: 10rem;
+    }
+
+    /* li.parent.hasChildren:hover+ul.child,
     li.parent.hasChildren+ul.child:hover,
     ul.child:hover {
         transform: translateY(0);
         z-index: 100;
         opacity: 1;
-    }
+    } */
 
     /* mobile */
     @media (max-width: 576px) {
@@ -1152,87 +1167,28 @@ nav.main-header {
     }
 }
 
-footer.main-footer {
-    background-color: var(--color-neutral-dark);
-    padding: var(--space-sm) var(--space-lg);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+footer.main-header {
+    ul {
+        gap: var(--space-xs);
+    }
 
     ul.parent {
-        /* display: flex;
-        flex-direction: column;
-        flex-wrap: wrap; */
-
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-
-
-        @media (max-width: 992px) {
-            grid-template-columns: repeat(2, 1fr);
-
-        }
-
-        @media (max-width: 768px) {
-            grid-template-columns: repeat(2, 1fr);
-
-        }
-
-        @media (max-width: 576px) {
-            grid-template-columns: 1fr;
-
-
-        }
-
-
-        align-items: start;
-        justify-content: center;
-
-
-        /* padding: 1rem; */
-        margin-bottom: var(--space-lg);
-        gap: var(--space-xxl);
-
-        a {
-            font-size: var(--font-size-lg);
-            font-family: var(--font-family-heading);
-        }
-
-
+        gap: 0;
     }
 
-    li.parent {
-        display: flex;
-        gap: var(--space-lg);
-
-        flex-direction: column;
-        /* grid-template-columns: repeat(2, 1fr); */
-        /* text-align: center; */
-
-        a {}
+    div {
+        padding: 0;
     }
 
-    ul.child {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        /* padding: 1rem; */
+    li {
 
-        width: 100%;
+        padding: 0;
+    }
 
+    a {
+        font-size: var(--font-size-xs);
+        padding: 0;
 
-        li {
-            width: 100%;
-            text-align: start;
-        }
-
-
-        a {
-            font-size: var(--font-size-sm);
-            font-family: var(--font-family-body);
-        }
     }
 }
 

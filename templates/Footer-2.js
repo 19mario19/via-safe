@@ -11,7 +11,7 @@
 import { LANGUAGES } from "../data/data.js"
 import { routes2 as routes } from "../routes/routes.js"
 
-function Navigation(lang = LANGUAGES.RU) {
+function Footer(lang = LANGUAGES.RU) {
   // const stringDepth = "../".repeat(depth)
 
   const logoSrc = {
@@ -66,41 +66,7 @@ function Navigation(lang = LANGUAGES.RU) {
     .join("")
 
   return /*html*/ `
-  <nav class="main-header">
-  <div class="left container">
-  <h1 class="logo">
-  ${
-    logoSrc
-      ? /*html*/ `
-    <a href="/${lang}${routes[0].path}">
-    <img src="${logoSrc.light}" alt="" />
-    </a>
-    `
-      : ""
-  }
-  </h1>
-  
-  <div class="mid">
-  <ul class="langs">
-  ${Object.keys(LANGUAGES)
-    .map(
-      (item) => /*html*/ `
-      <li class="item">
-      ${item}
-      </li>
-      `,
-    )
-    .join("")}
-    </ul>
-    <button class="theme">
-    <img src="/media/theme/theme.png" alt="toggle theme image" />
-    </button>
-  </div>
-  </div>
-
-  <div class="burger" id="toggle">
-    <img src="/media/menu/menu.png" alt="menu icon" />
-  </div>
+  <footer class="main-header">
   
   ${
     elements
@@ -111,7 +77,8 @@ function Navigation(lang = LANGUAGES.RU) {
     `
       : ""
   }
-  </nav>`
+  <div className="bottom"><p>© 2025 ViaSafe</p></div>
+  </footer>`
 }
 
-export { Navigation }
+export { Footer }
