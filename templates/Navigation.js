@@ -67,33 +67,35 @@ function Navigation(lang = LANGUAGES.RU) {
 
   return /*html*/ `
   <nav class="main-header">
+  <div class="left container">
   <h1 class="logo">
   ${
     logoSrc
       ? /*html*/ `
-      <a href="/${lang}${routes[0].path}">
-      <img src="${logoSrc.light}" alt="" />
-      </a>
-      `
+    <a href="/${lang}${routes[0].path}">
+    <img src="${logoSrc.light}" alt="" />
+    </a>
+    `
       : ""
   }
   </h1>
-
+  
   <div class="mid">
   <button class="theme">
-    <img src="/media/theme/theme.png" alt="toggle theme image" />
+  <img src="/media/theme/theme.png" alt="toggle theme image" />
   </button>
-    <ul class="langs">
-    ${Object.keys(LANGUAGES)
-      .map(
-        (item) => /*html*/ `
-        <li class="item">
-          ${item}
+  <ul class="langs">
+  ${Object.keys(LANGUAGES)
+    .map(
+      (item) => /*html*/ `
+      <li class="item">
+      ${item}
         </li>
         `,
-      )
-      .join("")}
+    )
+    .join("")}
     </ul>
+  </div>
   </div>
 
   <div class="burger" id="toggle">

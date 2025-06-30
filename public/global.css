@@ -288,7 +288,7 @@ a {
 }
 
 li {
-    /* margin-bottom: var(--space-md); */
+    margin-bottom: var(--space-md);
     /* padding-left: var(--space-sm); */
 }
 
@@ -764,6 +764,17 @@ nav.main-header {
     /* gap: 1rem; */
 
     /* transition: all 5s ease-in-out; */
+
+    .left {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--space-lg);
+
+
+    }
+
     .mid {
         display: flex;
         /* gap: 1rem; */
@@ -788,17 +799,15 @@ nav.main-header {
 
         ul.langs {
             display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            gap: var(--space-sm);
-
+            gap: var(--space-xs);
 
             li {
-                padding: var(--space-xxs);
-                border-radius: var(--radius-md);
+                margin: 0;
+                padding: 0;
                 font-weight: bold;
-                display: flex;
+                padding: var(--space-xs);
+                border-radius: var(--radius-sm);
+
             }
 
             li.active {
@@ -872,7 +881,7 @@ nav.main-header {
     ul.parent {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     li.parent {
@@ -935,10 +944,10 @@ nav.main-header {
     @media (max-width: 576px) {
         max-width: 576px;
         flex-direction: row;
-        gap: var(--space-lg);
+        gap: var(--space-sm);
         justify-content: space-between;
         align-items: center;
-        padding: var(--space-sm) var(--space-lg);
+        padding: var(--space-sm) var(--space-sm);
 
         button.theme {
             display: flex;
@@ -955,7 +964,7 @@ nav.main-header {
             /* gap: 1rem; */
             align-items: center;
             justify-content: center;
-            gap: var(--space-sm);
+            /* gap: var(--space-sm); */
 
             button.theme {
                 display: flex;
@@ -971,18 +980,12 @@ nav.main-header {
             /* border: 10px solid; */
 
             ul.langs {
-                display: flex;
                 flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                gap: var(--space-sm);
-
 
                 li {
-                    padding: var(--space-xxs);
-                    border-radius: var(--radius-md);
-                    font-weight: bold;
-                    display: flex;
+                    margin: 0;
+                    padding: 0;
+                    font-size: var(--font-size-base);
                 }
 
                 li.active {
@@ -1236,7 +1239,7 @@ footer.main-footer {
 main.container {
     ul {
         li {
-            margin-bottom: var(--space-md);
+            margin-bottom: var(--space-md) !important;
         }
     }
 }

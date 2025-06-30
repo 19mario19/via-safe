@@ -1,5 +1,3 @@
-import { LANGUAGES } from "../data/data.js"
-
 const THEME = {
   LIGHT: "light",
   DARK: "dark",
@@ -28,7 +26,7 @@ window.addEventListener("DOMContentLoaded", () => {
   })
 
   // active li element
-  parents.forEach((parent, index) => {
+  parents.forEach((parent, _) => {
     parent.addEventListener("click", () => {
       console.log("parent clicked is: ", parent)
 
