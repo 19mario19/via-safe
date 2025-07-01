@@ -39,7 +39,7 @@ function LayoutDir(
     <body>
         ${nav ?? ""}
 
-          <main className="container">${body}</main>
+          <main class="container">${body}</main>
          
         ${footer ?? ""}
     </body>

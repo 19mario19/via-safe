@@ -77,7 +77,7 @@ function Footer(lang = LANGUAGES.RU) {
     `
       : ""
   }
-  <div className="bottom"><p>© 2025 ViaSafe</p></div>
+  <div class="bottom"><p>© 2025 ViaSafe</p></div>
   </footer>`
 }
 

@@ -14,7 +14,7 @@ window.addEventListener("DOMContentLoaded", () => {
   // console.log(container.children)
 
   const toggle = container?.querySelector("#toggle")
-  const parents = container.querySelectorAll("li.parent.hasChildren")
+  const parents = container.querySelectorAll("li.parent.hasChildren img")
 
   //   toggle.classList.remove("active")
 
@@ -96,13 +96,13 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // toggle theme
   const buttonTheme = document.querySelector("button.theme")
-  // const buttonTheme = document.createElement("button")
-  // buttonTheme.classList.add("theme")
-  // const img = document.createElement("img")
-  // img.src = "/media/theme/theme.png"
-  // buttonTheme.appendChild(img)
-  // container.insertBefore(buttonTheme, container.firstChild)
+
   buttonTheme.addEventListener("click", () => {
+    if (currentTheme === THEME.LIGHT)
+      buttonTheme.querySelector("img").classList.add("light")
+    if (currentTheme === THEME.DARK)
+      buttonTheme.querySelector("img").classList.remove("light")
+
     toggleTheme()
     currentTheme = localStorage.getItem("theme")
     localStorage.setItem(

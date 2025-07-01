@@ -33,6 +33,7 @@ function Navigation(lang = LANGUAGES.RU) {
       <li class="parent ${hasChildren}">
       <a href="/${lang}${route.path}">
       ${route.name[lang]}
+      </a>
       ${
         hasChildren
           ? /*html*/ `
@@ -40,7 +41,6 @@ function Navigation(lang = LANGUAGES.RU) {
         `
           : ""
       }
-      </a>
       </li>
       ${
         route?.children
