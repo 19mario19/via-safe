@@ -1098,7 +1098,7 @@ nav.main-header {
                 width: fit-content;
                 font-size: var(--font-size-body);
                 /* background-color: red; */
-                text-align: center;
+                text-align: start;
                 padding: var(--space-xs);
             }
 
