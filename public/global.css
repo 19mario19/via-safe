@@ -181,6 +181,7 @@ select {
     /* For headings and potentially UI elements */
     --font-family-body: "IBM Plex Sans", sans-serif;
     /* For paragraphs and longer text blocks */
+
 }
 
 /* Light Theme Overrides */
@@ -787,12 +788,15 @@ nav.main-header {
             padding: 0;
             background-color: transparent;
 
+            
             img {
                 height: 35px;
                 aspect-ratio: 1;
                 margin: 0;
                 padding: 0;
 
+                transition: transform .15s ease-in-out;
+                
                 &.light {
                     transform: rotate(180deg);
                 }
@@ -979,7 +983,7 @@ nav.main-header {
         gap: var(--space-sm);
         justify-content: space-between;
         align-items: center;
-        padding: var(--space-sm) var(--space-sm);
+        padding: var(--space-xxs) var(--space-sm);
 
         button.theme {
             display: flex;
