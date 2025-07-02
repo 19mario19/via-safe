@@ -1,3 +1,5 @@
+import { LANGUAGES } from "../data/data.js"
+
 const THEME = {
   LIGHT: "light",
   DARK: "dark",
@@ -28,7 +30,7 @@ window.addEventListener("DOMContentLoaded", () => {
   // active li element
   parents.forEach((parent, _) => {
     parent.addEventListener("click", () => {
-      console.log("parent clicked is: ", parent)
+      // console.log("parent clicked is: ", parent)
 
       //   console.log(parent.innerHTML)
 
@@ -44,21 +46,23 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const currentPath = getPath()
 
+  // testing in live server, move to [1] otherwise
+  // const currentLanguage = currentPath.split("/")[3]
   const currentLanguage = currentPath.split("/")[1]
-  console.log(currentLanguage)
+  // console.log(currentLanguage)
 
   const ul = document.querySelector("ul.langs")
   const items = ul.querySelectorAll("li.item")
 
-  console.log(ul)
-  console.log(items)
+  // console.log(ul)
+  // console.log(items)
   let itemsArray = Array.from(items)
 
   for (let item of itemsArray) {
     const language = item.textContent.trim().toLowerCase()
     if (language === currentLanguage) item.classList.add("active")
 
-    console.log(language, currentLanguage)
+    // console.log(language, currentLanguage)
     if (language !== currentLanguage)
       item.addEventListener("click", () => {
         // console.log(language)
@@ -71,28 +75,6 @@ window.addEventListener("DOMContentLoaded", () => {
         window.location.href = "/" + completePath
       })
   }
-
-  // items.forEach((item) => {
-  //   for (let lang in LANGUAGES) {
-  //     const language = lang.toLowerCase()
-  //     // console.log(lang)
-  //     const li = item
-  //     clearActive(items)
-  //     if (language === currentLanguage) li.classList.add("active")
-
-  //     li.addEventListener("click", () => {
-  //       console.log(li)
-
-  //       // console.log(currentPath, lang)
-  //       // const newPath = currentPath.split("/")
-  //       // newPath.shift()
-  //       // newPath[0] = language
-  //       // const completePath = newPath.join("/")
-  //       // console.log(completePath)
-  //       // window.location.href = "/" + completePath
-  //     })
-  //   }
-  // })
 
   // toggle theme
   const buttonTheme = document.querySelector("button.theme")
@@ -110,6 +92,46 @@ window.addEventListener("DOMContentLoaded", () => {
       currentTheme === THEME.DARK ? THEME.LIGHT : THEME.DARK,
     )
   })
+
+  // testing dropdown langs
+
+  const ulContainer = document.querySelector("ul.langs")
+
+  const arrow = document.createElement("img")
+  arrow.src = "/media/svg/arrow.svg"
+  ulContainer.append(arrow)
+
+  const cnt = document.createElement("ul")
+  cnt.classList.add("not-selected")
+  ulContainer.append(cnt)
+
+  arrow.addEventListener("click", () => {
+    cnt.innerHTML = ""
+    cnt.classList.toggle("show")
+    const notSelectedLangs = Object.values(LANGUAGES).filter(
+      (lang) => lang !== currentLanguage,
+    )
+    console.log(notSelectedLangs)
+
+    for (let lang of notSelectedLangs) {
+      const element = document.createElement("li")
+      element.textContent = lang.toUpperCase()
+      console.log("element =>",element)
+      cnt.append(element)
+
+      element.addEventListener("click", () => {
+        console.log("current path: ",currentPath)
+        const newPath = currentPath.split("/")
+        console.log(newPath)
+        newPath[1] = lang
+        const completePath = newPath.join("/")
+        console.log(completePath)
+        window.location.href = `http://localhost:3000${completePath}`
+      })
+    }
+  })
+
+  // if (!item.classList.contains("active"))
 })
 
 /**

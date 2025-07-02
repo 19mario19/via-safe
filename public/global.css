@@ -780,15 +780,15 @@ nav.main-header {
         display: flex;
         /* gap: 1rem; */
         align-items: center;
-        justify-content: center;
-        gap: var(--space-sm);
+        justify-content: space-between;
+        gap: var(--space-xss);
 
         button.theme {
             display: flex;
             padding: 0;
             background-color: transparent;
 
-            
+
             img {
                 height: 35px;
                 aspect-ratio: 1;
@@ -796,7 +796,7 @@ nav.main-header {
                 padding: 0;
 
                 transition: transform .15s ease-in-out;
-                
+
                 &.light {
                     transform: rotate(180deg);
                 }
@@ -806,21 +806,62 @@ nav.main-header {
         /* border: 10px solid; */
 
         ul.langs {
-            display: flex;
-            gap: var(--space-xs);
+            /* flex-direction: row; */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            /* display: flex;
+            flex-direction: row; */
+            gap: var(--space-xxs);
+            position: relative;
+
+            img {
+                height: 20px;
+                margin: 0;
+                padding: 0;
+            }
+
+
+
+            ul.not-selected {
+                display: none;
+                z-index: -100;
+            }
+
+            ul.not-selected.show {
+                display: flex;
+                z-index: 100;
+                flex-direction: row !important;
+                position: absolute;
+                top: 90%;
+                padding: var(--space-sm);
+                background-color: var(--color-primary-background);
+                color: var(--color-primary-text);
+                border: 1px solid white;
+
+                li {
+                    color: var(--color-primary-text);
+                }
+
+            }
 
             li {
                 margin: 0;
-                padding: 0;
+                padding: .05rem;
+                font-size: var(--font-size-base);
                 font-weight: bold;
-                padding: var(--space-xs);
-                border-radius: var(--radius-sm);
 
             }
 
             li.active {
+                gap: 1rem;
+                align-items: center;
+                padding: var(--space-sm);
                 background-color: var(--color-success);
                 color: black;
+                border-radius: var(--radius-sm);
+
+
             }
         }
     }
@@ -900,7 +941,7 @@ nav.main-header {
 
         display: flex;
         align-items: center;
-        
+
         img {
             max-width: 20px;
             margin: 0;
@@ -934,7 +975,7 @@ nav.main-header {
 
     li.child {
         margin-bottom: 1rem;
-    
+
         a {
             text-align: end;
         }
@@ -985,6 +1026,7 @@ nav.main-header {
         align-items: center;
         padding: var(--space-xxs) var(--space-sm);
 
+
         button.theme {
             display: flex;
             padding: 0;
@@ -1002,41 +1044,7 @@ nav.main-header {
             }
         }
 
-        .mid {
-            display: flex;
-            /* gap: 1rem; */
-            align-items: center;
-            justify-content: center;
-            /* gap: var(--space-sm); */
 
-            button.theme {
-                display: flex;
-                padding: 0;
-                background-color: transparent;
-
-                img {
-                    height: 35px;
-                    width: 50px;
-                }
-            }
-
-            /* border: 10px solid; */
-
-            ul.langs {
-                flex-direction: row;
-
-                li {
-                    margin: 0;
-                    padding: .05rem;
-                    font-size: var(--font-size-base);
-                }
-
-                li.active {
-                    background-color: var(--color-success);
-                    color: black;
-                }
-            }
-        }
 
 
 
@@ -1194,6 +1202,29 @@ nav.main-header {
             }
         }
 
+        .mid {
+            display: flex;
+            /* gap: 1rem; */
+            align-items: center;
+            justify-content: center;
+            /* gap: var(--space-sm); */
+
+            button.theme {
+                display: flex;
+                padding: 0;
+                background-color: transparent;
+
+                img {
+                    height: 35px;
+                    width: 50px;
+                }
+            }
+
+            /* border: 10px solid; */
+
+
+        }
+
         /* end mobile */
     }
 }
@@ -1201,6 +1232,10 @@ nav.main-header {
 footer {
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 576px) {
+        overflow: hidden;
+    }
 
 
     li {

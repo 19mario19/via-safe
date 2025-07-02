@@ -82,15 +82,9 @@ function Navigation(lang = LANGUAGES.RU) {
   
   <div class="mid">
   <ul class="langs">
-  ${Object.keys(LANGUAGES)
-    .map(
-      (item) => /*html*/ `
-      <li class="item">
-      ${item}
-      </li>
-      `,
-    )
-    .join("")}
+  <li class="active">
+  ${lang.toUpperCase()}
+  </li>
     </ul>
     <button class="theme">
     <img src="/media/theme/theme.png" alt="toggle theme image" />
