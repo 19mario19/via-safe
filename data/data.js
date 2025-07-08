@@ -37,6 +37,13 @@ pages["Home Page"] = [
     },
     children: [
       {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
+      {
         tag: "h1",
         attributes: {
           id: "main-title",
@@ -299,6 +306,13 @@ pages["What is ViaSafe?"] = [
     },
     children: [
       {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
+      {
         tag: "h1",
         attributes: {
           id: "what-is-title",
@@ -375,6 +389,13 @@ pages["Our Mission and Values"] = [
     },
     children: [
       {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
+      {
         tag: "h1",
         attributes: {
           id: "mission-values-title",
@@ -450,6 +471,13 @@ pages["ViaSafe Technologies"] = [
       role: "region",
     },
     children: [
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
       {
         tag: "h1",
         attributes: { id: "technologies-title" },
@@ -570,6 +598,13 @@ pages["Road Safety"] = [
     },
     children: [
       {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
+      {
         tag: "h1",
         attributes: { id: "road-safety-title" },
         content: {
@@ -628,6 +663,13 @@ pages["Convenience and Savings"] = [
     },
     children: [
       {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
+      {
         tag: "h1",
         attributes: { id: "convenience-savings-title" },
         content: {
@@ -685,6 +727,13 @@ pages["Family and Travel"] = [
       role: "region",
     },
     children: [
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
       {
         tag: "h1",
         attributes: { id: "family-travel-title" },
@@ -752,6 +801,13 @@ pages["Inclusivity and Accessibility"] = [
     },
     children: [
       {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
+      {
         tag: "h1",
         attributes: { id: "inclusivity-accessibility-title" },
         content: {
@@ -818,6 +874,13 @@ pages["Tuning and Customization"] = [
     },
     children: [
       {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
+      {
         tag: "h1",
         attributes: { id: "tuning-customisation-title" },
         content: {
@@ -876,6 +939,13 @@ pages["Logistics and Cargo"] = [
     },
     children: [
       {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
+      {
         tag: "h1",
         attributes: { id: "logistics-title" },
         content: {
@@ -933,6 +1003,13 @@ pages["ViaSafe Architecture"] = [
       role: "region",
     },
     children: [
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
       {
         tag: "h1",
         attributes: { id: "architecture-title" },
@@ -1029,6 +1106,13 @@ pages["ViaSafe Operators"] = [
     },
     children: [
       {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
+      {
         tag: "h1",
         attributes: { id: "operators-title" },
         content: {
@@ -1107,6 +1191,13 @@ pages["Global Roaming"] = [
       role: "region",
     },
     children: [
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
       {
         tag: "h1",
         attributes: { id: "global-roaming-title" },
@@ -1187,6 +1278,20 @@ pages["Integration with Existing Systems"] = [
       role: "region",
     },
     children: [
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
       {
         tag: "h1",
         attributes: { id: "integration-title" },
@@ -1325,6 +1430,20 @@ pages["For Users"] = [
       role: "region",
     },
     children: [
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
       {
         tag: "h1",
         attributes: { id: "for-users-title" },
@@ -1626,6 +1745,13 @@ pages["For Partners (Business, Government)"] = [
     },
     children: [
       {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
+      {
         tag: "h1",
         attributes: { id: "partners-title" },
         content: {
@@ -1785,6 +1911,13 @@ pages["Careers at ViaSafe"] = [
     },
     children: [
       {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
+      {
         tag: "h1",
         attributes: { id: "careers-title" },
         content: {
@@ -1893,6 +2026,13 @@ pages["News & Blog"] = [
     },
     children: [
       {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
+      {
         tag: "h1",
         attributes: { id: "news-blog-title" },
         content: {
@@ -1990,6 +2130,13 @@ pages["Contact Us"] = [
     },
     children: [
       {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
+      {
         tag: "h1",
         attributes: { id: "contact-title" },
         content: {
@@ -2035,6 +2182,13 @@ pages["Privacy Policy"] = [
     },
     children: [
       {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
+      {
         tag: "h1",
         attributes: { id: "privacy-policy-title" },
         content: {
@@ -2063,6 +2217,13 @@ pages["Terms of Use"] = [
       role: "region",
     },
     children: [
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
       {
         tag: "h1",
         attributes: { id: "terms-of-use-main-title" },
@@ -2483,6 +2644,13 @@ pages["Cookie Policy"] = [
     },
     children: [
       {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
+      {
         tag: "h1",
         attributes: { id: "cookie-policy-title" },
         content: {
@@ -2511,6 +2679,13 @@ pages["Legal Information"] = [
       role: "region",
     },
     children: [
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
       {
         tag: "h1",
         attributes: { id: "legal-info-main-title" },
@@ -2588,6 +2763,13 @@ pages["About ViaSafe"] = [
       role: "region",
     },
     children: [
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/About ViaSafe.png",
+        },
+      },
       {
         tag: "h1",
         attributes: { id: "about-viasafe-main-title" },
@@ -2698,6 +2880,13 @@ pages["Features & Benefits"] = [
       role: "region",
     },
     children: [
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
       {
         tag: "h1",
         attributes: { id: "features-benefits-main-title" },
@@ -2875,6 +3064,13 @@ pages["How It Works"] = [
     },
     children: [
       {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
+      {
         tag: "h1",
         attributes: { id: "how-it-works-main-title" },
         content: {
@@ -3006,6 +3202,13 @@ pages["Join ViaSafe"] = [
       role: "region",
     },
     children: [
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
       {
         tag: "h1",
         attributes: { id: "join-viasafe-main-title" },

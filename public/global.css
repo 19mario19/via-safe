@@ -812,7 +812,7 @@ nav.main-header {
             align-items: center;
             /* display: flex;
             flex-direction: row; */
-            gap: var(--space-xxs);
+            gap: var(--space-xs);
             position: relative;
 
             img {
@@ -1316,6 +1316,14 @@ footer {
 
 main {
     min-height: 60vh;
+
+
+    img.bg {
+        min-height: 200px;
+        width: 100%;
+        object-fit: cover;
+        object-position: bottom;
+    }
 
     ul {
         li {
