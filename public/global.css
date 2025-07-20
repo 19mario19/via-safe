@@ -171,6 +171,15 @@ select {
     --font-size-xxl: clamp(2rem, 1.7rem + 3vw, 2.75rem);
     --font-size-xxxl: clamp(2.25rem, 1.85rem + 3.5vw, 3.25rem);
 
+    /* ↓ two levels */
+    --font-size-lg: clamp(1rem, 0.85rem + 1vw, 1.25rem);
+    /* ↓ two levels */
+    --font-size-xl: clamp(1.25rem, 1.05rem + 1.25vw, 1.5rem);
+    /* ↓ two levels */
+    --font-size-xxl: clamp(1.5rem, 1.25rem + 2vw, 2rem);
+    /* ↓ two levels */
+    --font-size-xxxl: clamp(1.75rem, 1.5rem + 2.5vw, 2.5rem);
+
     /* Line Heights */
     --line-height-heading: 1.2;
     --line-height-body: 1.6;
@@ -236,7 +245,7 @@ h6 {
     color: var(--color-primary-text);
     line-height: var(--line-height-heading);
     margin-top: var(--space-xl);
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-lg);
 }
 
 h1 {
@@ -756,6 +765,11 @@ body {
     overflow-x: hidden;
 }
 
+img {
+    margin: 0;
+    padding: 0;
+}
+
 nav.main-header {
     display: flex;
     flex-direction: column;
@@ -772,6 +786,11 @@ nav.main-header {
         align-items: center;
         justify-content: space-between;
         gap: var(--space-lg);
+
+        padding: 0;
+        padding: 0 var(--space-md);
+
+        margin: 0;
 
 
     }
@@ -857,10 +876,12 @@ nav.main-header {
             li.active {
                 gap: 1rem;
                 align-items: center;
-                padding: var(--space-sm);
+                /* padding: var(--space-sm); */
                 background-color: var(--color-success);
                 color: black;
                 border-radius: var(--radius-sm);
+
+                text-align: center;
 
 
             }
@@ -938,7 +959,7 @@ nav.main-header {
         display: flex;
         align-items: center;
         gap: var(--space-sm);
-        justify-content: center;
+        /* justify-content: center; */
         /* justify-content: space-evenly; */
     }
 
@@ -1041,7 +1062,7 @@ nav.main-header {
 
 
             img {
-                height: 30px;
+                height: 25px;
                 width: 70px;
 
                 &.light {
@@ -1313,11 +1334,10 @@ footer {
 
     }
 
-    i {
+    /* i {
         width: 30px;
         padding: 5px;
-        /* border: 1px solid red; */
-    }
+    } */
 }
 
 main {
