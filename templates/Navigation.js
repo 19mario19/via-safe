@@ -19,11 +19,6 @@ function Navigation(lang = LANGUAGES.RU) {
     // dark: "./media/logo/logo-1-dark.svg",
   }
 
-  const arrowSrc = {
-    light: "/media/svg/arrow.svg",
-    // dark: "",
-  }
-
   const elements = routes
     ?.map((route) => {
       const hasChildren = route?.children?.length > 0 ? "hasChildren" : ""
@@ -37,7 +32,7 @@ function Navigation(lang = LANGUAGES.RU) {
       ${
         hasChildren
           ? /*html*/ `
-        <img src="${arrowSrc.light}" alt="arrow" />
+          <i class="material-icons">arrow_drop_down</i>
         `
           : ""
       }
@@ -93,6 +88,7 @@ function Navigation(lang = LANGUAGES.RU) {
   </div>
 
   <div class="burger" id="toggle">
+  
     <img src="/media/menu/menu.png" alt="menu icon" />
   </div>
   

@@ -97,8 +97,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const ulContainer = document.querySelector("ul.langs")
 
-  const arrow = document.createElement("img")
-  arrow.src = "/media/svg/arrow.svg"
+  const arrow = document.createElement("i")
+  arrow.classList.add("material-icons")
+  arrow.textContent = "arrow_drop_down"
   ulContainer.append(arrow)
 
   const cnt = document.createElement("ul")
@@ -116,11 +117,11 @@ window.addEventListener("DOMContentLoaded", () => {
     for (let lang of notSelectedLangs) {
       const element = document.createElement("li")
       element.textContent = lang.toUpperCase()
-      console.log("element =>",element)
+      console.log("element =>", element)
       cnt.append(element)
 
       element.addEventListener("click", () => {
-        console.log("current path: ",currentPath)
+        console.log("current path: ", currentPath)
         const newPath = currentPath.split("/")
         console.log(newPath)
         newPath[1] = lang

@@ -14,15 +14,6 @@ import { routes2 as routes } from "../routes/routes.js"
 function Footer(lang = LANGUAGES.RU) {
   // const stringDepth = "../".repeat(depth)
 
-  const logoSrc = {
-    light: "/media/logo/logo-1.svg",
-    // dark: "./media/logo/logo-1-dark.svg",
-  }
-
-  const arrowSrc = {
-    light: "/media/svg/arrow.svg",
-    // dark: "",
-  }
 
   const elements = routes
     ?.map((route) => {
@@ -36,7 +27,7 @@ function Footer(lang = LANGUAGES.RU) {
       ${
         hasChildren
           ? /*html*/ `
-        <img src="${arrowSrc.light}" alt="arrow" />
+          <i class="material-icons">arrow_drop_down</i>
         `
           : ""
       }
