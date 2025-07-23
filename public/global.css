@@ -1071,13 +1071,14 @@ main {
     h1 {
         /* background-color: red; */
         margin-bottom: var(--space-xxl);
+        text-align: center;
     }
 
-        @media (max-width: 576px) {
-            h1 {
-                margin-bottom: var(--space-sm);
-            }
+    @media (max-width: 576px) {
+        h1 {
+            margin-bottom: var(--space-lg);
         }
+    }
 
 
     &.container {
@@ -1094,7 +1095,12 @@ main {
         object-position: bottom;
 
         border-radius: var(--radius-md);
-        margin-bottom: var(--space-xl);
+        margin-bottom: var(--space-xxl);
+
+        @media (max-width: 576px) {
+
+            margin-bottom: var(--space-lg);
+        }
     }
 
     ul {
