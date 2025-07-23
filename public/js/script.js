@@ -16,13 +16,14 @@ window.addEventListener("DOMContentLoaded", () => {
   // console.log(container.children)
 
   const toggle = container?.querySelector("#toggle")
-  const parents = container.querySelectorAll("li.parent.hasChildren img")
+  const parents = container.querySelectorAll("li.parent.hasChildren i")
 
   //   toggle.classList.remove("active")
 
   toggle.addEventListener("click", () => {
     // console.log("click")
     toggle.classList.toggle("active")
+    // document.body.classList.toggle("stop-scroll")
 
     if (!toggle.classList.contains("active")) clearActive(parents)
   })
@@ -112,7 +113,6 @@ window.addEventListener("DOMContentLoaded", () => {
     const notSelectedLangs = Object.values(LANGUAGES).filter(
       (lang) => lang !== currentLanguage,
     )
-    console.log(notSelectedLangs)
 
     for (let lang of notSelectedLangs) {
       const element = document.createElement("li")
