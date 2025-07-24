@@ -513,6 +513,8 @@ nav.main-header {
             gap: var(--space-xs);
             position: relative;
 
+            z-index: var(--z-modal);
+
             i {
                 /* height: 20px; */
                 margin: 0;
