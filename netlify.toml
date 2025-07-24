@@ -1,0 +1,37 @@
+[build]
+  publish = "public/pages"
+  command = ""
+
+# Redirect root to /en/
+[[redirects]]
+  from = "/"
+  to = "/en/"
+  status = 302
+
+# Language homepages (e.g. /en → /en/)
+[[redirects]]
+  from = "/en"
+  to = "/en/"
+  status = 301
+
+[[redirects]]
+  from = "/ro"
+  to = "/ro/"
+  status = 301
+
+[[redirects]]
+  from = "/ru"
+  to = "/ru/"
+  status = 301
+
+# Parent-level pages
+[[redirects]]
+  from = "/:lang/:section/"
+  to = "/:lang/:section/index.html"
+  status = 200
+
+# Child pages — catch everything two levels deep
+[[redirects]]
+  from = "/:lang/:section/:subpage/"
+  to = "/:lang/:section/:subpage/index.html"
+  status = 200
