@@ -8,7 +8,9 @@
               href="https://fonts.googleapis.com/icon?family=Material+Icons"
               rel="stylesheet"/>
 
-        <link rel="stylesheet" href="/global.css" />
+        <link rel="stylesheet" href="/global.css" />        
+    <script src="/fast.js"></script>
+
         
         <script src="/js/script.js" defer type="module"></script>
         <title>Alătură-te ViaSafe</title>
@@ -30,9 +32,20 @@
   <li class="active">
   RO
   </li>
-    </ul>
-    <button class="theme">
-    <img src="/media/theme/theme.png" alt="toggle theme image" />
+    </ul>          
+    <button
+        class="theme"
+        data-toggle="#theme-toggle"
+        data-class="light"
+        data-fn="toggleTheme,toggleLogo"
+     >
+ 
+     <img
+        id="theme-toggle"
+        src="/media/theme/theme.png"
+        alt="toggle theme image"
+      />
+
     </button>
   </div>
   </div>
@@ -268,7 +281,7 @@
     
   </nav>
 
-          <main class="container"><section class="container" aria-labelledby="join-viasafe-main-title" role="region" ><img class="bg" src="/media/bg/Home.png" /><h1 id="join-viasafe-main-title" >Alăturați-vă ViaSafe</h1><p >Bun venit în viitorul mobilității! ViaSafe oferă oportunități pentru toată lumea—fie că sunteți un utilizator individual care caută călătorii mai sigure și mai convenabile, fie o organizație de afaceri/guvernamentală care dorește să optimizeze procesele de transport. Descoperiți cum să deveniți parte a ecosistemului nostru în creștere.</p><h2 id="explore-join-heading" >Cum să Vă Alăturați</h2><ul ><li ><a href="/ro/join/users" href="/join/users" >Pentru Utilizatori</a><span >: Conectați-vă la ViaSafe prin aplicația mobilă sau echipamentul auto.</span></li><li ><a href="/ro/join/partners" href="/join/partners" >Pentru Parteneri (Afaceri, Guvern)</a><span >: Aflați despre oportunitățile de colaborare și integrare pentru afacerea sau organizația dumneavoastră.</span></li><li ><a href="/ro/join/careers" href="/join/careers" >Cariere la ViaSafe</a><span >: Explorați posturile deschise și alăturați-vă echipei noastre inovatoare.</span></li></ul></section></main>
+          <main class="container"><section class="container" aria-labelledby="join-viasafe-main-title" role="region" ><h1 id="join-viasafe-main-title" >Alăturați-vă ViaSafe</h1><img class="bg" src="/media/bg/Home.png" /><p >Bun venit în viitorul mobilității! ViaSafe oferă oportunități pentru toată lumea—fie că sunteți un utilizator individual care caută călătorii mai sigure și mai convenabile, fie o organizație de afaceri/guvernamentală care dorește să optimizeze procesele de transport. Descoperiți cum să deveniți parte a ecosistemului nostru în creștere.</p><h2 id="explore-join-heading" >Cum să Vă Alăturați</h2><ul ><li ><a href="/ro/join/users" href="/join/users" >Pentru Utilizatori</a><span >: Conectați-vă la ViaSafe prin aplicația mobilă sau echipamentul auto.</span></li><li ><a href="/ro/join/partners" href="/join/partners" >Pentru Parteneri (Afaceri, Guvern)</a><span >: Aflați despre oportunitățile de colaborare și integrare pentru afacerea sau organizația dumneavoastră.</span></li><li ><a href="/ro/join/careers" href="/join/careers" >Cariere la ViaSafe</a><span >: Explorați posturile deschise și alăturați-vă echipei noastre inovatoare.</span></li></ul></section></main>
          
         
   <footer class="main-header">

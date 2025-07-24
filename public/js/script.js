@@ -5,12 +5,21 @@ const THEME = {
   DARK: "dark",
 }
 
-let currentTheme = localStorage.getItem("theme") || THEME.DARK
-if (currentTheme === THEME.LIGHT) enableLight()
-if (currentTheme === THEME.DARK) enableDark()
-
 window.addEventListener("DOMContentLoaded", () => {
   console.log("Script loaded...")
+
+  let currentTheme = localStorage.getItem("theme") || THEME.DARK
+  const buttonTheme = document.querySelector("button.theme")
+
+  if (currentTheme === THEME.DARK) {
+    enableDark()
+    // buttonTheme.classList.remove("active")
+  }
+  if (currentTheme === THEME.LIGHT) {
+    // buttonTheme.classList.add("active")
+    enableLight()
+  }
+
   const container = document.querySelector(".main-header")
 
   // console.log(container.children)
@@ -78,15 +87,14 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   // toggle theme
-  const buttonTheme = document.querySelector("button.theme")
 
   buttonTheme.addEventListener("click", () => {
     if (currentTheme === THEME.LIGHT)
-      buttonTheme.querySelector("img").classList.add("light")
-    if (currentTheme === THEME.DARK)
-      buttonTheme.querySelector("img").classList.remove("light")
+      if (currentTheme === THEME.DARK)
+        // buttonTheme.querySelector("img").classList.add("light")
+        // buttonTheme.querySelector("img").classList.remove("light")
 
-    toggleTheme()
+        toggleTheme()
     currentTheme = localStorage.getItem("theme")
     localStorage.setItem(
       "theme",
@@ -151,9 +159,27 @@ function getPath() {
 function toggleTheme() {
   document.body.classList.toggle("light-theme")
 }
+
+
 function enableLight() {
+  console.log("ENABLEING LIGHT THEME")
   document.body.classList.add("light-theme")
+  
+  const logo = document.querySelector("h1.logo a img")
+  
+  
+  const dark = "/media/logo/logo-1.svg"
+  
+  logo.src = dark
 }
 function enableDark() {
+  console.log("ENABLEING DARK THEME")
   document.body.classList.remove("light-theme")
+
+  const logo = document.querySelector("h1.logo a img")
+
+
+  const light = "/media/logo/logo-1-dark.svg"
+
+  logo.src = light
 }

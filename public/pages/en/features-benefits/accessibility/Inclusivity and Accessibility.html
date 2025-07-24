@@ -8,7 +8,9 @@
               href="https://fonts.googleapis.com/icon?family=Material+Icons"
               rel="stylesheet"/>
 
-        <link rel="stylesheet" href="/global.css" />
+        <link rel="stylesheet" href="/global.css" />        
+    <script src="/fast.js"></script>
+
         
         <script src="/js/script.js" defer type="module"></script>
         <title>Inclusivity and Accessibility</title>
@@ -30,9 +32,20 @@
   <li class="active">
   EN
   </li>
-    </ul>
-    <button class="theme">
-    <img src="/media/theme/theme.png" alt="toggle theme image" />
+    </ul>          
+    <button
+        class="theme"
+        data-toggle="#theme-toggle"
+        data-class="light"
+        data-fn="toggleTheme,toggleLogo"
+     >
+ 
+     <img
+        id="theme-toggle"
+        src="/media/theme/theme.png"
+        alt="toggle theme image"
+      />
+
     </button>
   </div>
   </div>
@@ -268,7 +281,7 @@
     
   </nav>
 
-          <main class="container"><section class="container" aria-labelledby="inclusivity-accessibility-title" role="region" ><img class="bg" src="/media/bg/Home.png" /><h1 id="inclusivity-accessibility-title" >Inclusivity and Accessibility</h1><p >ViaSafe strives to make mobility truly accessible to everyone, breaking down barriers and ensuring independence for all participants in movement, regardless of their physical abilities:</p><ul ><li >Assistance for visually impaired and blind (voice navigation): For people with vision impairments, ViaSafe becomes their 'eyes' on the road. The system provides detailed voice prompts for every step: 'curb ahead,' 'bench on the right,' 'electric scooter approaching,' 'pedestrian crossing, traffic light is green.' It can even warn about loose tiles or open manholes, acting as a personal, invisible guide.</li><li >Barrier-free routes for wheelchair users: ViaSafe plans routes that avoid stairs, seeks paths with ramps, elevators, and adequate passage widths. The system can also indicate accessible toilets, shops, or cafes, and, if needed, call taxis equipped for wheelchairs.</li><li >Support for elderly people (monitoring, emergency assistance): For elderly users, ViaSafe acts as a reliable companion, reminding them of the needed stop or helping find their way home. In unforeseen situations, such as a fall (which can be detected by integrated smartwatches), ViaSafe automatically calls for help and notifies relatives with exact coordinates.</li><li >Integration with existing accessibility systems: ViaSafe does not create isolated solutions but embeds inclusivity at its core, becoming an accessibility standard. If ViaSafe integrates with a 'smart cane' system or other specialized devices in one city, this feature instantly becomes available to all ViaSafe users worldwide. This means accessibility innovations spread globally, breaking geographic barriers.</li></ul></section></main>
+          <main class="container"><section class="container" aria-labelledby="inclusivity-accessibility-title" role="region" ><h1 id="inclusivity-accessibility-title" >Inclusivity and Accessibility</h1><img class="bg" src="/media/bg/Home.png" /><p >ViaSafe strives to make mobility truly accessible to everyone, breaking down barriers and ensuring independence for all participants in movement, regardless of their physical abilities:</p><ul ><li >Assistance for visually impaired and blind (voice navigation): For people with vision impairments, ViaSafe becomes their 'eyes' on the road. The system provides detailed voice prompts for every step: 'curb ahead,' 'bench on the right,' 'electric scooter approaching,' 'pedestrian crossing, traffic light is green.' It can even warn about loose tiles or open manholes, acting as a personal, invisible guide.</li><li >Barrier-free routes for wheelchair users: ViaSafe plans routes that avoid stairs, seeks paths with ramps, elevators, and adequate passage widths. The system can also indicate accessible toilets, shops, or cafes, and, if needed, call taxis equipped for wheelchairs.</li><li >Support for elderly people (monitoring, emergency assistance): For elderly users, ViaSafe acts as a reliable companion, reminding them of the needed stop or helping find their way home. In unforeseen situations, such as a fall (which can be detected by integrated smartwatches), ViaSafe automatically calls for help and notifies relatives with exact coordinates.</li><li >Integration with existing accessibility systems: ViaSafe does not create isolated solutions but embeds inclusivity at its core, becoming an accessibility standard. If ViaSafe integrates with a 'smart cane' system or other specialized devices in one city, this feature instantly becomes available to all ViaSafe users worldwide. This means accessibility innovations spread globally, breaking geographic barriers.</li></ul></section></main>
          
         
   <footer class="main-header">

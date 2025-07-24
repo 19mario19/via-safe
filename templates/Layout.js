@@ -27,7 +27,9 @@ function LayoutDir(
               href="https://fonts.googleapis.com/icon?family=Material+Icons"
               rel="stylesheet"/>
 
-        <link rel="stylesheet" href="/global.css" />
+        <link rel="stylesheet" href="/global.css" />        
+    <script src="/fast.js"></script>
+
         ${
           description
             ? `<meta name="description" content="${description}" />`

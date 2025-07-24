@@ -37,13 +37,6 @@ pages["Home Page"] = [
     },
     children: [
       {
-        tag: "img",
-        attributes: {
-          class: "bg",
-          src: "/media/bg/Home.png",
-        },
-      },
-      {
         tag: "h1",
         attributes: {
           id: "main-title",
@@ -52,6 +45,13 @@ pages["Home Page"] = [
           ru: "ViaSafe: Ваша Мобильность. Умно. Безопасно. Без Забот.",
           en: "ViaSafe: Your Mobility. Smart. Safe. Worry-Free.",
           ro: "ViaSafe: Mobilitatea Ta. Inteligent. Sigur. Fără Griji.",
+        },
+      },
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
         },
       },
       {
@@ -306,13 +306,6 @@ pages["What is ViaSafe?"] = [
     },
     children: [
       {
-        tag: "img",
-        attributes: {
-          class: "bg",
-          src: "/media/bg/Home.png",
-        },
-      },
-      {
         tag: "h1",
         attributes: {
           id: "what-is-title",
@@ -321,6 +314,13 @@ pages["What is ViaSafe?"] = [
           ru: "Что такое ViaSafe?",
           en: "What is ViaSafe?",
           ro: "Ce este ViaSafe?",
+        },
+      },
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
         },
       },
       {
@@ -389,13 +389,6 @@ pages["Our Mission and Values"] = [
     },
     children: [
       {
-        tag: "img",
-        attributes: {
-          class: "bg",
-          src: "/media/bg/Home.png",
-        },
-      },
-      {
         tag: "h1",
         attributes: {
           id: "mission-values-title",
@@ -404,6 +397,13 @@ pages["Our Mission and Values"] = [
           ru: "Наша Миссия и Ценности",
           en: "Our Mission and Values",
           ro: "Misiunea și Valorile Noastre",
+        },
+      },
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
         },
       },
       {
@@ -472,19 +472,19 @@ pages["ViaSafe Technologies"] = [
     },
     children: [
       {
-        tag: "img",
-        attributes: {
-          class: "bg",
-          src: "/media/bg/Home.png",
-        },
-      },
-      {
         tag: "h1",
         attributes: { id: "technologies-title" },
         content: {
           ru: "Технологии ViaSafe",
           en: "ViaSafe Technologies",
           ro: "Tehnologiile ViaSafe",
+        },
+      },
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
         },
       },
       {
@@ -598,19 +598,19 @@ pages["Road Safety"] = [
     },
     children: [
       {
-        tag: "img",
-        attributes: {
-          class: "bg",
-          src: "/media/bg/Home.png",
-        },
-      },
-      {
         tag: "h1",
         attributes: { id: "road-safety-title" },
         content: {
           ru: "Безопасность на Дорогах",
           en: "Road Safety",
           ro: "Siguranța Rutieră",
+        },
+      },
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
         },
       },
       {
@@ -663,19 +663,19 @@ pages["Convenience and Savings"] = [
     },
     children: [
       {
-        tag: "img",
-        attributes: {
-          class: "bg",
-          src: "/media/bg/Home.png",
-        },
-      },
-      {
         tag: "h1",
         attributes: { id: "convenience-savings-title" },
         content: {
           ru: "Удобство и Экономия",
           en: "Convenience and Savings",
           ro: "Confort și Economii",
+        },
+      },
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
         },
       },
       {
@@ -728,19 +728,19 @@ pages["Family and Travel"] = [
     },
     children: [
       {
-        tag: "img",
-        attributes: {
-          class: "bg",
-          src: "/media/bg/Home.png",
-        },
-      },
-      {
         tag: "h1",
         attributes: { id: "family-travel-title" },
         content: {
           ru: "Семья и Путешествия",
           en: "Family and Travel",
           ro: "Familie și Călătorii",
+        },
+      },
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
         },
       },
       {
@@ -801,19 +801,19 @@ pages["Inclusivity and Accessibility"] = [
     },
     children: [
       {
-        tag: "img",
-        attributes: {
-          class: "bg",
-          src: "/media/bg/Home.png",
-        },
-      },
-      {
         tag: "h1",
         attributes: { id: "inclusivity-accessibility-title" },
         content: {
           ru: "Инклюзивность и Доступность",
           en: "Inclusivity and Accessibility",
           ro: "Incluziune și Accesibilitate",
+        },
+      },
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
         },
       },
       {
@@ -874,19 +874,19 @@ pages["Tuning and Customization"] = [
     },
     children: [
       {
-        tag: "img",
-        attributes: {
-          class: "bg",
-          src: "/media/bg/Home.png",
-        },
-      },
-      {
         tag: "h1",
         attributes: { id: "tuning-customisation-title" },
         content: {
           ru: "Тюнинг и Кастомизация",
           en: "Tuning and Customization",
           ro: "Tuning și Personalizare",
+        },
+      },
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
         },
       },
       {
@@ -939,19 +939,19 @@ pages["Logistics and Cargo"] = [
     },
     children: [
       {
-        tag: "img",
-        attributes: {
-          class: "bg",
-          src: "/media/bg/Home.png",
-        },
-      },
-      {
         tag: "h1",
         attributes: { id: "logistics-title" },
         content: {
           ru: "Логистика и Грузоперевозки (Для Бизнеса)",
           en: "Logistics and Cargo (For Business)",
           ro: "Logistică și Transport de Marfă (Pentru Afaceri)",
+        },
+      },
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
         },
       },
       {
@@ -1004,19 +1004,19 @@ pages["ViaSafe Architecture"] = [
     },
     children: [
       {
-        tag: "img",
-        attributes: {
-          class: "bg",
-          src: "/media/bg/Home.png",
-        },
-      },
-      {
         tag: "h1",
         attributes: { id: "architecture-title" },
         content: {
           ru: "Архитектура ViaSafe",
           en: "ViaSafe Architecture",
           ro: "Arhitectura ViaSafe",
+        },
+      },
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
         },
       },
       {
@@ -1106,19 +1106,19 @@ pages["ViaSafe Operators"] = [
     },
     children: [
       {
-        tag: "img",
-        attributes: {
-          class: "bg",
-          src: "/media/bg/Home.png",
-        },
-      },
-      {
         tag: "h1",
         attributes: { id: "operators-title" },
         content: {
           ru: "Операторы ViaSafe",
           en: "ViaSafe Operators",
           ro: "Operatorii ViaSafe",
+        },
+      },
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
         },
       },
       {
@@ -1192,19 +1192,19 @@ pages["Global Roaming"] = [
     },
     children: [
       {
-        tag: "img",
-        attributes: {
-          class: "bg",
-          src: "/media/bg/Home.png",
-        },
-      },
-      {
         tag: "h1",
         attributes: { id: "global-roaming-title" },
         content: {
           ru: "Глобальный Роуминг",
           en: "Global Roaming",
           ro: "Roaming Global",
+        },
+      },
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
         },
       },
       {
@@ -1286,19 +1286,19 @@ pages["Integration with Existing Systems"] = [
         },
       },
       {
-        tag: "img",
-        attributes: {
-          class: "bg",
-          src: "/media/bg/Home.png",
-        },
-      },
-      {
         tag: "h1",
         attributes: { id: "integration-title" },
         content: {
           ru: "Интеграция с Существующими Систем",
           en: "Integration with Existing Systems",
           ro: "Integrarea cu Sistemele Existente",
+        },
+      },
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
         },
       },
       {
@@ -1431,20 +1431,6 @@ pages["For Users"] = [
     },
     children: [
       {
-        tag: "img",
-        attributes: {
-          class: "bg",
-          src: "/media/bg/Home.png",
-        },
-      },
-      {
-        tag: "img",
-        attributes: {
-          class: "bg",
-          src: "/media/bg/Home.png",
-        },
-      },
-      {
         tag: "h1",
         attributes: { id: "for-users-title" },
         content: {
@@ -1453,6 +1439,14 @@ pages["For Users"] = [
           ro: "Pentru Utilizatori",
         },
       },
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
+        },
+      },
+
       {
         tag: "p",
         content: {
@@ -1745,19 +1739,19 @@ pages["For Partners (Business, Government)"] = [
     },
     children: [
       {
-        tag: "img",
-        attributes: {
-          class: "bg",
-          src: "/media/bg/Home.png",
-        },
-      },
-      {
         tag: "h1",
         attributes: { id: "partners-title" },
         content: {
           ru: "Для Партнеров (Бизнес, Государство)",
           en: "For Partners (Business, Government)",
           ro: "Pentru Parteneri (Afaceri, Guvern)",
+        },
+      },
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
         },
       },
       {
@@ -1911,19 +1905,19 @@ pages["Careers at ViaSafe"] = [
     },
     children: [
       {
-        tag: "img",
-        attributes: {
-          class: "bg",
-          src: "/media/bg/Home.png",
-        },
-      },
-      {
         tag: "h1",
         attributes: { id: "careers-title" },
         content: {
           ru: "Карьера в ViaSafe",
           en: "Careers at ViaSafe",
           ro: "Cariere la ViaSafe",
+        },
+      },
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
         },
       },
       {
@@ -2026,19 +2020,19 @@ pages["News & Blog"] = [
     },
     children: [
       {
-        tag: "img",
-        attributes: {
-          class: "bg",
-          src: "/media/bg/Home.png",
-        },
-      },
-      {
         tag: "h1",
         attributes: { id: "news-blog-title" },
         content: {
           ru: "Новости и Блог",
           en: "News & Blog",
           ro: "Noutăți și Blog",
+        },
+      },
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
         },
       },
       {
@@ -2130,19 +2124,19 @@ pages["Contact Us"] = [
     },
     children: [
       {
-        tag: "img",
-        attributes: {
-          class: "bg",
-          src: "/media/bg/Home.png",
-        },
-      },
-      {
         tag: "h1",
         attributes: { id: "contact-title" },
         content: {
           ru: "Контакты",
           en: "Contact Us",
           ro: "Contact",
+        },
+      },
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
         },
       },
       {
@@ -2182,19 +2176,19 @@ pages["Privacy Policy"] = [
     },
     children: [
       {
-        tag: "img",
-        attributes: {
-          class: "bg",
-          src: "/media/bg/Home.png",
-        },
-      },
-      {
         tag: "h1",
         attributes: { id: "privacy-policy-title" },
         content: {
           ru: "Политика конфиденциальности",
           en: "Privacy Policy",
           ro: "Politica de Confidențialitate",
+        },
+      },
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
         },
       },
       {
@@ -2218,19 +2212,19 @@ pages["Terms of Use"] = [
     },
     children: [
       {
-        tag: "img",
-        attributes: {
-          class: "bg",
-          src: "/media/bg/Home.png",
-        },
-      },
-      {
         tag: "h1",
         attributes: { id: "terms-of-use-main-title" },
         content: {
           ru: "Условия использования",
           en: "Terms of Use",
           ro: "Termeni de Utilizare",
+        },
+      },
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
         },
       },
       {
@@ -2644,19 +2638,19 @@ pages["Cookie Policy"] = [
     },
     children: [
       {
-        tag: "img",
-        attributes: {
-          class: "bg",
-          src: "/media/bg/Home.png",
-        },
-      },
-      {
         tag: "h1",
         attributes: { id: "cookie-policy-title" },
         content: {
           ru: "Политика Cookies",
           en: "Cookie Policy",
           ro: "Politica de Cookie-uri",
+        },
+      },
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
         },
       },
       {
@@ -2680,19 +2674,19 @@ pages["Legal Information"] = [
     },
     children: [
       {
-        tag: "img",
-        attributes: {
-          class: "bg",
-          src: "/media/bg/Home.png",
-        },
-      },
-      {
         tag: "h1",
         attributes: { id: "legal-info-main-title" },
         content: {
           ru: "Юридическая Информация",
           en: "Legal Information",
           ro: "Informații Juridice",
+        },
+      },
+      {
+        tag: "img",
+        attributes: {
+          class: "bg",
+          src: "/media/bg/Home.png",
         },
       },
       {
@@ -2763,20 +2757,20 @@ pages["About ViaSafe"] = [
       role: "region",
     },
     children: [
+        {
+          tag: "h1",
+          attributes: { id: "about-viasafe-main-title" },
+          content: {
+            ru: "О ViaSafe",
+            en: "About ViaSafe",
+            ro: "Despre ViaSafe",
+          },
+        },
       {
         tag: "img",
         attributes: {
           class: "bg",
           src: "/media/bg/About ViaSafe.png",
-        },
-      },
-      {
-        tag: "h1",
-        attributes: { id: "about-viasafe-main-title" },
-        content: {
-          ru: "О ViaSafe",
-          en: "About ViaSafe",
-          ro: "Despre ViaSafe",
         },
       },
       {
@@ -2880,20 +2874,20 @@ pages["Features & Benefits"] = [
       role: "region",
     },
     children: [
+        {
+          tag: "h1",
+          attributes: { id: "features-benefits-main-title" },
+          content: {
+            ru: "Возможности и Преимущества ViaSafe",
+            en: "ViaSafe Features & Benefits",
+            ro: "Funcționalități și Beneficii ViaSafe",
+          },
+        },
       {
         tag: "img",
         attributes: {
           class: "bg",
           src: "/media/bg/Home.png",
-        },
-      },
-      {
-        tag: "h1",
-        attributes: { id: "features-benefits-main-title" },
-        content: {
-          ru: "Возможности и Преимущества ViaSafe",
-          en: "ViaSafe Features & Benefits",
-          ro: "Funcționalități și Beneficii ViaSafe",
         },
       },
       {
@@ -3063,20 +3057,20 @@ pages["How It Works"] = [
       role: "region",
     },
     children: [
+        {
+          tag: "h1",
+          attributes: { id: "how-it-works-main-title" },
+          content: {
+            ru: "Как Работает ViaSafe",
+            en: "How ViaSafe Works",
+            ro: "Cum Funcționează ViaSafe",
+          },
+        },
       {
         tag: "img",
         attributes: {
           class: "bg",
           src: "/media/bg/Home.png",
-        },
-      },
-      {
-        tag: "h1",
-        attributes: { id: "how-it-works-main-title" },
-        content: {
-          ru: "Как Работает ViaSafe",
-          en: "How ViaSafe Works",
-          ro: "Cum Funcționează ViaSafe",
         },
       },
       {
@@ -3202,20 +3196,20 @@ pages["Join ViaSafe"] = [
       role: "region",
     },
     children: [
+        {
+          tag: "h1",
+          attributes: { id: "join-viasafe-main-title" },
+          content: {
+            ru: "Присоединиться к ViaSafe",
+            en: "Join ViaSafe",
+            ro: "Alăturați-vă ViaSafe",
+          },
+        },
       {
         tag: "img",
         attributes: {
           class: "bg",
           src: "/media/bg/Home.png",
-        },
-      },
-      {
-        tag: "h1",
-        attributes: { id: "join-viasafe-main-title" },
-        content: {
-          ru: "Присоединиться к ViaSafe",
-          en: "Join ViaSafe",
-          ro: "Alăturați-vă ViaSafe",
         },
       },
       {

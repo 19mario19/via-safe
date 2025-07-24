@@ -96,44 +96,20 @@ select {
 :root {
     /* Primary Colors */
     --color-primary-background: #12122b;
-    /* Original Dark Blue */
+    --color-primary-background: #000f1e;
     --color-primary-text: #f0f0f0;
-    /* Brighter light grey for general text */
 
     /* Accent Colors */
     --color-accent-primary: #33ffff;
-    /* Slightly lighter cyan for better legibility on small text */
-    /* Contrast: #33FFFF on #12122B has a contrast ratio of ~6.0:1 (Passes AA comfortably, closer to AAA) */
     --color-accent-secondary: #00bfbf;
-    /* Muted teal for secondary accents */
 
     /* Neutral Colors */
     --color-neutral-dark: #3a3a57;
-    /* Slightly lighter than original dark neutral for better contrast with primary text on light mode, or for secondary dark backgrounds */
-    /* On --color-primary-background (#12122B), #3A3A57 would be low contrast for text. It's meant to be a darker neutral for backgrounds or borders. */
-    /* Text on --color-neutral-dark (#3A3A57): Use --color-primary-text (#F0F0F0) - Contrast: ~5.3:1 (Passes AA) */
-
     --color-neutral-medium: #a0a0b5;
-    /* Brighter medium neutral, good for subtle text or borders */
-    /* On --color-primary-background (#12122B), #A0A0B5 has a contrast ratio of ~3.3:1 (Fails AA for normal text). This might be suitable for very large, non-essential text or borders. */
-    /* Text on --color-neutral-medium (#A0A0B5): Use a darker color, e.g., #12122B - Contrast: ~3.3:1 (Fails AA). So, use a much darker color like #000000 (black) or #1A1A1A (dark grey) - Contrast: ~11.8:1 (Passes AAA) */
-
     --color-neutral-light: #d0d0e0;
-    /* Even brighter light neutral, for borders, dividers, or very subtle backgrounds */
-    /* On --color-primary-background (#12122B), #D0D0E0 has a contrast ratio of ~6.8:1 (Passes AA for normal text) */
-    /* Text on --color-neutral-light (#D0D0E0): Use a darker color, e.g., #12122B - Contrast: ~6.8:1 (Passes AA) */
-
-    /* Semantic State Colors (Basic examples) */
     --color-success: #3cb371;
-    /* A more vibrant green with good contrast */
-    /* Contrast on #12122B: ~4.6:1 (Passes AA) */
     --color-error: #ff6347;
-    /* A strong, clear red-orange */
-    /* Contrast on #12122B: ~4.7:1 (Passes AA) */
     --color-warning: #ffd700;
-    /* A brighter, more distinct yellow */
-    /* Contrast on #12122B: ~4.5:1 (Passes AA) */
-    /* --- Spacing & Sizing Variables --- */
 
     --space-xxs: 0.25rem;
     --space-xs: 0.5rem;
@@ -171,13 +147,9 @@ select {
     --font-size-xxl: clamp(2rem, 1.7rem + 3vw, 2.75rem);
     --font-size-xxxl: clamp(2.25rem, 1.85rem + 3.5vw, 3.25rem);
 
-    /* ↓ two levels */
     --font-size-lg: clamp(1rem, 0.85rem + 1vw, 1.25rem);
-    /* ↓ two levels */
     --font-size-xl: clamp(1.25rem, 1.05rem + 1.25vw, 1.5rem);
-    /* ↓ two levels */
     --font-size-xxl: clamp(1.5rem, 1.25rem + 2vw, 2rem);
-    /* ↓ two levels */
     --font-size-xxxl: clamp(1.75rem, 1.5rem + 2.5vw, 2.5rem);
 
     /* Line Heights */
@@ -196,21 +168,12 @@ select {
 /* Light Theme Overrides */
 .light-theme {
     --color-primary-background: #f0f2f5;
-    /* Light grey/off-white background */
     --color-primary-text: #222222;
-    /* Dark text for readability */
-
     --color-accent-primary: #007bff;
-    /* A bright, professional blue */
     --color-accent-secondary: #0056b3;
-    /* A darker shade for secondary actions */
-
     --color-neutral-dark: #ffffff;
-    /* White for cards */
     --color-neutral-medium: #cccccc;
-    /* Light gray for borders/dividers */
     --color-neutral-light: #eeeeee;
-    /* Very light gray for subtle backgrounds */
 }
 
 /* --- 3. Base Element Styles --- */
@@ -1096,6 +1059,8 @@ main {
 
         border-radius: var(--radius-md);
         margin-bottom: var(--space-xxl);
+
+
 
         @media (max-width: 576px) {
 

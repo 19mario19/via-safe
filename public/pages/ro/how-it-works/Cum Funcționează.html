@@ -8,7 +8,9 @@
               href="https://fonts.googleapis.com/icon?family=Material+Icons"
               rel="stylesheet"/>
 
-        <link rel="stylesheet" href="/global.css" />
+        <link rel="stylesheet" href="/global.css" />        
+    <script src="/fast.js"></script>
+
         
         <script src="/js/script.js" defer type="module"></script>
         <title>Cum Funcționează</title>
@@ -30,9 +32,20 @@
   <li class="active">
   RO
   </li>
-    </ul>
-    <button class="theme">
-    <img src="/media/theme/theme.png" alt="toggle theme image" />
+    </ul>          
+    <button
+        class="theme"
+        data-toggle="#theme-toggle"
+        data-class="light"
+        data-fn="toggleTheme,toggleLogo"
+     >
+ 
+     <img
+        id="theme-toggle"
+        src="/media/theme/theme.png"
+        alt="toggle theme image"
+      />
+
     </button>
   </div>
   </div>
@@ -268,7 +281,7 @@
     
   </nav>
 
-          <main class="container"><section class="container" aria-labelledby="how-it-works-main-title" role="region" ><img class="bg" src="/media/bg/Home.png" /><h1 id="how-it-works-main-title" >Cum Funcționează ViaSafe</h1><p >ViaSafe este un sistem complex, dar intuitiv, care integrează armonios vehiculele, infrastructura și utilizatorii. Aflați despre arhitectura sa internă, rolul operatorilor, mecanismele de roaming global și modul în care ne integrăm cu sistemele existente pentru a asigura o mobilitate fluidă și eficientă.</p><h2 id="explore-how-it-works-heading" >Explorați Principiile de Funcționare</h2><ul ><li ><a href="/ro/how-it-works/architecture" href="/how-it-works/architecture" >Arhitectura ViaSafe</a><span >: Aprofundați structura și componentele de bază ale sistemului nostru.</span></li><li ><a href="/ro/how-it-works/operators" href="/how-it-works/operators" >Operatori ViaSafe</a><span >: Aflați despre rolul și funcțiile operatorilor descentralizați în ecosistem.</span></li><li ><a href="/ro/how-it-works/global-roaming" href="/how-it-works/global-roaming" >Roaming Global</a><span >: Cum ViaSafe asigură mobilitatea globală fără întreruperi.</span></li><li ><a href="/ro/how-it-works/integration" href="/how-it-works/integration" >Integrarea cu Sistemele Existente</a><span >: Aflați cum ViaSafe interacționează cu alte aplicații și servicii.</span></li></ul></section></main>
+          <main class="container"><section class="container" aria-labelledby="how-it-works-main-title" role="region" ><h1 id="how-it-works-main-title" >Cum Funcționează ViaSafe</h1><img class="bg" src="/media/bg/Home.png" /><p >ViaSafe este un sistem complex, dar intuitiv, care integrează armonios vehiculele, infrastructura și utilizatorii. Aflați despre arhitectura sa internă, rolul operatorilor, mecanismele de roaming global și modul în care ne integrăm cu sistemele existente pentru a asigura o mobilitate fluidă și eficientă.</p><h2 id="explore-how-it-works-heading" >Explorați Principiile de Funcționare</h2><ul ><li ><a href="/ro/how-it-works/architecture" href="/how-it-works/architecture" >Arhitectura ViaSafe</a><span >: Aprofundați structura și componentele de bază ale sistemului nostru.</span></li><li ><a href="/ro/how-it-works/operators" href="/how-it-works/operators" >Operatori ViaSafe</a><span >: Aflați despre rolul și funcțiile operatorilor descentralizați în ecosistem.</span></li><li ><a href="/ro/how-it-works/global-roaming" href="/how-it-works/global-roaming" >Roaming Global</a><span >: Cum ViaSafe asigură mobilitatea globală fără întreruperi.</span></li><li ><a href="/ro/how-it-works/integration" href="/how-it-works/integration" >Integrarea cu Sistemele Existente</a><span >: Aflați cum ViaSafe interacționează cu alte aplicații și servicii.</span></li></ul></section></main>
          
         
   <footer class="main-header">

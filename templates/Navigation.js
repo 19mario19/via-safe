@@ -80,9 +80,20 @@ function Navigation(lang = LANGUAGES.RU) {
   <li class="active">
   ${lang.toUpperCase()}
   </li>
-    </ul>
-    <button class="theme">
-    <img src="/media/theme/theme.png" alt="toggle theme image" />
+    </ul>          
+    <button
+        class="theme"
+        data-toggle="#theme-toggle"
+        data-class="light"
+        data-fn="toggleTheme,toggleLogo"
+     >
+ 
+     <img
+        id="theme-toggle"
+        src="/media/theme/theme.png"
+        alt="toggle theme image"
+      />
+
     </button>
   </div>
   </div>
