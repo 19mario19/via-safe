@@ -8,7 +8,7 @@ import { Footer } from "./templates/Footer-2.js"
 import { generateHTML, LANGUAGES } from "./data/data.js"
 
 const __rootFolder = process.cwd()
-const fullPath = path.join(__rootFolder, "public", "pages")
+const fullPath = path.join(__rootFolder, "public")
 
 // console.log(fullPath)
 // console.log(routes)

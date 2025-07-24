@@ -1,513 +1,475 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/global.css" />
+    <script src="/fast.js"></script>
 
-    <!DOCTYPE html>
-    <html lang=en>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <link
-              href="https://fonts.googleapis.com/icon?family=Material+Icons"
-              rel="stylesheet"/>
-        <link rel="stylesheet" href="/global.css" />        
-        <script src="/fast.js"></script>
-        
-        <script src="/js/script.js" defer type="module"></script>
-        <title>Integration with Existing Systems</title>
-    </head>
-    <body>
-        
-  <nav class="main-header">
-  <div class="left container">
-  <h1 class="logo">
-  
-    <a href="/en/">
-    <img src="/media/logo/logo-1.svg" alt="" />
-    </a>
-    
-  </h1>
-  
-  <div class="mid">
-  <ul class="langs">
-  <li class="active">
-  EN
-  </li>
-    </ul>          
-    <button
-        class="theme"
-        data-toggle="#theme-toggle"
-        data-class="light"
-        data-fn="toggleTheme,toggleLogo"
-     >
- 
-     <img
-        id="theme-toggle"
-        src="/media/theme/theme.png"
-        alt="toggle theme image"
-      />
+    <script src="/js/script.js" defer type="module"></script>
+    <title>Integration with Existing Systems</title>
+  </head>
+  <body>
+    <nav class="main-header">
+      <div class="left container">
+        <h1 class="logo">
+          <a href="/en/">
+            <img src="/media/logo/logo-1.svg" alt="" />
+          </a>
+        </h1>
 
-    </button>
-  </div>
-  </div>
+        <div class="mid">
+          <ul class="langs">
+            <li class="active">EN</li>
+          </ul>
+          <button
+            class="theme"
+            data-toggle="#theme-toggle"
+            data-class="light"
+            data-fn="toggleTheme,toggleLogo"
+          >
+            <img
+              id="theme-toggle"
+              src="/media/theme/theme.png"
+              alt="toggle theme image"
+            />
+          </button>
+        </div>
+      </div>
 
-  <div class="burger" id="toggle">
-  
-    <img src="/media/menu/menu.png" alt="menu icon" />
-  </div>
-  
-  
-    <ul class="parent container">
-    
-      <div class="drop-down">
-      <li class="parent ">
-      <a href="/en/">
-      Home Page
-      </a>
-      
-      </li>
-      
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent hasChildren">
-      <a href="/en/about/">
-      About ViaSafe
-      </a>
-      
-          <i class="material-icons">arrow_drop_down</i>
-        
-      </li>
-      
-        <ul class="child">
-        
-              <li class="child">
-              <a href="/en/about/what-is-viasafe/">
-              What is ViaSafe?
-                </a>
-                </li>
-                
-              <li class="child">
-              <a href="/en/about/mission-values/">
-              Our Mission and Values
-                </a>
-                </li>
-                
-              <li class="child">
-              <a href="/en/about/technologies/">
-              ViaSafe Technologies
-                </a>
-                </li>
-                
-            </ul>
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent hasChildren">
-      <a href="/en/features-benefits/">
-      Features & Benefits
-      </a>
-      
-          <i class="material-icons">arrow_drop_down</i>
-        
-      </li>
-      
-        <ul class="child">
-        
-              <li class="child">
-              <a href="/en/features-benefits/road-safety/">
-              Road Safety
-                </a>
-                </li>
-                
-              <li class="child">
+      <div class="burger" id="toggle">
+        <img src="/media/menu/menu.png" alt="menu icon" />
+      </div>
+
+      <ul class="parent container">
+        <div class="drop-down">
+          <li class="parent">
+            <a href="/en/"> Home Page </a>
+          </li>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent hasChildren">
+            <a href="/en/about/"> About ViaSafe </a>
+
+            <i class="material-icons">arrow_drop_down</i>
+          </li>
+
+          <ul class="child">
+            <li class="child">
+              <a href="/en/about/what-is-viasafe/"> What is ViaSafe? </a>
+            </li>
+
+            <li class="child">
+              <a href="/en/about/mission-values/"> Our Mission and Values </a>
+            </li>
+
+            <li class="child">
+              <a href="/en/about/technologies/"> ViaSafe Technologies </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent hasChildren">
+            <a href="/en/features-benefits/"> Features & Benefits </a>
+
+            <i class="material-icons">arrow_drop_down</i>
+          </li>
+
+          <ul class="child">
+            <li class="child">
+              <a href="/en/features-benefits/road-safety/"> Road Safety </a>
+            </li>
+
+            <li class="child">
               <a href="/en/features-benefits/convenience-savings/">
-              Convenience and Savings
-                </a>
-                </li>
-                
-              <li class="child">
+                Convenience and Savings
+              </a>
+            </li>
+
+            <li class="child">
               <a href="/en/features-benefits/family-travel/">
-              Family and Travel
-                </a>
-                </li>
-                
-              <li class="child">
+                Family and Travel
+              </a>
+            </li>
+
+            <li class="child">
               <a href="/en/features-benefits/accessibility/">
-              Inclusivity and Accessibility
-                </a>
-                </li>
-                
-              <li class="child">
+                Inclusivity and Accessibility
+              </a>
+            </li>
+
+            <li class="child">
               <a href="/en/features-benefits/tuning-customization/">
-              Tuning and Customization
-                </a>
-                </li>
-                
-              <li class="child">
+                Tuning and Customization
+              </a>
+            </li>
+
+            <li class="child">
               <a href="/en/features-benefits/logistics-cargo/">
-              Logistics and Cargo
-                </a>
-                </li>
-                
-            </ul>
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent hasChildren">
-      <a href="/en/how-it-works/">
-      How It Works
-      </a>
-      
-          <i class="material-icons">arrow_drop_down</i>
-        
-      </li>
-      
-        <ul class="child">
-        
-              <li class="child">
+                Logistics and Cargo
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent hasChildren">
+            <a href="/en/how-it-works/"> How It Works </a>
+
+            <i class="material-icons">arrow_drop_down</i>
+          </li>
+
+          <ul class="child">
+            <li class="child">
               <a href="/en/how-it-works/architecture/">
-              ViaSafe Architecture
-                </a>
-                </li>
-                
-              <li class="child">
-              <a href="/en/how-it-works/operators/">
-              ViaSafe Operators
-                </a>
-                </li>
-                
-              <li class="child">
-              <a href="/en/how-it-works/global-roaming/">
-              Global Roaming
-                </a>
-                </li>
-                
-              <li class="child">
+                ViaSafe Architecture
+              </a>
+            </li>
+
+            <li class="child">
+              <a href="/en/how-it-works/operators/"> ViaSafe Operators </a>
+            </li>
+
+            <li class="child">
+              <a href="/en/how-it-works/global-roaming/"> Global Roaming </a>
+            </li>
+
+            <li class="child">
               <a href="/en/how-it-works/integration/">
-              Integration with Existing Systems
-                </a>
-                </li>
-                
-            </ul>
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent hasChildren">
-      <a href="/en/join/">
-      Join ViaSafe
-      </a>
-      
-          <i class="material-icons">arrow_drop_down</i>
-        
-      </li>
-      
-        <ul class="child">
-        
-              <li class="child">
-              <a href="/en/join/users/">
-              For Users
-                </a>
-                </li>
-                
-              <li class="child">
+                Integration with Existing Systems
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent hasChildren">
+            <a href="/en/join/"> Join ViaSafe </a>
+
+            <i class="material-icons">arrow_drop_down</i>
+          </li>
+
+          <ul class="child">
+            <li class="child">
+              <a href="/en/join/users/"> For Users </a>
+            </li>
+
+            <li class="child">
               <a href="/en/join/partners/">
-              For Partners (Business, Government)
-                </a>
-                </li>
-                
-              <li class="child">
-              <a href="/en/join/careers/">
-              Careers at ViaSafe
-                </a>
-                </li>
-                
-            </ul>
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent ">
-      <a href="/en/news-blog/">
-      News & Blog
-      </a>
-      
-      </li>
-      
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent ">
-      <a href="/en/contact/">
-      Contact Us
-      </a>
-      
-      </li>
-      
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent hasChildren">
-      <a href="/en/legal/">
-      Legal Information
-      </a>
-      
-          <i class="material-icons">arrow_drop_down</i>
-        
-      </li>
-      
-        <ul class="child">
-        
-              <li class="child">
-              <a href="/en/legal/privacy-policy/">
-              Privacy Policy
-                </a>
-                </li>
-                
-              <li class="child">
-              <a href="/en/legal/terms-of-use/">
-              Terms of Use
-                </a>
-                </li>
-                
-              <li class="child">
-              <a href="/en/legal/cookie-policy/">
-              Cookie Policy
-                </a>
-                </li>
-                
-            </ul>
-            </div>
-    
-    </ul>
-    
-  </nav>
-          <main class="container"><section class="container" aria-labelledby="integration-title" role="region" ><img class="bg" src="/media/bg/Home.png" /><h1 id="integration-title" >Integration with Existing Systems</h1><img class="bg" src="/media/bg/Home.png" /><p >ViaSafe does not aim to replace all existing applications and services; on the contrary, it builds its strength on their intelligent integration. This approach allows for the creation of a seamless and intuitive ecosystem for the user.</p><h2 id="why-integration-title" >Why Integration, Not Building from Scratch</h2><ul ><li >Efficiency and speed: Creating analogues of already existing and successfully operating platforms (such as mapping services, messengers, or booking systems) from scratch would be inefficient and take decades. Integration allows ViaSafe to launch and evolve quickly, using proven and user-loved solutions.</li><li >Resource saving: Instead of duplicating functionality, ViaSafe focuses on its unique value—intelligent data analysis, ensuring safety, and global mobility coordination.</li><li >User habit: People are more comfortable using familiar interfaces and applications. ViaSafe integration allows them to continue using their accustomed services, enriching them with a new level of functionality and interaction.</li></ul><h2 id="examples-integration-title" >Examples of Integrations (Navigators, Messengers, Aggregators, Banks, Government Services)</h2><ul ><li >Navigators (Yandex.Maps, Google Maps, etc.): ViaSafe does not force you to abandon your favorite navigators. It integrates with them, enriching their data with its unique information about real-time road conditions, hazards, and dynamic traffic management. You get a familiar interface, but with much more accurate and safer navigation.</li><li >Messengers (WhatsApp, Telegram, etc.): Instead of creating its own 'built-in' messenger, ViaSafe allows you to communicate with other drivers or emergency services through platforms you already use, utilizing voice control for safety.</li><li >Travel aggregators (Booking.com, Expedia, Airbnb, etc.): When planning trips, ViaSafe connects to leading aggregators for booking hotels, tickets, and other services. It selects the best options based on your preferences and safety data, with confirmations coming from well-known global services.</li><li >Banking systems and payment gateways: To automate payments for parking, fines, fuel, or other services, ViaSafe integrates with banking systems.</li><li >Government services and databases (traffic police, tax authorities, etc.): To simplify bureaucratic procedures (registration, taxes, fines), ViaSafe interacts with government databases, automating document completion and payments under your control.</li></ul><h2 id="orchestrator-title" >ViaSafe as a Service 'Orchestrator'</h2><p >ViaSafe acts as a central 'conductor' that coordinates the operation of all these disparate services. It gathers information from each, processes it, makes decisions, and then 'instructs' the respective platforms to act in unison. This creates a unified, seamless ecosystem where you don't need to switch between dozens of apps, and all data is transferred automatically, making your life significantly simpler and more efficient.</p></section></main>
-         
-        
-  <footer class="main-header">
-  
-  
-    <ul class="parent container">
-    
-      <div class="drop-down">
-      <li class="parent ">
-      <a href="/en/">
-      Home Page
-      
-      </a>
-      </li>
-      
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent hasChildren">
-      <a href="/en/about/">
-      About ViaSafe
-      
-          <i class="material-icons">arrow_drop_down</i>
-        
-      </a>
-      </li>
-      
-        <ul class="child">
-        
-              <li class="child">
-              <a href="/en/about/what-is-viasafe/">
-              What is ViaSafe?
-                </a>
-                </li>
-                
-              <li class="child">
-              <a href="/en/about/mission-values/">
-              Our Mission and Values
-                </a>
-                </li>
-                
-              <li class="child">
-              <a href="/en/about/technologies/">
-              ViaSafe Technologies
-                </a>
-                </li>
-                
-            </ul>
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent hasChildren">
-      <a href="/en/features-benefits/">
-      Features & Benefits
-      
-          <i class="material-icons">arrow_drop_down</i>
-        
-      </a>
-      </li>
-      
-        <ul class="child">
-        
-              <li class="child">
-              <a href="/en/features-benefits/road-safety/">
-              Road Safety
-                </a>
-                </li>
-                
-              <li class="child">
+                For Partners (Business, Government)
+              </a>
+            </li>
+
+            <li class="child">
+              <a href="/en/join/careers/"> Careers at ViaSafe </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent">
+            <a href="/en/news-blog/"> News & Blog </a>
+          </li>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent">
+            <a href="/en/contact/"> Contact Us </a>
+          </li>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent hasChildren">
+            <a href="/en/legal/"> Legal Information </a>
+
+            <i class="material-icons">arrow_drop_down</i>
+          </li>
+
+          <ul class="child">
+            <li class="child">
+              <a href="/en/legal/privacy-policy/"> Privacy Policy </a>
+            </li>
+
+            <li class="child">
+              <a href="/en/legal/terms-of-use/"> Terms of Use </a>
+            </li>
+
+            <li class="child">
+              <a href="/en/legal/cookie-policy/"> Cookie Policy </a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+    </nav>
+    <main class="container">
+      <section
+        class="container"
+        aria-labelledby="integration-title"
+        role="region"
+      >
+        <img class="bg" src="/media/bg/Home.png" />
+        <h1 id="integration-title">Integration with Existing Systems</h1>
+        <img class="bg" src="/media/bg/Home.png" />
+        <p>
+          ViaSafe does not aim to replace all existing applications and
+          services; on the contrary, it builds its strength on their intelligent
+          integration. This approach allows for the creation of a seamless and
+          intuitive ecosystem for the user.
+        </p>
+        <h2 id="why-integration-title">
+          Why Integration, Not Building from Scratch
+        </h2>
+        <ul>
+          <li>
+            Efficiency and speed: Creating analogues of already existing and
+            successfully operating platforms (such as mapping services,
+            messengers, or booking systems) from scratch would be inefficient
+            and take decades. Integration allows ViaSafe to launch and evolve
+            quickly, using proven and user-loved solutions.
+          </li>
+          <li>
+            Resource saving: Instead of duplicating functionality, ViaSafe
+            focuses on its unique value—intelligent data analysis, ensuring
+            safety, and global mobility coordination.
+          </li>
+          <li>
+            User habit: People are more comfortable using familiar interfaces
+            and applications. ViaSafe integration allows them to continue using
+            their accustomed services, enriching them with a new level of
+            functionality and interaction.
+          </li>
+        </ul>
+        <h2 id="examples-integration-title">
+          Examples of Integrations (Navigators, Messengers, Aggregators, Banks,
+          Government Services)
+        </h2>
+        <ul>
+          <li>
+            Navigators (Yandex.Maps, Google Maps, etc.): ViaSafe does not force
+            you to abandon your favorite navigators. It integrates with them,
+            enriching their data with its unique information about real-time
+            road conditions, hazards, and dynamic traffic management. You get a
+            familiar interface, but with much more accurate and safer
+            navigation.
+          </li>
+          <li>
+            Messengers (WhatsApp, Telegram, etc.): Instead of creating its own
+            'built-in' messenger, ViaSafe allows you to communicate with other
+            drivers or emergency services through platforms you already use,
+            utilizing voice control for safety.
+          </li>
+          <li>
+            Travel aggregators (Booking.com, Expedia, Airbnb, etc.): When
+            planning trips, ViaSafe connects to leading aggregators for booking
+            hotels, tickets, and other services. It selects the best options
+            based on your preferences and safety data, with confirmations coming
+            from well-known global services.
+          </li>
+          <li>
+            Banking systems and payment gateways: To automate payments for
+            parking, fines, fuel, or other services, ViaSafe integrates with
+            banking systems.
+          </li>
+          <li>
+            Government services and databases (traffic police, tax authorities,
+            etc.): To simplify bureaucratic procedures (registration, taxes,
+            fines), ViaSafe interacts with government databases, automating
+            document completion and payments under your control.
+          </li>
+        </ul>
+        <h2 id="orchestrator-title">ViaSafe as a Service 'Orchestrator'</h2>
+        <p>
+          ViaSafe acts as a central 'conductor' that coordinates the operation
+          of all these disparate services. It gathers information from each,
+          processes it, makes decisions, and then 'instructs' the respective
+          platforms to act in unison. This creates a unified, seamless ecosystem
+          where you don't need to switch between dozens of apps, and all data is
+          transferred automatically, making your life significantly simpler and
+          more efficient.
+        </p>
+      </section>
+    </main>
+
+    <footer class="main-header">
+      <ul class="parent container">
+        <div class="drop-down">
+          <li class="parent">
+            <a href="/en/"> Home Page </a>
+          </li>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent hasChildren">
+            <a href="/en/about/">
+              About ViaSafe
+
+              <i class="material-icons">arrow_drop_down</i>
+            </a>
+          </li>
+
+          <ul class="child">
+            <li class="child">
+              <a href="/en/about/what-is-viasafe/"> What is ViaSafe? </a>
+            </li>
+
+            <li class="child">
+              <a href="/en/about/mission-values/"> Our Mission and Values </a>
+            </li>
+
+            <li class="child">
+              <a href="/en/about/technologies/"> ViaSafe Technologies </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent hasChildren">
+            <a href="/en/features-benefits/">
+              Features & Benefits
+
+              <i class="material-icons">arrow_drop_down</i>
+            </a>
+          </li>
+
+          <ul class="child">
+            <li class="child">
+              <a href="/en/features-benefits/road-safety/"> Road Safety </a>
+            </li>
+
+            <li class="child">
               <a href="/en/features-benefits/convenience-savings/">
-              Convenience and Savings
-                </a>
-                </li>
-                
-              <li class="child">
+                Convenience and Savings
+              </a>
+            </li>
+
+            <li class="child">
               <a href="/en/features-benefits/family-travel/">
-              Family and Travel
-                </a>
-                </li>
-                
-              <li class="child">
+                Family and Travel
+              </a>
+            </li>
+
+            <li class="child">
               <a href="/en/features-benefits/accessibility/">
-              Inclusivity and Accessibility
-                </a>
-                </li>
-                
-              <li class="child">
+                Inclusivity and Accessibility
+              </a>
+            </li>
+
+            <li class="child">
               <a href="/en/features-benefits/tuning-customization/">
-              Tuning and Customization
-                </a>
-                </li>
-                
-              <li class="child">
+                Tuning and Customization
+              </a>
+            </li>
+
+            <li class="child">
               <a href="/en/features-benefits/logistics-cargo/">
-              Logistics and Cargo
-                </a>
-                </li>
-                
-            </ul>
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent hasChildren">
-      <a href="/en/how-it-works/">
-      How It Works
-      
-          <i class="material-icons">arrow_drop_down</i>
-        
-      </a>
-      </li>
-      
-        <ul class="child">
-        
-              <li class="child">
+                Logistics and Cargo
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent hasChildren">
+            <a href="/en/how-it-works/">
+              How It Works
+
+              <i class="material-icons">arrow_drop_down</i>
+            </a>
+          </li>
+
+          <ul class="child">
+            <li class="child">
               <a href="/en/how-it-works/architecture/">
-              ViaSafe Architecture
-                </a>
-                </li>
-                
-              <li class="child">
-              <a href="/en/how-it-works/operators/">
-              ViaSafe Operators
-                </a>
-                </li>
-                
-              <li class="child">
-              <a href="/en/how-it-works/global-roaming/">
-              Global Roaming
-                </a>
-                </li>
-                
-              <li class="child">
+                ViaSafe Architecture
+              </a>
+            </li>
+
+            <li class="child">
+              <a href="/en/how-it-works/operators/"> ViaSafe Operators </a>
+            </li>
+
+            <li class="child">
+              <a href="/en/how-it-works/global-roaming/"> Global Roaming </a>
+            </li>
+
+            <li class="child">
               <a href="/en/how-it-works/integration/">
-              Integration with Existing Systems
-                </a>
-                </li>
-                
-            </ul>
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent hasChildren">
-      <a href="/en/join/">
-      Join ViaSafe
-      
-          <i class="material-icons">arrow_drop_down</i>
-        
-      </a>
-      </li>
-      
-        <ul class="child">
-        
-              <li class="child">
-              <a href="/en/join/users/">
-              For Users
-                </a>
-                </li>
-                
-              <li class="child">
+                Integration with Existing Systems
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent hasChildren">
+            <a href="/en/join/">
+              Join ViaSafe
+
+              <i class="material-icons">arrow_drop_down</i>
+            </a>
+          </li>
+
+          <ul class="child">
+            <li class="child">
+              <a href="/en/join/users/"> For Users </a>
+            </li>
+
+            <li class="child">
               <a href="/en/join/partners/">
-              For Partners (Business, Government)
-                </a>
-                </li>
-                
-              <li class="child">
-              <a href="/en/join/careers/">
-              Careers at ViaSafe
-                </a>
-                </li>
-                
-            </ul>
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent ">
-      <a href="/en/news-blog/">
-      News & Blog
-      
-      </a>
-      </li>
-      
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent ">
-      <a href="/en/contact/">
-      Contact Us
-      
-      </a>
-      </li>
-      
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent hasChildren">
-      <a href="/en/legal/">
-      Legal Information
-      
-          <i class="material-icons">arrow_drop_down</i>
-        
-      </a>
-      </li>
-      
-        <ul class="child">
-        
-              <li class="child">
-              <a href="/en/legal/privacy-policy/">
-              Privacy Policy
-                </a>
-                </li>
-                
-              <li class="child">
-              <a href="/en/legal/terms-of-use/">
-              Terms of Use
-                </a>
-                </li>
-                
-              <li class="child">
-              <a href="/en/legal/cookie-policy/">
-              Cookie Policy
-                </a>
-                </li>
-                
-            </ul>
-            </div>
-    
-    </ul>
-    
-  <div class="bottom"><p>© 2025 ViaSafe</p></div>
-  </footer>
-    </body>
-    </html>
+                For Partners (Business, Government)
+              </a>
+            </li>
+
+            <li class="child">
+              <a href="/en/join/careers/"> Careers at ViaSafe </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent">
+            <a href="/en/news-blog/"> News & Blog </a>
+          </li>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent">
+            <a href="/en/contact/"> Contact Us </a>
+          </li>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent hasChildren">
+            <a href="/en/legal/">
+              Legal Information
+
+              <i class="material-icons">arrow_drop_down</i>
+            </a>
+          </li>
+
+          <ul class="child">
+            <li class="child">
+              <a href="/en/legal/privacy-policy/"> Privacy Policy </a>
+            </li>
+
+            <li class="child">
+              <a href="/en/legal/terms-of-use/"> Terms of Use </a>
+            </li>
+
+            <li class="child">
+              <a href="/en/legal/cookie-policy/"> Cookie Policy </a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+
+      <div class="bottom"><p>© 2025 ViaSafe</p></div>
+    </footer>
+  </body>
+</html>

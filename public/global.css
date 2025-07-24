@@ -1036,7 +1036,11 @@ main {
     h1 {
         /* background-color: red; */
         margin-bottom: var(--space-xxl);
-        text-align: center;
+        text-align: start;
+        line-height: calc(var(--font-size-xxxl) + 10)px;
+
+        
+        
     }
 
     @media (max-width: 576px) {

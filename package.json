@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon index.js",
-    "create": "node create.js",
+    "create": "node create.js && prettier --write './public/**/*.html'",
     "format": "prettier --write .",
     "format:html": "prettier --write './public/**/*.html'"
   },

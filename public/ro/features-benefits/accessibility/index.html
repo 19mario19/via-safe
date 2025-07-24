@@ -1,513 +1,449 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/global.css" />
+    <script src="/fast.js"></script>
 
-    <!DOCTYPE html>
-    <html lang=ro>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <link
-              href="https://fonts.googleapis.com/icon?family=Material+Icons"
-              rel="stylesheet"/>
-        <link rel="stylesheet" href="/global.css" />        
-        <script src="/fast.js"></script>
-        
-        <script src="/js/script.js" defer type="module"></script>
-        <title>Incluziune și Accesibilitate</title>
-    </head>
-    <body>
-        
-  <nav class="main-header">
-  <div class="left container">
-  <h1 class="logo">
-  
-    <a href="/ro/">
-    <img src="/media/logo/logo-1.svg" alt="" />
-    </a>
-    
-  </h1>
-  
-  <div class="mid">
-  <ul class="langs">
-  <li class="active">
-  RO
-  </li>
-    </ul>          
-    <button
-        class="theme"
-        data-toggle="#theme-toggle"
-        data-class="light"
-        data-fn="toggleTheme,toggleLogo"
-     >
- 
-     <img
-        id="theme-toggle"
-        src="/media/theme/theme.png"
-        alt="toggle theme image"
-      />
+    <script src="/js/script.js" defer type="module"></script>
+    <title>Incluziune și Accesibilitate</title>
+  </head>
+  <body>
+    <nav class="main-header">
+      <div class="left container">
+        <h1 class="logo">
+          <a href="/ro/">
+            <img src="/media/logo/logo-1.svg" alt="" />
+          </a>
+        </h1>
 
-    </button>
-  </div>
-  </div>
+        <div class="mid">
+          <ul class="langs">
+            <li class="active">RO</li>
+          </ul>
+          <button
+            class="theme"
+            data-toggle="#theme-toggle"
+            data-class="light"
+            data-fn="toggleTheme,toggleLogo"
+          >
+            <img
+              id="theme-toggle"
+              src="/media/theme/theme.png"
+              alt="toggle theme image"
+            />
+          </button>
+        </div>
+      </div>
 
-  <div class="burger" id="toggle">
-  
-    <img src="/media/menu/menu.png" alt="menu icon" />
-  </div>
-  
-  
-    <ul class="parent container">
-    
-      <div class="drop-down">
-      <li class="parent ">
-      <a href="/ro/">
-      Pagina Principală
-      </a>
-      
-      </li>
-      
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent hasChildren">
-      <a href="/ro/about/">
-      Despre ViaSafe
-      </a>
-      
-          <i class="material-icons">arrow_drop_down</i>
-        
-      </li>
-      
-        <ul class="child">
-        
-              <li class="child">
-              <a href="/ro/about/what-is-viasafe/">
-              Ce este ViaSafe?
-                </a>
-                </li>
-                
-              <li class="child">
+      <div class="burger" id="toggle">
+        <img src="/media/menu/menu.png" alt="menu icon" />
+      </div>
+
+      <ul class="parent container">
+        <div class="drop-down">
+          <li class="parent">
+            <a href="/ro/"> Pagina Principală </a>
+          </li>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent hasChildren">
+            <a href="/ro/about/"> Despre ViaSafe </a>
+
+            <i class="material-icons">arrow_drop_down</i>
+          </li>
+
+          <ul class="child">
+            <li class="child">
+              <a href="/ro/about/what-is-viasafe/"> Ce este ViaSafe? </a>
+            </li>
+
+            <li class="child">
               <a href="/ro/about/mission-values/">
-              Misiunea și Valorile Noastre
-                </a>
-                </li>
-                
-              <li class="child">
-              <a href="/ro/about/technologies/">
-              Tehnologiile ViaSafe
-                </a>
-                </li>
-                
-            </ul>
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent hasChildren">
-      <a href="/ro/features-benefits/">
-      Funcționalități și Beneficii
-      </a>
-      
-          <i class="material-icons">arrow_drop_down</i>
-        
-      </li>
-      
-        <ul class="child">
-        
-              <li class="child">
+                Misiunea și Valorile Noastre
+              </a>
+            </li>
+
+            <li class="child">
+              <a href="/ro/about/technologies/"> Tehnologiile ViaSafe </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent hasChildren">
+            <a href="/ro/features-benefits/"> Funcționalități și Beneficii </a>
+
+            <i class="material-icons">arrow_drop_down</i>
+          </li>
+
+          <ul class="child">
+            <li class="child">
               <a href="/ro/features-benefits/road-safety/">
-              Siguranța Rutieră
-                </a>
-                </li>
-                
-              <li class="child">
+                Siguranța Rutieră
+              </a>
+            </li>
+
+            <li class="child">
               <a href="/ro/features-benefits/convenience-savings/">
-              Confort și Economii
-                </a>
-                </li>
-                
-              <li class="child">
+                Confort și Economii
+              </a>
+            </li>
+
+            <li class="child">
               <a href="/ro/features-benefits/family-travel/">
-              Familie și Călătorii
-                </a>
-                </li>
-                
-              <li class="child">
+                Familie și Călătorii
+              </a>
+            </li>
+
+            <li class="child">
               <a href="/ro/features-benefits/accessibility/">
-              Incluziune și Accesibilitate
-                </a>
-                </li>
-                
-              <li class="child">
+                Incluziune și Accesibilitate
+              </a>
+            </li>
+
+            <li class="child">
               <a href="/ro/features-benefits/tuning-customization/">
-              Tuning și Personalizare
-                </a>
-                </li>
-                
-              <li class="child">
+                Tuning și Personalizare
+              </a>
+            </li>
+
+            <li class="child">
               <a href="/ro/features-benefits/logistics-cargo/">
-              Logistică și Transport Marfă
-                </a>
-                </li>
-                
-            </ul>
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent hasChildren">
-      <a href="/ro/how-it-works/">
-      Cum Funcționează
-      </a>
-      
-          <i class="material-icons">arrow_drop_down</i>
-        
-      </li>
-      
-        <ul class="child">
-        
-              <li class="child">
-              <a href="/ro/how-it-works/architecture/">
-              Arhitectura ViaSafe
-                </a>
-                </li>
-                
-              <li class="child">
-              <a href="/ro/how-it-works/operators/">
-              Operatorii ViaSafe
-                </a>
-                </li>
-                
-              <li class="child">
-              <a href="/ro/how-it-works/global-roaming/">
-              Roaming Global
-                </a>
-                </li>
-                
-              <li class="child">
+                Logistică și Transport Marfă
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent hasChildren">
+            <a href="/ro/how-it-works/"> Cum Funcționează </a>
+
+            <i class="material-icons">arrow_drop_down</i>
+          </li>
+
+          <ul class="child">
+            <li class="child">
+              <a href="/ro/how-it-works/architecture/"> Arhitectura ViaSafe </a>
+            </li>
+
+            <li class="child">
+              <a href="/ro/how-it-works/operators/"> Operatorii ViaSafe </a>
+            </li>
+
+            <li class="child">
+              <a href="/ro/how-it-works/global-roaming/"> Roaming Global </a>
+            </li>
+
+            <li class="child">
               <a href="/ro/how-it-works/integration/">
-              Integrare cu Sistemele Existente
-                </a>
-                </li>
-                
-            </ul>
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent hasChildren">
-      <a href="/ro/join/">
-      Alătură-te ViaSafe
-      </a>
-      
-          <i class="material-icons">arrow_drop_down</i>
-        
-      </li>
-      
-        <ul class="child">
-        
-              <li class="child">
-              <a href="/ro/join/users/">
-              Pentru Utilizatori
-                </a>
-                </li>
-                
-              <li class="child">
+                Integrare cu Sistemele Existente
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent hasChildren">
+            <a href="/ro/join/"> Alătură-te ViaSafe </a>
+
+            <i class="material-icons">arrow_drop_down</i>
+          </li>
+
+          <ul class="child">
+            <li class="child">
+              <a href="/ro/join/users/"> Pentru Utilizatori </a>
+            </li>
+
+            <li class="child">
               <a href="/ro/join/partners/">
-              Pentru Parteneri (Afaceri, Guvern)
-                </a>
-                </li>
-                
-              <li class="child">
-              <a href="/ro/join/careers/">
-              Cariere la ViaSafe
-                </a>
-                </li>
-                
-            </ul>
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent ">
-      <a href="/ro/news-blog/">
-      Noutăți și Blog
-      </a>
-      
-      </li>
-      
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent ">
-      <a href="/ro/contact/">
-      Contactați-ne
-      </a>
-      
-      </li>
-      
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent hasChildren">
-      <a href="/ro/legal/">
-      Informații Legale
-      </a>
-      
-          <i class="material-icons">arrow_drop_down</i>
-        
-      </li>
-      
-        <ul class="child">
-        
-              <li class="child">
+                Pentru Parteneri (Afaceri, Guvern)
+              </a>
+            </li>
+
+            <li class="child">
+              <a href="/ro/join/careers/"> Cariere la ViaSafe </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent">
+            <a href="/ro/news-blog/"> Noutăți și Blog </a>
+          </li>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent">
+            <a href="/ro/contact/"> Contactați-ne </a>
+          </li>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent hasChildren">
+            <a href="/ro/legal/"> Informații Legale </a>
+
+            <i class="material-icons">arrow_drop_down</i>
+          </li>
+
+          <ul class="child">
+            <li class="child">
               <a href="/ro/legal/privacy-policy/">
-              Politica de Confidențialitate
-                </a>
-                </li>
-                
-              <li class="child">
-              <a href="/ro/legal/terms-of-use/">
-              Termeni de Utilizare
-                </a>
-                </li>
-                
-              <li class="child">
-              <a href="/ro/legal/cookie-policy/">
-              Politica Cookie
-                </a>
-                </li>
-                
-            </ul>
-            </div>
-    
-    </ul>
-    
-  </nav>
-          <main class="container"><section class="container" aria-labelledby="inclusivity-accessibility-title" role="region" ><h1 id="inclusivity-accessibility-title" >Incluziune și Accesibilitate</h1><img class="bg" src="/media/bg/Home.png" /><p >ViaSafe se străduiește să facă mobilitatea cu adevărat accesibilă pentru toți, eliminând barierele și asigurând independența tuturor participanților la mișcare, indiferent de abilitățile lor fizice:</p><ul ><li >Asistență pentru persoanele cu deficiențe de vedere și nevăzătoare (navigație vocală): Pentru persoanele cu deficiențe de vedere, ViaSafe devine „ochii” lor pe drum. Sistemul oferă indicații vocale detaliate pentru fiecare pas: „bordură înainte”, „bancă în dreapta”, „trotinetă electrică care se apropie”, „trecere de pietoni, semaforul este verde”. Poate chiar avertiza despre dale slăbite sau gură de canal deschisă, acționând ca un ghid personal invizibil.</li><li >Rute fără bariere pentru utilizatorii de scaune cu rotile: ViaSafe planifică rute care evită scările, caută trasee cu rampe, lifturi și lățimi adecvate ale pasajelor. Sistemul poate indica și toalete accesibile, magazine sau cafenele și, dacă este necesar, poate chema taxiuri echipate pentru scaune cu rotile.</li><li >Sprijin pentru persoanele în vârstă (monitorizare, asistență de urgență): Pentru utilizatorii vârstnici, ViaSafe acționează ca un însoțitor de încredere, amintindu-le de oprirea necesară sau ajutându-i să găsească drumul spre casă. În situații neprevăzute, cum ar fi o cădere (care poate fi detectată de ceasuri inteligente integrate), ViaSafe apelează automat ajutorul și notifică rudele cu coordonatele exacte.</li><li >Integrarea cu sistemele existente de accesibilitate: ViaSafe nu creează soluții izolate, ci integrează incluziunea în nucleul său, devenind un standard de accesibilitate. Dacă ViaSafe se integrează cu un sistem de „bastoane inteligente” sau alte dispozitive specializate într-un oraș, această funcție devine instantaneu disponibilă pentru toți utilizatorii ViaSafe din întreaga lume. Aceasta înseamnă că inovațiile în accesibilitate se răspândesc global, distrugând barierele geografice.</li></ul></section></main>
-         
-        
-  <footer class="main-header">
-  
-  
-    <ul class="parent container">
-    
-      <div class="drop-down">
-      <li class="parent ">
-      <a href="/ro/">
-      Pagina Principală
-      
-      </a>
-      </li>
-      
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent hasChildren">
-      <a href="/ro/about/">
-      Despre ViaSafe
-      
-          <i class="material-icons">arrow_drop_down</i>
-        
-      </a>
-      </li>
-      
-        <ul class="child">
-        
-              <li class="child">
-              <a href="/ro/about/what-is-viasafe/">
-              Ce este ViaSafe?
-                </a>
-                </li>
-                
-              <li class="child">
+                Politica de Confidențialitate
+              </a>
+            </li>
+
+            <li class="child">
+              <a href="/ro/legal/terms-of-use/"> Termeni de Utilizare </a>
+            </li>
+
+            <li class="child">
+              <a href="/ro/legal/cookie-policy/"> Politica Cookie </a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+    </nav>
+    <main class="container">
+      <section
+        class="container"
+        aria-labelledby="inclusivity-accessibility-title"
+        role="region"
+      >
+        <h1 id="inclusivity-accessibility-title">
+          Incluziune și Accesibilitate
+        </h1>
+        <img class="bg" src="/media/bg/Home.png" />
+        <p>
+          ViaSafe se străduiește să facă mobilitatea cu adevărat accesibilă
+          pentru toți, eliminând barierele și asigurând independența tuturor
+          participanților la mișcare, indiferent de abilitățile lor fizice:
+        </p>
+        <ul>
+          <li>
+            Asistență pentru persoanele cu deficiențe de vedere și nevăzătoare
+            (navigație vocală): Pentru persoanele cu deficiențe de vedere,
+            ViaSafe devine „ochii” lor pe drum. Sistemul oferă indicații vocale
+            detaliate pentru fiecare pas: „bordură înainte”, „bancă în dreapta”,
+            „trotinetă electrică care se apropie”, „trecere de pietoni,
+            semaforul este verde”. Poate chiar avertiza despre dale slăbite sau
+            gură de canal deschisă, acționând ca un ghid personal invizibil.
+          </li>
+          <li>
+            Rute fără bariere pentru utilizatorii de scaune cu rotile: ViaSafe
+            planifică rute care evită scările, caută trasee cu rampe, lifturi și
+            lățimi adecvate ale pasajelor. Sistemul poate indica și toalete
+            accesibile, magazine sau cafenele și, dacă este necesar, poate chema
+            taxiuri echipate pentru scaune cu rotile.
+          </li>
+          <li>
+            Sprijin pentru persoanele în vârstă (monitorizare, asistență de
+            urgență): Pentru utilizatorii vârstnici, ViaSafe acționează ca un
+            însoțitor de încredere, amintindu-le de oprirea necesară sau
+            ajutându-i să găsească drumul spre casă. În situații neprevăzute,
+            cum ar fi o cădere (care poate fi detectată de ceasuri inteligente
+            integrate), ViaSafe apelează automat ajutorul și notifică rudele cu
+            coordonatele exacte.
+          </li>
+          <li>
+            Integrarea cu sistemele existente de accesibilitate: ViaSafe nu
+            creează soluții izolate, ci integrează incluziunea în nucleul său,
+            devenind un standard de accesibilitate. Dacă ViaSafe se integrează
+            cu un sistem de „bastoane inteligente” sau alte dispozitive
+            specializate într-un oraș, această funcție devine instantaneu
+            disponibilă pentru toți utilizatorii ViaSafe din întreaga lume.
+            Aceasta înseamnă că inovațiile în accesibilitate se răspândesc
+            global, distrugând barierele geografice.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="main-header">
+      <ul class="parent container">
+        <div class="drop-down">
+          <li class="parent">
+            <a href="/ro/"> Pagina Principală </a>
+          </li>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent hasChildren">
+            <a href="/ro/about/">
+              Despre ViaSafe
+
+              <i class="material-icons">arrow_drop_down</i>
+            </a>
+          </li>
+
+          <ul class="child">
+            <li class="child">
+              <a href="/ro/about/what-is-viasafe/"> Ce este ViaSafe? </a>
+            </li>
+
+            <li class="child">
               <a href="/ro/about/mission-values/">
-              Misiunea și Valorile Noastre
-                </a>
-                </li>
-                
-              <li class="child">
-              <a href="/ro/about/technologies/">
-              Tehnologiile ViaSafe
-                </a>
-                </li>
-                
-            </ul>
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent hasChildren">
-      <a href="/ro/features-benefits/">
-      Funcționalități și Beneficii
-      
-          <i class="material-icons">arrow_drop_down</i>
-        
-      </a>
-      </li>
-      
-        <ul class="child">
-        
-              <li class="child">
+                Misiunea și Valorile Noastre
+              </a>
+            </li>
+
+            <li class="child">
+              <a href="/ro/about/technologies/"> Tehnologiile ViaSafe </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent hasChildren">
+            <a href="/ro/features-benefits/">
+              Funcționalități și Beneficii
+
+              <i class="material-icons">arrow_drop_down</i>
+            </a>
+          </li>
+
+          <ul class="child">
+            <li class="child">
               <a href="/ro/features-benefits/road-safety/">
-              Siguranța Rutieră
-                </a>
-                </li>
-                
-              <li class="child">
+                Siguranța Rutieră
+              </a>
+            </li>
+
+            <li class="child">
               <a href="/ro/features-benefits/convenience-savings/">
-              Confort și Economii
-                </a>
-                </li>
-                
-              <li class="child">
+                Confort și Economii
+              </a>
+            </li>
+
+            <li class="child">
               <a href="/ro/features-benefits/family-travel/">
-              Familie și Călătorii
-                </a>
-                </li>
-                
-              <li class="child">
+                Familie și Călătorii
+              </a>
+            </li>
+
+            <li class="child">
               <a href="/ro/features-benefits/accessibility/">
-              Incluziune și Accesibilitate
-                </a>
-                </li>
-                
-              <li class="child">
+                Incluziune și Accesibilitate
+              </a>
+            </li>
+
+            <li class="child">
               <a href="/ro/features-benefits/tuning-customization/">
-              Tuning și Personalizare
-                </a>
-                </li>
-                
-              <li class="child">
+                Tuning și Personalizare
+              </a>
+            </li>
+
+            <li class="child">
               <a href="/ro/features-benefits/logistics-cargo/">
-              Logistică și Transport Marfă
-                </a>
-                </li>
-                
-            </ul>
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent hasChildren">
-      <a href="/ro/how-it-works/">
-      Cum Funcționează
-      
-          <i class="material-icons">arrow_drop_down</i>
-        
-      </a>
-      </li>
-      
-        <ul class="child">
-        
-              <li class="child">
-              <a href="/ro/how-it-works/architecture/">
-              Arhitectura ViaSafe
-                </a>
-                </li>
-                
-              <li class="child">
-              <a href="/ro/how-it-works/operators/">
-              Operatorii ViaSafe
-                </a>
-                </li>
-                
-              <li class="child">
-              <a href="/ro/how-it-works/global-roaming/">
-              Roaming Global
-                </a>
-                </li>
-                
-              <li class="child">
+                Logistică și Transport Marfă
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent hasChildren">
+            <a href="/ro/how-it-works/">
+              Cum Funcționează
+
+              <i class="material-icons">arrow_drop_down</i>
+            </a>
+          </li>
+
+          <ul class="child">
+            <li class="child">
+              <a href="/ro/how-it-works/architecture/"> Arhitectura ViaSafe </a>
+            </li>
+
+            <li class="child">
+              <a href="/ro/how-it-works/operators/"> Operatorii ViaSafe </a>
+            </li>
+
+            <li class="child">
+              <a href="/ro/how-it-works/global-roaming/"> Roaming Global </a>
+            </li>
+
+            <li class="child">
               <a href="/ro/how-it-works/integration/">
-              Integrare cu Sistemele Existente
-                </a>
-                </li>
-                
-            </ul>
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent hasChildren">
-      <a href="/ro/join/">
-      Alătură-te ViaSafe
-      
-          <i class="material-icons">arrow_drop_down</i>
-        
-      </a>
-      </li>
-      
-        <ul class="child">
-        
-              <li class="child">
-              <a href="/ro/join/users/">
-              Pentru Utilizatori
-                </a>
-                </li>
-                
-              <li class="child">
+                Integrare cu Sistemele Existente
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent hasChildren">
+            <a href="/ro/join/">
+              Alătură-te ViaSafe
+
+              <i class="material-icons">arrow_drop_down</i>
+            </a>
+          </li>
+
+          <ul class="child">
+            <li class="child">
+              <a href="/ro/join/users/"> Pentru Utilizatori </a>
+            </li>
+
+            <li class="child">
               <a href="/ro/join/partners/">
-              Pentru Parteneri (Afaceri, Guvern)
-                </a>
-                </li>
-                
-              <li class="child">
-              <a href="/ro/join/careers/">
-              Cariere la ViaSafe
-                </a>
-                </li>
-                
-            </ul>
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent ">
-      <a href="/ro/news-blog/">
-      Noutăți și Blog
-      
-      </a>
-      </li>
-      
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent ">
-      <a href="/ro/contact/">
-      Contactați-ne
-      
-      </a>
-      </li>
-      
-            </div>
-    
-      <div class="drop-down">
-      <li class="parent hasChildren">
-      <a href="/ro/legal/">
-      Informații Legale
-      
-          <i class="material-icons">arrow_drop_down</i>
-        
-      </a>
-      </li>
-      
-        <ul class="child">
-        
-              <li class="child">
+                Pentru Parteneri (Afaceri, Guvern)
+              </a>
+            </li>
+
+            <li class="child">
+              <a href="/ro/join/careers/"> Cariere la ViaSafe </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent">
+            <a href="/ro/news-blog/"> Noutăți și Blog </a>
+          </li>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent">
+            <a href="/ro/contact/"> Contactați-ne </a>
+          </li>
+        </div>
+
+        <div class="drop-down">
+          <li class="parent hasChildren">
+            <a href="/ro/legal/">
+              Informații Legale
+
+              <i class="material-icons">arrow_drop_down</i>
+            </a>
+          </li>
+
+          <ul class="child">
+            <li class="child">
               <a href="/ro/legal/privacy-policy/">
-              Politica de Confidențialitate
-                </a>
-                </li>
-                
-              <li class="child">
-              <a href="/ro/legal/terms-of-use/">
-              Termeni de Utilizare
-                </a>
-                </li>
-                
-              <li class="child">
-              <a href="/ro/legal/cookie-policy/">
-              Politica Cookie
-                </a>
-                </li>
-                
-            </ul>
-            </div>
-    
-    </ul>
-    
-  <div class="bottom"><p>© 2025 ViaSafe</p></div>
-  </footer>
-    </body>
-    </html>
+                Politica de Confidențialitate
+              </a>
+            </li>
+
+            <li class="child">
+              <a href="/ro/legal/terms-of-use/"> Termeni de Utilizare </a>
+            </li>
+
+            <li class="child">
+              <a href="/ro/legal/cookie-policy/"> Politica Cookie </a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+
+      <div class="bottom"><p>© 2025 ViaSafe</p></div>
+    </footer>
+  </body>
+</html>
