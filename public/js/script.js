@@ -5,6 +5,10 @@ const THEME = {
   DARK: "dark",
 }
 
+document.documentElement.scrollTop = 0;
+document.body.scrollTop = 0;
+
+
 window.addEventListener("DOMContentLoaded", () => {
   console.log("Script loaded...")
 
@@ -135,7 +139,8 @@ window.addEventListener("DOMContentLoaded", () => {
         newPath[1] = lang
         const completePath = newPath.join("/")
         console.log(completePath)
-        window.location.href = `http://localhost:3000${completePath}`
+        const origin = location.origin
+        window.location.href = `${origin}${completePath}`
       })
     }
   })
@@ -160,16 +165,14 @@ function toggleTheme() {
   document.body.classList.toggle("light-theme")
 }
 
-
 function enableLight() {
   console.log("ENABLEING LIGHT THEME")
   document.body.classList.add("light-theme")
-  
+
   const logo = document.querySelector("h1.logo a img")
-  
-  
+
   const dark = "/media/logo/logo-1.svg"
-  
+
   logo.src = dark
 }
 function enableDark() {
@@ -177,7 +180,6 @@ function enableDark() {
   document.body.classList.remove("light-theme")
 
   const logo = document.querySelector("h1.logo a img")
-
 
   const light = "/media/logo/logo-1-dark.svg"
 

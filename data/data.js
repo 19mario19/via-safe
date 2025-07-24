@@ -264,7 +264,7 @@ pages["Home Page"] = [
           {
             tag: "a",
             attributes: {
-              href: "#",
+              href: "/",
             },
             content: {
               ru: "Узнать больше о ViaSafe",
@@ -283,7 +283,7 @@ pages["Home Page"] = [
           {
             tag: "a",
             attributes: {
-              href: "#",
+              href: "/",
             },
             content: {
               ru: "Подключиться сейчас",

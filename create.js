@@ -30,7 +30,7 @@ async function generatePages() {
       let lang = l.toLowerCase()
       try {
         const parentPath = path.join(fullPath, lang, route.path)
-        const parentFile = path.join(parentPath, `${route.name[lang]}.html`)
+        const parentFile = path.join(parentPath, `index.html`)
 
         // console.log(route.name)
 
@@ -47,7 +47,7 @@ async function generatePages() {
         if (Array.isArray(route.children) && route.children.length > 0) {
           for (let child of route.children) {
             const childPath = path.join(fullPath, lang, child.path)
-            const childFile = path.join(childPath, `${child.name[lang]}.html`)
+            const childFile = path.join(childPath, `index.html`)
 
             await fs.mkdir(childPath, { recursive: true })
 

@@ -1,14 +1,12 @@
 [build]
-  publish = "public/pages"
+  publish = "public"
   command = ""
 
-# Redirect root to /en/
 [[redirects]]
   from = "/"
   to = "/en/"
   status = 302
 
-# Language homepages (e.g. /en → /en/)
 [[redirects]]
   from = "/en"
   to = "/en/"
@@ -24,14 +22,36 @@
   to = "/ru/"
   status = 301
 
-# Parent-level pages
+# This rule uses a greedy wildcard '*' to capture all path segments after the language.
+# It should correctly map paths like /ro/features-benefits/family-travel/
+# to /pages/ro/features-benefits/family-travel/index.html
 [[redirects]]
-  from = "/:lang/:section/"
-  to = "/:lang/:section/index.html"
+  from = "/:lang/*"
+  to = "/pages/:lang/:splat/index.html"
   status = 200
 
-# Child pages — catch everything two levels deep
+# Explicit language homepages (e.g., /en/ -> /pages/en/index.html)
+# These rules have been moved to be AFTER the greedy rule.
+# This ensures that even if the greedy rule matches `/en/` and produces `pages/en//index.html`,
+# these more specific rules might then take precedence for the exact match `/en/`.
 [[redirects]]
-  from = "/:lang/:section/:subpage/"
-  to = "/:lang/:section/:subpage/index.html"
+  from = "/:lang/"
+  to = "/pages/:lang/index.html"
   status = 200
+
+# [[redirects]]
+#   from = "/ro/"
+#   to = "/pages/ro/index.html"
+#   status = 200
+
+# [[redirects]]
+#   from = "/ru/"
+#   to = "/pages/ru/index.html"
+#   status = 200
+
+# This rule forces trailing slashes for consistency and should be placed after
+# the content-serving rules to avoid unnecessary redirects when content can be served directly.
+[[redirects]]
+  from = "/:lang/:path"
+  to = "/:lang/:path/"
+  status = 301

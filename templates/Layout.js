@@ -26,10 +26,8 @@ function LayoutDir(
             <link
               href="https://fonts.googleapis.com/icon?family=Material+Icons"
               rel="stylesheet"/>
-
         <link rel="stylesheet" href="/global.css" />        
-    <script src="/fast.js"></script>
-
+        <script src="/fast.js"></script>
         ${
           description
             ? `<meta name="description" content="${description}" />`
@@ -44,7 +42,6 @@ function LayoutDir(
     </head>
     <body>
         ${nav ?? ""}
-
           <main class="container">${body}</main>
          
         ${footer ?? ""}
@@ -52,5 +49,4 @@ function LayoutDir(
     </html>
 `
 }
-
 export { LayoutDir }
