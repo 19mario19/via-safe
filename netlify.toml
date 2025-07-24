@@ -36,8 +36,13 @@
 # these more specific rules might then take precedence for the exact match `/en/`.
 [[redirects]]
   from = "/:lang/"
-  to = "/pages/:lang/index.html"
+  to = "/:lang/index.html"
   status = 200
+  force = true
+
+
+
+
 
 # [[redirects]]
 #   from = "/ro/"
